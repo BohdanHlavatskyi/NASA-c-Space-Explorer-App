@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en" data-locale="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="NASA-inspired APOD gallery that shows nine consecutive days of astronomy images and videos."
+    />
+    <title>NASA APOD Explorer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="starfield" aria-hidden="true"></div>
+
+    <main class="app-shell">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">NASA Astronomy Picture of the Day</p>
+          <h1 id="hero-title">Nine Days of Deep Space Discovery</h1>
+          <p class="hero-text">
+            Choose an ending date and explore a consecutive 9-day APOD gallery with
+            image, video, and modal details.
+          </p>
+        </div>
+
+        <form class="controls" id="controls" autocomplete="off">
+          <div class="language-picker">
+            <label for="language-select">Language</label>
+            <select id="language-select" name="language-select">
+              <option value="en">English</option>
+              <option value="es">Español</option>
+              <option value="de">Deutsch</option>
+              <option value="fr">Français</option>
+              <option value="ja">日本語</option>
+              <option value="ko">한국어</option>
+              <option value="zh-Hans">中文</option>
+              <option value="ru">Русский</option>
+              <option value="uk">Українська</option>
+              <option value="pl">Polski</option>
+            </select>
+          </div>
+
+          <label for="end-date">
+            End date
+            <span>Select the last day in the 9-day range.</span>
+          </label>
+          <div class="controls-row">
+            <input id="end-date" name="end-date" type="date" required />
+            <button type="submit">Load gallery</button>
+          </div>
+          <p class="helper-text" id="range-help"></p>
+        </form>
+      </section>
+
+      <section class="fact-panel" aria-labelledby="fact-title">
+        <p class="section-label">Did You Know?</p>
+        <h2 id="fact-title">Random space fact</h2>
+        <p id="space-fact" class="fact-text">Loading a cosmic fact...</p>
+      </section>
+
+      <section class="gallery-section" aria-labelledby="gallery-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-label">Gallery</p>
+            <h2 id="gallery-title">APOD results</h2>
+          </div>
+          <p id="status" class="status" aria-live="polite">Select a date to begin.</p>
+        </div>
+
+        <div id="loading" class="loading" hidden aria-live="polite" aria-busy="true">
+          <span class="spinner" aria-hidden="true"></span>
+          <p>Loading NASA imagery for 9 consecutive days...</p>
+        </div>
+
+        <div id="gallery" class="gallery" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <div id="modal" class="modal" hidden role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-backdrop" data-close-modal></div>
+      <div class="modal-card" role="document">
+        <button class="modal-close" type="button" aria-label="Close dialog" data-close-modal>
+          ×
+        </button>
+        <div id="modal-media" class="modal-media"></div>
+        <div class="modal-content">
+          <p class="section-label">APOD detail</p>
+          <h2 id="modal-title"></h2>
+          <p id="modal-date" class="modal-date"></p>
+          <p id="modal-explanation" class="modal-explanation"></p>
+          <a id="modal-link" class="modal-link" href="#" target="_blank" rel="noreferrer noopener" hidden>
+            Open original media
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
