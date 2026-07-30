@@ -82,6 +82,37 @@
 
         <div id="gallery" class="gallery" aria-live="polite"></div>
       </section>
+
+      <section class="galaxy-section" aria-labelledby="galaxy-title">
+        <div class="section-heading galaxy-heading">
+          <div>
+            <p class="section-label">Galaxy Atlas</p>
+            <h2 id="galaxy-title">Similar galaxies database</h2>
+          </div>
+          <div class="atlas-controls">
+            <label for="galaxy-seed">Seed galaxy</label>
+            <select id="galaxy-seed" name="galaxy-seed"></select>
+            <button id="galaxy-next" class="atlas-button" type="button" hidden>Show next 6</button>
+          </div>
+        </div>
+
+        <p class="helper-text" id="galaxy-help">
+          Estimated age is merged with a NASA image search result and ranked by age,
+          central black hole mass, star formation rate, stellar mass, morphology, and redshift.
+        </p>
+
+        <div class="atlas-summary">
+          <p id="galaxy-summary" class="summary-text"></p>
+          <p id="galaxy-status" class="status" aria-live="polite"></p>
+        </div>
+
+        <div id="galaxy-loading" class="loading" hidden aria-live="polite" aria-busy="true">
+          <span class="spinner" aria-hidden="true"></span>
+          <p>Loading NASA galaxy matches...</p>
+        </div>
+
+        <div id="galaxy-atlas" class="gallery similar-gallery" aria-live="polite"></div>
+      </section>
     </main>
 
     <div id="modal" class="modal" hidden role="dialog" aria-modal="true" aria-labelledby="modal-title">
@@ -98,6 +129,26 @@
           <p id="modal-explanation" class="modal-explanation"></p>
           <a id="modal-link" class="modal-link" href="#" target="_blank" rel="noreferrer noopener" hidden>
             Open original media
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="galaxy-modal" class="modal" hidden role="dialog" aria-modal="true" aria-labelledby="galaxy-modal-title">
+      <div class="modal-backdrop" data-close-galaxy-modal></div>
+      <div class="modal-card" role="document">
+        <button class="modal-close" type="button" aria-label="Close dialog" data-close-galaxy-modal>
+          ×
+        </button>
+        <div id="galaxy-modal-media" class="modal-media"></div>
+        <div class="modal-content">
+          <p class="section-label">Galaxy detail</p>
+          <h2 id="galaxy-modal-title"></h2>
+          <p id="galaxy-modal-subtitle" class="modal-date"></p>
+          <p id="galaxy-modal-summary" class="modal-explanation"></p>
+          <div id="galaxy-modal-facts" class="modal-facts"></div>
+          <a id="galaxy-modal-link" class="modal-link" href="#" target="_blank" rel="noreferrer noopener" hidden>
+            Open NASA image
           </a>
         </div>
       </div>

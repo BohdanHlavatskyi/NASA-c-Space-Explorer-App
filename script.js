@@ -451,6 +451,166 @@ const translationTargetLocales = {
   pl: 'pl'
 };
 
+const GALAXY_PAGE_SIZE = 6;
+const GALAXY_DATABASE = [
+  {
+    id: 'andromeda',
+    name: 'Andromeda Galaxy',
+    ageGyr: 10.0,
+    blackHoleMassSolar: 140000000,
+    stellarMassSolar: 1230000000000,
+    starFormationRate: 0.4,
+    morphology: 'SA(s)b spiral',
+    redshift: -0.001,
+    environment: 'Local Group',
+    imageQuery: 'Andromeda Galaxy',
+    summary: 'A massive spiral with a dense bulge and a long, quiet evolution history.'
+  },
+  {
+    id: 'milky-way',
+    name: 'Milky Way',
+    ageGyr: 10.5,
+    blackHoleMassSolar: 4300000,
+    stellarMassSolar: 1000000000000,
+    starFormationRate: 1.9,
+    morphology: 'barred spiral',
+    redshift: 0,
+    environment: 'Local Group',
+    imageQuery: 'Milky Way Galaxy',
+    summary: 'Our own barred spiral galaxy with a moderately active nucleus and rich star-forming arms.'
+  },
+  {
+    id: 'triangulum',
+    name: 'Triangulum Galaxy',
+    ageGyr: 8.0,
+    blackHoleMassSolar: 300000,
+    stellarMassSolar: 50000000000,
+    starFormationRate: 0.5,
+    morphology: 'spiral',
+    redshift: 0.0009,
+    environment: 'Local Group',
+    imageQuery: 'Triangulum Galaxy',
+    summary: 'A smaller spiral with bright star-forming regions and a loose, open structure.'
+  },
+  {
+    id: 'whirlpool',
+    name: 'Whirlpool Galaxy',
+    ageGyr: 8.6,
+    blackHoleMassSolar: 10000000,
+    stellarMassSolar: 160000000000,
+    starFormationRate: 3.4,
+    morphology: 'grand-design spiral',
+    redshift: 0.0015,
+    environment: 'Interacting pair',
+    imageQuery: 'Whirlpool Galaxy',
+    summary: 'A classic spiral structure shaped by interaction with a companion galaxy.'
+  },
+  {
+    id: 'sombrero',
+    name: 'Sombrero Galaxy',
+    ageGyr: 11.0,
+    blackHoleMassSolar: 1000000000,
+    stellarMassSolar: 800000000000,
+    starFormationRate: 0.1,
+    morphology: 'unbarred spiral',
+    redshift: 0.0034,
+    environment: 'Field',
+    imageQuery: 'Sombrero Galaxy',
+    summary: 'A bright bulge and dusty disk make this edge-on galaxy easy to recognize.'
+  },
+  {
+    id: 'pinwheel',
+    name: 'Pinwheel Galaxy',
+    ageGyr: 9.8,
+    blackHoleMassSolar: 26000,
+    stellarMassSolar: 100000000000,
+    starFormationRate: 2.0,
+    morphology: 'face-on spiral',
+    redshift: 0.0008,
+    environment: 'Local Group outskirts',
+    imageQuery: 'Pinwheel Galaxy',
+    summary: 'A face-on spiral with extended arms and numerous bright H II regions.'
+  },
+  {
+    id: 'black-eye',
+    name: 'Black Eye Galaxy',
+    ageGyr: 9.1,
+    blackHoleMassSolar: 50000000,
+    stellarMassSolar: 60000000000,
+    starFormationRate: 1.1,
+    morphology: 'spiral',
+    redshift: 0.0023,
+    environment: 'Field',
+    imageQuery: 'Black Eye Galaxy',
+    summary: 'A dramatic dust lane crosses its luminous core like a dark cosmic eye.'
+  },
+  {
+    id: 'ngc-1300',
+    name: 'NGC 1300',
+    ageGyr: 10.4,
+    blackHoleMassSolar: 70000000,
+    stellarMassSolar: 110000000000,
+    starFormationRate: 0.8,
+    morphology: 'barred spiral',
+    redshift: 0.0052,
+    environment: 'Field',
+    imageQuery: 'NGC 1300 galaxy',
+    summary: 'A striking barred spiral with long, symmetrical arms extending from the center.'
+  },
+  {
+    id: 'ngc-1365',
+    name: 'NGC 1365',
+    ageGyr: 10.7,
+    blackHoleMassSolar: 800000000,
+    stellarMassSolar: 250000000000,
+    starFormationRate: 5.0,
+    morphology: 'barred spiral',
+    redshift: 0.0055,
+    environment: 'Fornax Cluster',
+    imageQuery: 'NGC 1365 galaxy',
+    summary: 'A large barred spiral with strong star formation and a powerful central engine.'
+  },
+  {
+    id: 'm87',
+    name: 'Messier 87',
+    ageGyr: 13.0,
+    blackHoleMassSolar: 6500000000,
+    stellarMassSolar: 2700000000000,
+    starFormationRate: 0.05,
+    morphology: 'giant elliptical',
+    redshift: 0.0043,
+    environment: 'Virgo Cluster',
+    imageQuery: 'Messier 87 galaxy',
+    summary: 'A giant elliptical galaxy famous for its supermassive black hole and relativistic jet.'
+  },
+  {
+    id: 'leo-a',
+    name: 'Leo A',
+    ageGyr: 12.0,
+    blackHoleMassSolar: 0,
+    stellarMassSolar: 20000000,
+    starFormationRate: 0.01,
+    morphology: 'dwarf irregular',
+    redshift: 0.001,
+    environment: 'Local Group',
+    imageQuery: 'Leo A galaxy',
+    summary: 'A faint dwarf irregular with very sparse structure and a young stellar population.'
+  },
+  {
+    id: 'cartwheel',
+    name: 'Cartwheel Galaxy',
+    ageGyr: 7.5,
+    blackHoleMassSolar: 100000000,
+    stellarMassSolar: 100000000000,
+    starFormationRate: 5.5,
+    morphology: 'ring galaxy',
+    redshift: 0.03,
+    environment: 'Field',
+    imageQuery: 'Cartwheel Galaxy',
+    summary: 'A ring galaxy formed by a dramatic collision that triggered a wave of star formation.'
+  }
+];
+
 const form = document.getElementById('controls');
 const languageSelect = document.getElementById('language-select');
 const endDateInput = document.getElementById('end-date');
@@ -466,6 +626,20 @@ const modalTitle = document.getElementById('modal-title');
 const modalDate = document.getElementById('modal-date');
 const modalExplanation = document.getElementById('modal-explanation');
 const modalLink = document.getElementById('modal-link');
+const galaxySeedSelect = document.getElementById('galaxy-seed');
+const galaxyNextButton = document.getElementById('galaxy-next');
+const galaxyHelp = document.getElementById('galaxy-help');
+const galaxySummary = document.getElementById('galaxy-summary');
+const galaxyStatus = document.getElementById('galaxy-status');
+const galaxyLoading = document.getElementById('galaxy-loading');
+const galaxyAtlas = document.getElementById('galaxy-atlas');
+const galaxyModal = document.getElementById('galaxy-modal');
+const galaxyModalMedia = document.getElementById('galaxy-modal-media');
+const galaxyModalTitle = document.getElementById('galaxy-modal-title');
+const galaxyModalSubtitle = document.getElementById('galaxy-modal-subtitle');
+const galaxyModalSummary = document.getElementById('galaxy-modal-summary');
+const galaxyModalFacts = document.getElementById('galaxy-modal-facts');
+const galaxyModalLink = document.getElementById('galaxy-modal-link');
 const metaDescription = document.querySelector('meta[name="description"]');
 
 let currentLocale = initialLocale;
@@ -476,6 +650,12 @@ let activeModalSourceItem = null;
 
 let lastTrigger = null;
 let galleryRenderToken = 0;
+let currentGalaxySeedId = GALAXY_DATABASE[0]?.id || 'andromeda';
+let currentGalaxyPageIndex = 0;
+let currentGalaxyMatches = [];
+let galaxyRenderToken = 0;
+
+const galaxyImageCache = new Map();
 
 function getPreferredLocale() {
   const browserLocales = [navigator.language, ...(navigator.languages || [])].filter(Boolean);
@@ -1024,6 +1204,306 @@ async function loadGallery(endDateString) {
   }
 }
 
+function getGalaxyById(id) {
+  return GALAXY_DATABASE.find((galaxy) => galaxy.id === id) || GALAXY_DATABASE[0];
+}
+
+function formatGalaxyAge(ageGyr) {
+  return `${ageGyr.toFixed(1)} billion years`;
+}
+
+function formatSolarMass(value) {
+  return `${new Intl.NumberFormat('en', { notation: 'compact', maximumFractionDigits: 2 }).format(value)} M☉`;
+}
+
+function formatRedshift(value) {
+  return value === 0 ? 'z = 0' : `z = ${value.toFixed(4)}`;
+}
+
+function formatSimilarityScore(score) {
+  const normalized = Math.max(45, Math.min(99, Math.round(100 - score * 5)));
+  return `${normalized}% match`;
+}
+
+function logDifference(left, right) {
+  if (left <= 0 || right <= 0) {
+    return Math.abs(left - right);
+  }
+
+  return Math.abs(Math.log10(left) - Math.log10(right));
+}
+
+function scoreGalaxySimilarity(seed, candidate) {
+  const morphologyBonus = seed.morphology === candidate.morphology ? 0 : 3;
+  const environmentBonus = seed.environment === candidate.environment ? 0 : 1.5;
+
+  return (
+    Math.abs(seed.ageGyr - candidate.ageGyr) * 1.7 +
+    logDifference(seed.blackHoleMassSolar, candidate.blackHoleMassSolar) * 6 +
+    logDifference(seed.stellarMassSolar, candidate.stellarMassSolar) * 2.2 +
+    Math.abs(seed.starFormationRate - candidate.starFormationRate) * 2 +
+    Math.abs(seed.redshift - candidate.redshift) * 40 +
+    morphologyBonus +
+    environmentBonus
+  );
+}
+
+function getSimilarGalaxies(seed) {
+  return GALAXY_DATABASE.filter((galaxy) => galaxy.id !== seed.id)
+    .map((galaxy) => ({
+      galaxy,
+      score: scoreGalaxySimilarity(seed, galaxy)
+    }))
+    .sort((left, right) => left.score - right.score);
+}
+
+function setGalaxyLoading(isLoading) {
+  galaxyLoading.hidden = !isLoading;
+  galaxyAtlas.setAttribute('aria-busy', String(isLoading));
+}
+
+function populateGalaxySeedOptions() {
+  const fragment = document.createDocumentFragment();
+
+  for (const galaxy of GALAXY_DATABASE) {
+    const option = document.createElement('option');
+    option.value = galaxy.id;
+    option.textContent = galaxy.name;
+    fragment.append(option);
+  }
+
+  galaxySeedSelect.replaceChildren(fragment);
+  galaxySeedSelect.value = currentGalaxySeedId;
+}
+
+async function fetchGalaxyImage(galaxy) {
+  if (galaxyImageCache.has(galaxy.imageQuery)) {
+    return galaxyImageCache.get(galaxy.imageQuery);
+  }
+
+  const request = (async () => {
+    try {
+      const url = new URL('https://images-api.nasa.gov/search');
+      url.searchParams.set('q', galaxy.imageQuery);
+      url.searchParams.set('media_type', 'image');
+
+      const response = await fetch(url.toString());
+      if (!response.ok) {
+        throw new Error('NASA image search failed.');
+      }
+
+      const data = await response.json();
+      const item = data?.collection?.items?.find((entry) => Array.isArray(entry.links) && entry.links.length > 0);
+      const imageUrl = item?.links?.find((link) => link.rel === 'preview' || link.rel === 'canonical')?.href || null;
+      const sourceUrl = imageUrl || item?.href || null;
+
+      return {
+        imageUrl,
+        sourceUrl
+      };
+    } catch (error) {
+      return {
+        imageUrl: null,
+        sourceUrl: null
+      };
+    }
+  })();
+
+  galaxyImageCache.set(galaxy.imageQuery, request);
+  return request;
+}
+
+function createGalaxyPlaceholder(galaxy) {
+  const placeholder = document.createElement('div');
+  placeholder.className = 'video-placeholder image-placeholder';
+
+  const content = document.createElement('div');
+  const heading = document.createElement('strong');
+  heading.textContent = galaxy.name;
+
+  const body = document.createElement('p');
+  body.textContent = 'Loading NASA archive image...';
+
+  content.append(heading, body);
+  placeholder.append(content);
+  return placeholder;
+}
+
+function createGalaxyCard(galaxy, score) {
+  const article = document.createElement('article');
+  article.className = 'gallery-item galaxy-card';
+
+  const trigger = document.createElement('button');
+  trigger.type = 'button';
+  trigger.className = 'gallery-trigger';
+  trigger.setAttribute('aria-label', `Open details for ${galaxy.name}`);
+  trigger.addEventListener('click', () => openGalaxyModal(galaxy, trigger));
+
+  const media = document.createElement('div');
+  media.className = 'gallery-media';
+  const placeholder = createGalaxyPlaceholder(galaxy);
+  const badge = document.createElement('span');
+  badge.className = 'galaxy-score';
+  badge.textContent = formatSimilarityScore(score);
+  media.append(placeholder, badge);
+
+  const body = document.createElement('div');
+  body.className = 'gallery-body';
+
+  const title = document.createElement('h3');
+  title.textContent = galaxy.name;
+
+  const details = document.createElement('p');
+  details.textContent = `${formatGalaxyAge(galaxy.ageGyr)} • ${galaxy.morphology}`;
+
+  const summary = document.createElement('p');
+  summary.textContent = galaxy.summary;
+
+  body.append(title, details, summary);
+  trigger.append(media, body);
+  article.append(trigger);
+  return article;
+}
+
+async function hydrateGalaxyCard(card, galaxy, token) {
+  const media = card.querySelector('.gallery-media');
+  const badge = card.querySelector('.galaxy-score');
+  const placeholder = media?.querySelector('.image-placeholder');
+  const asset = await fetchGalaxyImage(galaxy);
+
+  if (token !== galaxyRenderToken || !media) {
+    return;
+  }
+
+  if (asset.imageUrl) {
+    const image = document.createElement('img');
+    image.src = asset.imageUrl;
+    image.alt = galaxy.name;
+    image.loading = 'lazy';
+    media.replaceChildren(image, badge);
+  } else if (placeholder) {
+    placeholder.textContent = 'Image unavailable';
+  }
+}
+
+function renderGalaxyFacts(galaxy) {
+  const facts = [
+    ['Age', formatGalaxyAge(galaxy.ageGyr)],
+    ['Central black hole', formatSolarMass(galaxy.blackHoleMassSolar)],
+    ['Stellar mass', formatSolarMass(galaxy.stellarMassSolar)],
+    ['Star formation', `${galaxy.starFormationRate.toFixed(2)} M☉/yr`],
+    ['Structure', galaxy.morphology],
+    ['Environment', `${galaxy.environment} • ${formatRedshift(galaxy.redshift)}`]
+  ];
+
+  galaxyModalFacts.replaceChildren(
+    ...facts.map(([label, value]) => {
+      const fact = document.createElement('p');
+      fact.className = 'modal-fact';
+      fact.innerHTML = `<strong>${label}:</strong> ${value}`;
+      return fact;
+    })
+  );
+}
+
+function updateGalaxySummary(seed, totalMatches) {
+  galaxySummary.textContent = `Seed: ${seed.name}. The atlas compares age, black hole mass, star formation rate, stellar mass, morphology, and redshift.`;
+  const totalPages = Math.max(1, Math.ceil(totalMatches / GALAXY_PAGE_SIZE));
+  const pageLabel = `${currentGalaxyPageIndex + 1}/${totalPages}`;
+  const startNumber = Math.min(currentGalaxyPageIndex * GALAXY_PAGE_SIZE + 1, totalMatches);
+  const endNumber = Math.min((currentGalaxyPageIndex + 1) * GALAXY_PAGE_SIZE, totalMatches);
+  galaxyStatus.textContent = `${startNumber}-${endNumber} of ${totalMatches} similar galaxies • page ${pageLabel}`;
+  galaxyNextButton.hidden = totalMatches <= GALAXY_PAGE_SIZE;
+}
+
+function openGalaxyModal(galaxy, trigger) {
+  activeGalaxyModalItem = galaxy;
+  activeGalaxyTrigger = trigger;
+
+  galaxyModalTitle.textContent = galaxy.name;
+  galaxyModalSubtitle.textContent = `${formatGalaxyAge(galaxy.ageGyr)} • ${galaxy.morphology}`;
+  galaxyModalSummary.textContent = galaxy.summary;
+  renderGalaxyFacts(galaxy);
+
+  galaxyModalLink.hidden = true;
+  galaxyModalLink.removeAttribute('href');
+
+  galaxyModalMedia.replaceChildren();
+  const placeholder = createGalaxyPlaceholder(galaxy);
+  galaxyModalMedia.append(placeholder);
+
+  fetchGalaxyImage(galaxy).then((asset) => {
+    if (activeGalaxyModalItem?.id !== galaxy.id || galaxyModal.hidden) {
+      return;
+    }
+
+    if (asset.imageUrl) {
+      const image = document.createElement('img');
+      image.src = asset.imageUrl;
+      image.alt = galaxy.name;
+      galaxyModalMedia.replaceChildren(image);
+      galaxyModalLink.href = asset.sourceUrl || asset.imageUrl;
+      galaxyModalLink.hidden = false;
+    } else {
+      placeholder.textContent = 'Image unavailable';
+    }
+  });
+
+  galaxyModal.hidden = false;
+  document.body.style.overflow = 'hidden';
+  galaxyModal.querySelector('.modal-close').focus();
+}
+
+function closeGalaxyModal() {
+  galaxyModal.hidden = true;
+  document.body.style.overflow = '';
+  galaxyModalMedia.replaceChildren();
+  galaxyModalLink.hidden = true;
+  galaxyModalLink.removeAttribute('href');
+  activeGalaxyModalItem = null;
+
+  if (activeGalaxyTrigger) {
+    activeGalaxyTrigger.focus();
+    activeGalaxyTrigger = null;
+  }
+}
+
+async function renderGalaxyAtlas() {
+  const seed = getGalaxyById(currentGalaxySeedId);
+  const matches = getSimilarGalaxies(seed);
+  const token = ++galaxyRenderToken;
+
+  currentGalaxyMatches = matches;
+  currentGalaxySeedId = seed.id;
+  galaxySeedSelect.value = seed.id;
+
+  const totalPages = Math.max(1, Math.ceil(matches.length / GALAXY_PAGE_SIZE));
+  if (currentGalaxyPageIndex >= totalPages) {
+    currentGalaxyPageIndex = 0;
+  }
+
+  setGalaxyLoading(true);
+  updateGalaxySummary(seed, matches.length);
+
+  const startIndex = currentGalaxyPageIndex * GALAXY_PAGE_SIZE;
+  const visibleMatches = matches.slice(startIndex, startIndex + GALAXY_PAGE_SIZE);
+  const cards = visibleMatches.map(({ galaxy, score }) => createGalaxyCard(galaxy, score));
+  galaxyAtlas.replaceChildren(...cards);
+
+  await Promise.all(cards.map((card, index) => hydrateGalaxyCard(card, visibleMatches[index].galaxy, token)));
+
+  if (token === galaxyRenderToken) {
+    setGalaxyLoading(false);
+    updateGalaxySummary(seed, matches.length);
+  }
+}
+
+function initializeGalaxyAtlas() {
+  populateGalaxySeedOptions();
+  galaxyHelp.textContent = galaxyHelp.textContent;
+  renderGalaxyAtlas();
+}
+
 languageSelect.addEventListener('change', (event) => {
   const target = event.target;
   if (target instanceof HTMLSelectElement) {
@@ -1043,12 +1523,41 @@ modal.addEventListener('click', (event) => {
   }
 });
 
+galaxySeedSelect.addEventListener('change', (event) => {
+  const target = event.target;
+  if (target instanceof HTMLSelectElement) {
+    currentGalaxySeedId = target.value;
+    currentGalaxyPageIndex = 0;
+    renderGalaxyAtlas();
+  }
+});
+
+galaxyNextButton.addEventListener('click', () => {
+  const totalPages = Math.max(1, Math.ceil(currentGalaxyMatches.length / GALAXY_PAGE_SIZE));
+  if (totalPages > 1) {
+    currentGalaxyPageIndex = (currentGalaxyPageIndex + 1) % totalPages;
+    renderGalaxyAtlas();
+  }
+});
+
+galaxyModal.addEventListener('click', (event) => {
+  const target = event.target;
+  if (target instanceof HTMLElement && target.hasAttribute('data-close-galaxy-modal')) {
+    closeGalaxyModal();
+  }
+});
+
 document.addEventListener('keydown', (event) => {
   if (event.key === 'Escape' && !modal.hidden) {
     closeModal();
+  }
+
+  if (event.key === 'Escape' && !galaxyModal.hidden) {
+    closeGalaxyModal();
   }
 });
 
 applyLocale(initialLocale);
 clampEndDate();
 loadGallery(endDateInput.value);
+initializeGalaxyAtlas();
