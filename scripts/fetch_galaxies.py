@@ -2,12 +2,11 @@
 """
 Fetch galaxy metadata from NASA Image and Video Library and create a local JSON database.
 
-This script queries https://images-api.nasa.gov/search?q=<query>&media_type=image
-and extracts basic metadata. It will not download large images by default; use
-`--download-images` to fetch thumbnails selectively.
+This script queries the NASA image archive for galaxy-related records, deduplicates
+them against an existing database, and preserves previously downloaded local images.
 
 Usage:
-  python3 scripts/fetch_galaxies.py --query "NGC" --limit 100 --output data/galaxies.json
+  python3 scripts/fetch_galaxies.py --limit 500 --output data/galaxies.json
 """
 import argparse
 import json
@@ -18,12 +17,73 @@ import sys
 try:
     from urllib.request import urlopen, Request
     from urllib.parse import urlencode
+    from urllib.parse import urlparse
 except Exception:
     print('urllib unavailable', file=sys.stderr)
     raise
 
 BASE_SEARCH = 'https://images-api.nasa.gov/search'
 ASSET_ENDPOINT = 'https://images-api.nasa.gov/asset/'
+DEFAULT_QUERIES = [
+    'galaxy',
+    'spiral galaxy',
+    'elliptical galaxy',
+    'barred spiral galaxy',
+    'interacting galaxies',
+    'galaxy cluster',
+    'deep field galaxy',
+    'hubble galaxy',
+    'jwst galaxy',
+    'ngc galaxy'
+]
+
+
+def normalize_text(value):
+    if not value:
+        return ''
+    return re.sub(r'\s+', ' ', str(value)).strip().lower()
+
+
+def normalize_url(value):
+    if not value:
+        return ''
+
+    parsed = urlparse(value)
+    if not parsed.scheme and not parsed.netloc:
+        return normalize_text(value)
+
+    path = parsed.path.rstrip('/')
+    return f'{parsed.netloc.lower()}{path}'.lower()
+
+
+def entry_key(entry):
+    candidates = [
+        entry.get('id'),
+        entry.get('nasa_id'),
+        entry.get('imageUrl'),
+        entry.get('sourceUrl'),
+        entry.get('localImage'),
+        entry.get('name')
+    ]
+
+    for candidate in candidates:
+        key = normalize_url(candidate) if candidate and '://' in str(candidate) else normalize_text(candidate)
+        if key:
+            return key
+
+    return ''
+
+
+def load_existing_entries(path):
+    if not path or not os.path.exists(path):
+        return []
+
+    try:
+        with open(path, 'r', encoding='utf-8') as fh:
+            data = json.load(fh)
+            return data if isinstance(data, list) else []
+    except Exception:
+        return []
 
 def parse_redshift(text):
     if not text:
@@ -78,9 +138,16 @@ def fetch_asset(nasa_id):
 
 def main():
     p = argparse.ArgumentParser()
-    p.add_argument('--query', default='galaxy', help='Search query for NASA images')
+    p.add_argument(
+        '--query',
+        action='append',
+        dest='queries',
+        help='Search query for NASA images. May be provided multiple times.'
+    )
     p.add_argument('--limit', type=int, default=100, help='Maximum number of items to fetch')
     p.add_argument('--output', default='data/galaxies.json', help='Output JSON path')
+    p.add_argument('--existing', default='data/galaxies.json', help='Existing galaxy database used to skip duplicates')
+    p.add_argument('--page-limit', type=int, default=25, help='Maximum pages to scan per query')
     p.add_argument('--download-images', action='store_true', help='Download thumbnail images')
     p.add_argument('--images-dir', default='data/images', help='Directory to save downloaded images')
     args = p.parse_args()
@@ -89,78 +156,117 @@ def main():
     if args.download_images:
         os.makedirs(args.images_dir, exist_ok=True)
 
+    existing_entries = load_existing_entries(args.existing)
     results = []
-    page = 1
-    fetched = 0
-    while fetched < args.limit:
-        try:
-            data = fetch_search(args.query, page=page)
-        except Exception as e:
-            print('Search failed:', e, file=sys.stderr)
-            break
+    seen = set()
 
-        items = data.get('collection', {}).get('items', [])
-        if not items:
-            break
+    for entry in existing_entries:
+        key = entry_key(entry)
+        if key:
+            seen.add(key)
 
-        for item in items:
-            if fetched >= args.limit:
+    queries = args.queries or DEFAULT_QUERIES
+    pages_scanned = 0
+
+    for query in queries:
+        for page in range(1, args.page_limit + 1):
+            if len(results) >= args.limit:
                 break
-            d = item.get('data', [{}])[0]
-            links = item.get('links', []) or []
-            nasa_id = d.get('nasa_id') or d.get('title')
-            title = d.get('title')
-            desc = d.get('description') or d.get('secondary_creator') or ''
-            date_created = d.get('date_created')
-            redshift = parse_redshift(desc)
 
-            thumb = None
-            for link in links:
-                href = link.get('href')
-                if not href:
-                    continue
-                if link.get('rel') in ('preview', 'thumbnail', 'canonical'):
-                    thumb = href
-                    break
-                if href.lower().endswith('.jpg') or href.lower().endswith('.png'):
-                    thumb = thumb or href
-
-            asset_url = None
             try:
-                asset = fetch_asset(nasa_id)
-                asset_items = asset.get('collection', {}).get('items', [])
-                # prefer small preview images
-                for a in asset_items:
-                    href = a.get('href')
-                    if href and (href.endswith('~thumb.jpg') or href.endswith('~medium.jpg') or href.endswith('.jpg')):
-                        asset_url = href
+                data = fetch_search(query, page=page)
+            except Exception as e:
+                print('Search failed:', query, page, e, file=sys.stderr)
+                break
+
+            pages_scanned += 1
+            items = data.get('collection', {}).get('items', [])
+            if not items:
+                break
+
+            for item in items:
+                if len(results) >= args.limit:
+                    break
+
+                d = item.get('data', [{}])[0]
+                links = item.get('links', []) or []
+                nasa_id = d.get('nasa_id') or d.get('title')
+                title = d.get('title')
+                desc = d.get('description') or d.get('secondary_creator') or ''
+                date_created = d.get('date_created')
+                keywords = d.get('keywords') or []
+                redshift = parse_redshift(desc)
+
+                thumb = None
+                for link in links:
+                    href = link.get('href')
+                    if not href:
+                        continue
+                    if link.get('rel') in ('preview', 'thumbnail', 'canonical'):
+                        thumb = href
                         break
-            except Exception:
-                asset_url = asset_url or thumb
+                    if href.lower().endswith('.jpg') or href.lower().endswith('.jpeg') or href.lower().endswith('.png'):
+                        thumb = thumb or href
 
-            entry = {
-                'id': str(nasa_id).replace(' ', '_'),
-                'name': title,
-                'summary': desc,
-                'date_created': date_created,
-                'redshift': redshift,
-                'imageUrl': asset_url or thumb,
-                'sourceUrl': asset_url or thumb
-            }
+                asset_url = None
+                try:
+                    asset = fetch_asset(nasa_id)
+                    asset_items = asset.get('collection', {}).get('items', [])
+                    for a in asset_items:
+                        href = a.get('href')
+                        if href and (href.endswith('~thumb.jpg') or href.endswith('~medium.jpg') or href.endswith('.jpg') or href.endswith('.jpeg') or href.endswith('.png')):
+                            asset_url = href
+                            break
+                except Exception:
+                    asset_url = asset_url or thumb
 
-            if redshift is not None:
-                entry['ageGyr'] = redshift_to_age_gyr(redshift)
+                image_url = asset_url or thumb
+                entry = {
+                    'id': str(nasa_id).replace(' ', '_'),
+                    'name': title,
+                    'summary': desc,
+                    'date_created': date_created,
+                    'keywords': keywords,
+                    'sourceQuery': query,
+                    'dataset': 'nasa-galaxy-expansion',
+                    'redshift': redshift,
+                    'imageUrl': image_url,
+                    'sourceUrl': image_url
+                }
 
-            results.append(entry)
-            fetched += 1
+                if redshift is not None:
+                    entry['ageGyr'] = redshift_to_age_gyr(redshift)
 
-        page += 1
+                key = entry_key(entry)
+                if not key or key in seen:
+                    continue
 
-    # Save results
+                seen.add(key)
+                results.append(entry)
+
+    merged = existing_entries[:]
+    merged_seen = set()
+    for entry in merged:
+        key = entry_key(entry)
+        if key:
+            merged_seen.add(key)
+
+    for entry in results:
+        key = entry_key(entry)
+        if key and key not in merged_seen:
+            merged.append(entry)
+            merged_seen.add(key)
+
+    merged.sort(key=lambda item: (
+        item.get('ageGyr') is None,
+        item.get('ageGyr') if item.get('ageGyr') is not None else 0,
+        normalize_text(item.get('name'))
+    ))
+
     with open(args.output, 'w', encoding='utf-8') as f:
-        json.dump(results, f, indent=2, ensure_ascii=False)
+        json.dump(merged, f, indent=2, ensure_ascii=False)
 
-    print(f'Saved {len(results)} items to {args.output}')
+    print(f'Saved {len(merged)} total items to {args.output} after scanning {pages_scanned} pages')
 
 if __name__ == '__main__':
     main()

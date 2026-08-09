@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """
-Download thumbnail images for the first N entries in data/galaxies.json that have imageUrl/sourceUrl.
-Writes a `localImage` key for each downloaded entry and updates data/galaxies.json.
+Download thumbnail images for the first N galaxy entries in data/galaxies.json
+that do not already have a localImage. The script skips repeated source URLs and
+updates data/galaxies.json in place.
 
 Usage:
-  python3 scripts/download_images.py --count 100
+    python3 scripts/download_images.py --count 100
 """
 import argparse
 import json
@@ -13,6 +14,7 @@ import sys
 from urllib.request import urlopen, Request
 from urllib.error import URLError, HTTPError
 from urllib.parse import urlparse
+import re
 
 
 def safe_filename(url):
@@ -21,6 +23,17 @@ def safe_filename(url):
     if not name:
         name = p.netloc.replace('.', '_')
     return name
+
+
+def normalize_url(url):
+    if not url:
+        return ''
+
+    parsed = urlparse(url)
+    if not parsed.scheme and not parsed.netloc:
+      return re.sub(r'\s+', ' ', str(url)).strip().lower()
+
+    return f'{parsed.netloc.lower()}{parsed.path.rstrip("/")}'.lower()
 
 
 def download(url, dest):
@@ -51,13 +64,34 @@ def main():
 
     count = args.count
     downloaded = 0
+    seen_urls = set()
+
     for entry in data:
+        if entry.get('localImage'):
+            for url in (entry.get('imageUrl'), entry.get('sourceUrl'), entry.get('localImage')):
+                key = normalize_url(url)
+                if key:
+                    seen_urls.add(key)
+
+    candidates = [entry for entry in data if not entry.get('localImage')]
+    candidates.sort(key=lambda entry: (
+        0 if entry.get('dataset') == 'nasa-galaxy-expansion' else 1,
+        0 if entry.get('sourceQuery') else 1,
+        normalize_url(entry.get('sourceUrl') or entry.get('imageUrl')),
+        normalize_url(entry.get('name'))
+    ))
+
+    for entry in candidates:
         if downloaded >= count:
             break
-        if entry.get('localImage'):
+        if entry.get('downloadFailed'):
             continue
         url = entry.get('imageUrl') or entry.get('sourceUrl')
         if not url:
+            continue
+
+        url_key = normalize_url(url)
+        if url_key and url_key in seen_urls:
             continue
 
         filename = safe_filename(url)
@@ -72,8 +106,11 @@ def main():
         if ok:
             entry['localImage'] = dest_path.replace('\\\\', '/')
             downloaded += 1
+            if url_key:
+                seen_urls.add(url_key)
             print('Downloaded', url, '->', dest_path)
         else:
+            entry['downloadFailed'] = True
             print('Failed to download', url)
 
     # write back

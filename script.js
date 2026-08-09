@@ -655,10 +655,16 @@ async function loadExternalGalaxyDatabase() {
     const items = await resp.json();
     if (!Array.isArray(items)) return;
 
+    const seenKeys = new Set(
+      GALAXY_DATABASE.flatMap((galaxy) =>
+        [galaxy.id, galaxy.name, galaxy.imageUrl, galaxy.sourceUrl, galaxy.localImage]
+          .filter(Boolean)
+          .map((value) => normalizeGalaxyKey(value))
+      )
+    );
+
     for (const entry of items) {
-      if (!entry || !entry.id) continue;
-      const exists = GALAXY_DATABASE.find((g) => g.id === entry.id);
-      if (exists) continue;
+      if (!entry) continue;
 
       const copy = { ...entry };
       if ((!copy.ageGyr || copy.ageGyr === null) && copy.redshift != null) {
@@ -672,6 +678,15 @@ async function loadExternalGalaxyDatabase() {
       copy.imageQuery = copy.imageQuery || copy.name;
       copy.summary = copy.summary || '';
 
+      const copyKeys = [copy.id, copy.name, copy.imageUrl, copy.sourceUrl, copy.localImage]
+        .filter(Boolean)
+        .map((value) => normalizeGalaxyKey(value));
+
+      if (copyKeys.some((key) => seenKeys.has(key))) {
+        continue;
+      }
+
+      copyKeys.forEach((key) => seenKeys.add(key));
       GALAXY_DATABASE.push(copy);
     }
 
@@ -693,6 +708,16 @@ function applyAgeFilter(minAge, maxAge) {
     if (maxAge != null && g.ageGyr > maxAge) return false;
     return true;
   });
+}
+
+function normalizeGalaxyKey(value) {
+  return String(value)
+    .trim()
+    .toLowerCase()
+    .replace(/^https?:\/\//, '')
+    .replace(/\?.*$/, '')
+    .replace(/#.*$/, '')
+    .replace(/\/+$/, '');
 }
 
 const form = document.getElementById('controls');
