@@ -16,6 +16,19 @@ from urllib.error import URLError, HTTPError
 from urllib.parse import urlparse
 import re
 
+GALAXY_TERMS = re.compile(
+    r'\b(galaxy|galaxies|spiral|elliptical|lenticular|dwarf|irregular|'
+    r'barred|interacting|merger|merging|cluster|field|deep field|'
+    r'andromeda|milky way|whirlpool|sombrero|pinwheel|cartwheel|messier)\b',
+    re.I
+)
+NON_GALAXY_TERMS = re.compile(
+    r'\b(planet|planets|people|person|astronaut|human|humans|earth|moon|'
+    r'solar system|satellite|jupiter|saturn|mars|venus|mercury|neptune|'
+    r'uranus|pluto|comet|asteroid|nebula|supernova|sun)\b',
+    re.I
+)
+
 
 def safe_filename(url):
     p = urlparse(url)
@@ -45,6 +58,14 @@ def download(url, dest):
         return True
     except (URLError, HTTPError, Exception) as e:
         return False
+
+
+def is_galaxy_entry(entry):
+    text = ' '.join(
+        str(entry.get(field, '')).lower()
+        for field in ['name', 'summary', 'sourceQuery', 'dataset']
+    )
+    return bool(GALAXY_TERMS.search(text)) and not bool(NON_GALAXY_TERMS.search(text))
 
 
 def main():
@@ -85,6 +106,8 @@ def main():
         if downloaded >= count:
             break
         if entry.get('downloadFailed'):
+            continue
+        if not is_galaxy_entry(entry):
             continue
         url = entry.get('imageUrl') or entry.get('sourceUrl')
         if not url:

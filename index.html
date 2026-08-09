@@ -75,6 +75,16 @@
           <p id="status" class="status" aria-live="polite">Select a date to begin.</p>
         </div>
 
+        <button id="apod-banner" class="apod-banner" type="button" aria-label="Open featured APOD in the gallery">
+          <div id="apod-banner-media" class="apod-banner-media"></div>
+          <div class="apod-banner-content">
+            <p class="section-label">Astronomy Picture of the Day</p>
+            <h3 id="apod-banner-title">Load the APOD gallery</h3>
+            <p id="apod-banner-date" class="modal-date"></p>
+            <p id="apod-banner-summary" class="apod-banner-summary">Choose a date to load the latest NASA APOD results.</p>
+          </div>
+        </button>
+
         <div id="loading" class="loading" hidden aria-live="polite" aria-busy="true">
           <span class="spinner" aria-hidden="true"></span>
           <p>Loading NASA imagery for 9 consecutive days...</p>
@@ -148,6 +158,7 @@
           <p class="section-label">Galaxy detail</p>
           <h2 id="galaxy-modal-title"></h2>
           <p id="galaxy-modal-subtitle" class="modal-date"></p>
+          <p class="section-label">Full description</p>
           <p id="galaxy-modal-summary" class="modal-explanation"></p>
           <div id="galaxy-modal-facts" class="modal-facts"></div>
           <a id="galaxy-modal-link" class="modal-link" href="#" target="_blank" rel="noreferrer noopener" hidden>

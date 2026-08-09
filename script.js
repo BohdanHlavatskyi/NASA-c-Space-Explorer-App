@@ -766,6 +766,13 @@ let galaxyRenderToken = 0;
 const galaxyImageCache = new Map();
 let galaxyVisibilityObserver = null;
 
+const apodBanner = document.getElementById('apod-banner');
+const apodBannerMedia = document.getElementById('apod-banner-media');
+const apodBannerTitle = document.getElementById('apod-banner-title');
+const apodBannerDate = document.getElementById('apod-banner-date');
+const apodBannerSummary = document.getElementById('apod-banner-summary');
+let currentApodBannerItem = null;
+
 function getPreferredLocale() {
   const browserLocales = [navigator.language, ...(navigator.languages || [])].filter(Boolean);
   for (const browserLocale of browserLocales) {
@@ -1070,6 +1077,59 @@ function createVideoPlaceholder(item) {
   return wrapper;
 }
 
+async function fetchApodByDate(dateString) {
+  const url = new URL(API_URL);
+  url.searchParams.set('api_key', DEFAULT_API_KEY);
+  url.searchParams.set('date', dateString);
+
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error('NASA APOD request failed.');
+  }
+
+  return response.json();
+}
+
+function renderApodBanner(item) {
+  if (!apodBanner || !apodBannerMedia || !apodBannerTitle || !apodBannerDate || !apodBannerSummary) {
+    return;
+  }
+
+  apodBannerMedia.replaceChildren();
+
+  if (!item) {
+    currentApodBannerItem = null;
+    apodBanner.disabled = true;
+    apodBanner.onclick = null;
+    apodBanner.setAttribute('aria-label', 'Open APOD details in the gallery');
+    apodBannerTitle.textContent = 'Load the APOD gallery';
+    apodBannerDate.textContent = '';
+    apodBannerSummary.textContent = 'Choose a date to load the latest NASA APOD results.';
+    return;
+  }
+
+  currentApodBannerItem = item;
+  apodBanner.disabled = false;
+  apodBannerTitle.textContent = item.title;
+  apodBannerDate.textContent = formatDateLabel(item.date);
+  apodBannerSummary.textContent = item.explanation;
+  apodBanner.setAttribute('aria-label', `Open APOD details for ${item.title}`);
+
+  if (item.media_type === 'video') {
+    const placeholder = createVideoPlaceholder(item);
+    apodBannerMedia.append(placeholder);
+  } else {
+    const image = document.createElement('img');
+    image.src = item.hdurl || item.url;
+    image.alt = item.title;
+    image.loading = 'lazy';
+    image.decoding = 'async';
+    apodBannerMedia.append(image);
+  }
+
+  apodBanner.onclick = () => openModal(item, apodBanner);
+}
+
 function createGalleryCard(item) {
   const strings = getLocaleStrings();
   const article = document.createElement('article');
@@ -1141,6 +1201,16 @@ async function renderTranslatedGallery(items, locale, options = {}) {
     if (shouldShowLoading && token === galleryRenderToken) {
       setLoading(false);
     }
+  }
+}
+
+async function loadApodForDate(dateString, locale) {
+  try {
+    const apodItem = await fetchApodByDate(dateString);
+    const translatedItem = await translateApodItem(apodItem, locale);
+    renderApodBanner(translatedItem);
+  } catch (error) {
+    renderApodBanner(null);
   }
 }
 
@@ -1254,6 +1324,11 @@ async function refreshVisibleContent() {
   updateDocumentLanguage(currentLocale);
   updateStaticText(currentLocale);
 
+  if (currentApodBannerItem) {
+    const translatedBanner = await translateApodItem(currentApodBannerItem.sourceItem || currentApodBannerItem, currentLocale);
+    renderApodBanner(translatedBanner);
+  }
+
   if (currentItems.length > 0) {
     await renderTranslatedGallery(currentItems, currentLocale, { showLoading: false });
     if (currentRange) {
@@ -1300,12 +1375,14 @@ async function loadGallery(endDateString) {
     currentItems = items;
     currentRange = range;
     await renderTranslatedGallery(items, currentLocale, { showLoading: false });
+    await loadApodForDate(range.endDate, currentLocale);
     statusText.textContent = describeRange(range.startDate, range.endDate);
     rangeHelp.textContent = strings.loadedEntries(items.length, formatDateLabel(range.endDate));
   } catch (error) {
     gallery.replaceChildren();
     currentItems = [];
     currentRange = null;
+    await loadApodForDate(range.endDate, currentLocale);
     statusText.textContent = strings.loadError;
     rangeHelp.textContent = error instanceof Error ? error.message : strings.unexpectedError;
   } finally {
@@ -1453,6 +1530,9 @@ function createGalaxyPlaceholder(galaxy) {
 function createGalaxyCard(galaxy) {
   const article = document.createElement('article');
   article.className = 'gallery-item galaxy-card';
+  article.tabIndex = 0;
+  article.setAttribute('role', 'button');
+  article.setAttribute('aria-label', `Open details for ${galaxy.name}`);
 
   const trigger = document.createElement('button');
   trigger.type = 'button';
@@ -1483,6 +1563,16 @@ function createGalaxyCard(galaxy) {
   body.append(title, details, summary);
   trigger.append(media, body);
   article.append(trigger);
+
+  const openCard = () => openGalaxyModal(galaxy, trigger);
+  article.addEventListener('click', openCard);
+  article.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      openCard();
+    }
+  });
+
   return article;
 }
 
@@ -1630,7 +1720,12 @@ function openGalaxyModal(galaxy, trigger) {
 
   galaxyModal.hidden = false;
   document.body.style.overflow = 'hidden';
-  galaxyModal.querySelector('.modal-close').focus();
+  requestAnimationFrame(() => {
+    galaxyModal.scrollTop = 0;
+    galaxyModal.scrollTo({ top: 0, behavior: 'auto' });
+    galaxyModal.querySelector('.modal-content')?.scrollTo({ top: 0, behavior: 'auto' });
+    galaxyModal.querySelector('.modal-close')?.focus();
+  });
 }
 
 function closeGalaxyModal() {
@@ -1740,6 +1835,6 @@ document.addEventListener('keydown', (event) => {
   // Try to load external galaxy records (data/galaxies.json) and merge.
   await loadExternalGalaxyDatabase();
 
-  loadGallery(endDateInput.value);
+  await loadGallery(endDateInput.value);
   initializeGalaxyAtlas();
 })();

@@ -14,6 +14,7 @@ import math
 import os
 import re
 import sys
+from datetime import date, timedelta
 try:
     from urllib.request import urlopen, Request
     from urllib.parse import urlencode
@@ -24,6 +25,10 @@ except Exception:
 
 BASE_SEARCH = 'https://images-api.nasa.gov/search'
 ASSET_ENDPOINT = 'https://images-api.nasa.gov/asset/'
+APOD_API = 'https://api.nasa.gov/planetary/apod'
+APOD_ARCHIVE = 'https://apod.nasa.gov/apod/archivepix.html'
+APOD_BASE = 'https://apod.nasa.gov/apod/'
+APOD_START_DATE = date(1995, 6, 24)
 DEFAULT_QUERIES = [
     'galaxy',
     'spiral galaxy',
@@ -34,8 +39,40 @@ DEFAULT_QUERIES = [
     'deep field galaxy',
     'hubble galaxy',
     'jwst galaxy',
-    'ngc galaxy'
+    'ngc galaxy',
+    'galaxy evolution',
+    'galaxy merger',
+    'galaxy survey',
+    'dwarf galaxy',
+    'lenticular galaxy',
+    'irregular galaxy',
+    'starburst galaxy',
+    'local group galaxy',
+    'active galaxy nucleus',
+    'andromeda galaxy',
+    'milky way galaxy',
+    'whirlpool galaxy',
+    'sombrero galaxy',
+    'pinwheel galaxy',
+    'cartwheel galaxy',
+    'messier galaxy',
+    'ngc spiral galaxy',
+    'eso galaxy',
+    'galaxy field'
 ]
+
+GALAXY_TERMS = re.compile(
+    r'\b(galaxy|galaxies|spiral|elliptical|lenticular|dwarf|irregular|'
+    r'barred|interacting|merger|merging|cluster|field|deep field|'
+    r'andromeda|milky way|whirlpool|sombrero|pinwheel|cartwheel|messier)\b',
+    re.I
+)
+NON_GALAXY_TERMS = re.compile(
+    r'\b(planet|planets|people|person|astronaut|human|humans|earth|moon|'
+    r'solar system|satellite|jupiter|saturn|mars|venus|mercury|neptune|'
+    r'uranus|pluto|comet|asteroid|nebula|supernova|sun)\b',
+    re.I
+)
 
 
 def normalize_text(value):
@@ -96,6 +133,16 @@ def parse_redshift(text):
             return None
     return None
 
+
+def is_galaxy_record(title, desc, keywords):
+    text = ' '.join([
+        normalize_text(title),
+        normalize_text(desc),
+        normalize_text(' '.join(keywords or []))
+    ])
+
+    return bool(GALAXY_TERMS.search(text)) and not bool(NON_GALAXY_TERMS.search(text))
+
 def redshift_to_age_gyr(z, steps=1000):
     # Same approximate cosmology as the frontend: H0=70, Om=0.3, Ol=0.7
     if z is None:
@@ -135,6 +182,79 @@ def fetch_asset(nasa_id):
     req = Request(url, headers={'User-Agent': 'fetch_galaxies/1.0'})
     with urlopen(req, timeout=30) as resp:
         return json.load(resp)
+
+
+def fetch_apod_range(start_date, end_date):
+    qs = {
+        'api_key': 'DEMO_KEY',
+        'start_date': start_date,
+        'end_date': end_date
+    }
+    url = APOD_API + '?' + urlencode(qs)
+    req = Request(url, headers={'User-Agent': 'fetch_galaxies/1.0'})
+    with urlopen(req, timeout=60) as resp:
+        data = json.load(resp)
+        return data if isinstance(data, list) else [data]
+
+
+def fetch_apod_archive():
+    req = Request(APOD_ARCHIVE, headers={'User-Agent': 'fetch_galaxies/1.0'})
+    with urlopen(req, timeout=60) as resp:
+        return resp.read().decode('utf-8', 'ignore')
+
+
+def extract_apod_entries(archive_html):
+    pattern = re.compile(r'<a href="(ap\d+\.html)">([^<]+)</a><br>', re.I)
+    entries = []
+    for href, title in pattern.findall(archive_html):
+        date_match = re.search(r'ap(\d{6})\.html', href, re.I)
+        if not date_match:
+            continue
+        date_code = date_match.group(1)
+        year = int(date_code[:2])
+        year += 2000 if year < 70 else 1900
+        month = int(date_code[2:4])
+        day = int(date_code[4:6])
+        entry_date = date(year, month, day).isoformat()
+        entries.append({
+            'href': href,
+            'title': title,
+            'date': entry_date
+        })
+    return entries
+
+
+def extract_apod_media_and_text(page_html):
+    if re.search(r'<video\b', page_html, re.I):
+        return None, None, None
+
+    image_match = re.search(r'<a href="(image/[^"]+\.(?:jpg|jpeg|png|gif|webp))"', page_html, re.I)
+    if not image_match:
+        image_match = re.search(r'<img[^>]+src="(image/[^"]+\.(?:jpg|jpeg|png|gif|webp))"', page_html, re.I)
+
+    if not image_match:
+        return None, None, None
+
+    image_url = APOD_BASE + image_match.group(1)
+
+    explanation_match = re.search(r'<b>\s*Explanation:\s*</b>(.*?)(?:<p>|</center>|</body>)', page_html, re.I | re.S)
+    explanation_html = explanation_match.group(1) if explanation_match else ''
+    explanation_text = re.sub(r'<[^>]+>', ' ', explanation_html)
+    explanation_text = re.sub(r'\s+', ' ', explanation_text).strip()
+
+    keywords_match = re.search(r'<meta name="keywords" content="([^"]+)"', page_html, re.I)
+    keywords = []
+    if keywords_match:
+        keywords = [part.strip() for part in keywords_match.group(1).split(',') if part.strip()]
+
+    return image_url, explanation_text, keywords
+
+
+def fetch_apod_page(href):
+    url = APOD_BASE + href
+    req = Request(url, headers={'User-Agent': 'fetch_galaxies/1.0'})
+    with urlopen(req, timeout=45) as resp:
+        return resp.read().decode('utf-8', 'ignore')
 
 def main():
     p = argparse.ArgumentParser()
@@ -195,6 +315,8 @@ def main():
                 desc = d.get('description') or d.get('secondary_creator') or ''
                 date_created = d.get('date_created')
                 keywords = d.get('keywords') or []
+                if not is_galaxy_record(title, desc, keywords):
+                    continue
                 redshift = parse_redshift(desc)
 
                 thumb = None
@@ -243,6 +365,59 @@ def main():
 
                 seen.add(key)
                 results.append(entry)
+
+    if len(results) < args.limit:
+        try:
+            archive_html = fetch_apod_archive()
+            apod_entries = extract_apod_entries(archive_html)
+        except Exception as e:
+            print('APOD archive failed:', e, file=sys.stderr)
+            apod_entries = []
+
+        for apod_entry in apod_entries:
+            if len(results) >= args.limit:
+                break
+
+            title = apod_entry['title']
+            if not is_galaxy_record(title, '', []):
+                continue
+
+            try:
+                page_html = fetch_apod_page(apod_entry['href'])
+            except Exception as e:
+                print('APOD page failed:', apod_entry['href'], e, file=sys.stderr)
+                continue
+
+            image_url, desc, keywords = extract_apod_media_and_text(page_html)
+            if not image_url or not desc:
+                continue
+
+            if not is_galaxy_record(title, desc, keywords):
+                continue
+
+            redshift = parse_redshift(desc)
+            entry = {
+                'id': f"apod-{apod_entry['date']}",
+                'name': title,
+                'summary': desc,
+                'date_created': apod_entry['date'],
+                'keywords': keywords,
+                'sourceQuery': 'apod archive galaxy titles',
+                'dataset': 'nasa-apod-galaxy-archive',
+                'redshift': redshift,
+                'imageUrl': image_url,
+                'sourceUrl': image_url
+            }
+
+            if redshift is not None:
+                entry['ageGyr'] = redshift_to_age_gyr(redshift)
+
+            key = entry_key(entry)
+            if not key or key in seen:
+                continue
+
+            seen.add(key)
+            results.append(entry)
 
     merged = existing_entries[:]
     merged_seen = set()
