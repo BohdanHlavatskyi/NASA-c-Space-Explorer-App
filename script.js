@@ -611,7 +611,7 @@ let GALAXY_DATABASE = [
 ];
 
 // Allow augmenting / filtering the galaxy database from an external JSON file.
-const EXTERNAL_GALAXY_DB_PATH = 'data/galaxies.json';
+const EXTERNAL_GALAXY_DB_PATH = 'data/galaxy-database.json';
 let ORIGINAL_GALAXY_DATABASE = GALAXY_DATABASE.slice();
 
 function redshiftToAgeGyr(z, options = {}) {
@@ -764,6 +764,7 @@ let galleryRenderToken = 0;
 let galaxyRenderToken = 0;
 
 const galaxyImageCache = new Map();
+let galaxyVisibilityObserver = null;
 
 function getPreferredLocale() {
   const browserLocales = [navigator.language, ...(navigator.languages || [])].filter(Boolean);
@@ -1372,6 +1373,67 @@ async function fetchGalaxyImage(galaxy) {
   return request;
 }
 
+function resetGalaxyVisibilityObserver() {
+  if (galaxyVisibilityObserver) {
+    galaxyVisibilityObserver.disconnect();
+    galaxyVisibilityObserver = null;
+  }
+}
+
+function getGalaxyVisibilityObserver(token) {
+  if (galaxyVisibilityObserver) {
+    return galaxyVisibilityObserver;
+  }
+
+  galaxyVisibilityObserver = new IntersectionObserver((entries, observer) => {
+    for (const entry of entries) {
+      if (!entry.isIntersecting) {
+        continue;
+      }
+
+      const card = entry.target;
+      const galaxy = card.__galaxyData;
+
+      observer.unobserve(card);
+
+      if (!galaxy || card.__galaxyHydrated || token !== galaxyRenderToken) {
+        continue;
+      }
+
+      card.__galaxyHydrated = true;
+      hydrateGalaxyCard(card, galaxy, token).finally(() => {
+        card.__galaxyHydrated = true;
+      });
+    }
+  }, {
+    rootMargin: '600px 0px'
+  });
+
+  return galaxyVisibilityObserver;
+}
+
+function queueGalaxyHydration(card, galaxy, token) {
+  card.__galaxyData = galaxy;
+  card.__galaxyHydrated = false;
+
+  if (typeof IntersectionObserver === 'function') {
+    getGalaxyVisibilityObserver(token).observe(card);
+    return;
+  }
+
+  const schedule = window.requestIdleCallback || ((callback) => window.setTimeout(() => callback({ didTimeout: true, timeRemaining: () => 0 }), 0));
+  schedule(() => {
+    if (token !== galaxyRenderToken || card.__galaxyHydrated) {
+      return;
+    }
+
+    card.__galaxyHydrated = true;
+    hydrateGalaxyCard(card, galaxy, token).finally(() => {
+      card.__galaxyHydrated = true;
+    });
+  });
+}
+
 function createGalaxyPlaceholder(galaxy) {
   const placeholder = document.createElement('div');
   placeholder.className = 'video-placeholder image-placeholder';
@@ -1439,6 +1501,7 @@ async function hydrateGalaxyCard(card, galaxy, token) {
     image.src = asset.imageUrl;
     image.alt = galaxy.name;
     image.loading = 'lazy';
+    image.decoding = 'async';
     media.replaceChildren(image, badge);
   } else if (placeholder) {
     placeholder.textContent = 'Image unavailable';
@@ -1538,7 +1601,7 @@ function openGalaxyModal(galaxy, trigger) {
 
   galaxyModalTitle.textContent = galaxy.name;
   galaxyModalSubtitle.textContent = `${formatGalaxyAge(galaxy.ageGyr)} • ${galaxy.morphology}`;
-  galaxyModalSummary.textContent = galaxy.summary;
+  galaxyModalSummary.textContent = galaxy.fullSummary || galaxy.summary;
   renderGalaxyFacts(galaxy);
 
   galaxyModalLink.hidden = true;
@@ -1591,10 +1654,14 @@ async function renderGalaxyAtlas() {
   const matches = getFilteredGalaxies();
   updateGalaxySummary(matches.length);
 
+  resetGalaxyVisibilityObserver();
+
   const cards = matches.map((galaxy) => createGalaxyCard(galaxy));
   galaxyAtlas.replaceChildren(...cards);
 
-  await Promise.all(cards.map((card, index) => hydrateGalaxyCard(card, matches[index], token)));
+  for (let index = 0; index < cards.length; index += 1) {
+    queueGalaxyHydration(cards[index], matches[index], token);
+  }
 
   if (token === galaxyRenderToken) {
     setGalaxyLoading(false);
