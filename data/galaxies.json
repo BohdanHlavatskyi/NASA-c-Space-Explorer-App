@@ -1,0 +1,2002 @@
+[
+  {
+    "id": "PIA12110",
+    "name": "Hubble Deep Field Image Unveils Myriad Galaxies Back to the Beginning of Time",
+    "summary": "Several hundred never before seen galaxies are visible in this deepest-ever view of the universe, called the Hubble Deep Field, made with NASA Hubble Space Telescope. ",
+    "date_created": "1996-01-15T18:46:16Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA12110/PIA12110~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA12110/PIA12110~orig.jpg",
+    "localImage": "data/images/PIA12110~orig_0.jpg"
+  },
+  {
+    "id": "PIA01262",
+    "name": "Hubble Tracks Jupiter Storms",
+    "summary": "Hubble Tracks Jupiter Storms",
+    "date_created": "1998-05-02T16:51:47Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA01262/PIA01262~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA01262/PIA01262~orig.jpg",
+    "localImage": "data/images/PIA01262~orig_1.jpg"
+  },
+  {
+    "id": "PIA01465",
+    "name": "Hubble Observes Surface of Titan",
+    "summary": "Hubble Observes Surface of Titan",
+    "date_created": "1998-09-26T09:45:12Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA01465/PIA01465~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA01465/PIA01465~orig.jpg",
+    "localImage": "data/images/PIA01465~orig_2.jpg"
+  },
+  {
+    "id": "PIA01249",
+    "name": "Hubble Sharpest View Of Mars",
+    "summary": "Hubble Sharpest View Of Mars",
+    "date_created": "1998-05-02T16:43:36Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA01249/PIA01249~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA01249/PIA01249~orig.jpg",
+    "localImage": "data/images/PIA01249~orig_3.jpg"
+  },
+  {
+    "id": "PIA01590",
+    "name": "A Closer Hubble Encounter With Mars - Tharsis",
+    "summary": "A Closer Hubble Encounter With Mars - Tharsis",
+    "date_created": "1999-08-23T22:19:27Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA01590/PIA01590~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA01590/PIA01590~orig.jpg",
+    "localImage": "data/images/PIA01590~orig_4.jpg"
+  },
+  {
+    "id": "PIA01258",
+    "name": "Rare Hubble Portrait of Io and Jupiter",
+    "summary": "Rare Hubble Portrait of Io and Jupiter",
+    "date_created": "1998-05-02T16:51:02Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA01258/PIA01258~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA01258/PIA01258~orig.jpg",
+    "localImage": "data/images/PIA01258~orig_5.jpg"
+  },
+  {
+    "id": "PIA01257",
+    "name": "Hubble Images Reveal Jupiter Auroras",
+    "summary": "Hubble Images Reveal Jupiter Auroras",
+    "date_created": "1998-05-02T16:51:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA01257/PIA01257~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA01257/PIA01257~orig.jpg",
+    "localImage": "data/images/PIA01257~orig_6.jpg"
+  },
+  {
+    "id": "PIA01250",
+    "name": "Hubble Captures A Full Rotation Of Mars",
+    "summary": "Hubble Captures A Full Rotation Of Mars",
+    "date_created": "1998-05-02T16:45:39Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA01250/PIA01250~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA01250/PIA01250~orig.jpg",
+    "localImage": "data/images/PIA01250~orig_7.jpg"
+  },
+  {
+    "id": "PIA01464",
+    "name": "Hubble Observes a New Saturn Storm",
+    "summary": "Hubble Observes a New Saturn Storm",
+    "date_created": "1998-09-26T09:44:57Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA01464/PIA01464~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA01464/PIA01464~orig.jpg",
+    "localImage": "data/images/PIA01464~orig_8.jpg"
+  },
+  {
+    "id": "PIA01591",
+    "name": "A Closer Hubble Encounter With Mars - Elysium",
+    "summary": "A Closer Hubble Encounter With Mars - Elysium",
+    "date_created": "1999-08-23T22:19:42Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA01591/PIA01591~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA01591/PIA01591~orig.jpg",
+    "localImage": "data/images/PIA01591~orig_9.jpg"
+  },
+  {
+    "id": "PIA01261",
+    "name": "Hubble Gallery of Jupiter Galilean Satellites",
+    "summary": "Hubble Gallery of Jupiter Galilean Satellites",
+    "date_created": "1998-05-02T16:51:33Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA01261/PIA01261~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA01261/PIA01261~orig.jpg",
+    "localImage": "data/images/PIA01261~orig_10.jpg"
+  },
+  {
+    "id": "PIA01289",
+    "name": "Hubble Images of Comet Hale-Bopp",
+    "summary": "Hubble Images of Comet Hale-Bopp",
+    "date_created": "1998-08-02T11:11:01Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA01289/PIA01289~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA01289/PIA01289~orig.jpg",
+    "localImage": "data/images/PIA01289~orig_11.jpg"
+  },
+  {
+    "id": "PIA01593",
+    "name": "Hubble Views Ancient Storm in the Atmosphere of Jupiter - Montage",
+    "summary": "Hubble Views Ancient Storm in the Atmosphere of Jupiter - Montage",
+    "date_created": "1999-08-24T00:20:16Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA01593/PIA01593~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA01593/PIA01593~orig.jpg",
+    "localImage": "data/images/PIA01593~orig_12.jpg"
+  },
+  {
+    "id": "hubble-eyes-galactic-refurbishment_17322896925_o",
+    "name": "Hubble Eyes Galactic Refurbishment",
+    "summary": "The smudge of stars at the center of this NASA/ESA Hubble Space Telescope image is a galaxy known as UGC 5797. UGC 5797 is an emission line galaxy, meaning that it is currently undergoing active star formation. The result is a stellar population that is constantly being refurbished as massive bright blue stars form. Galaxies with prolific star formation are not only veiled in a blue tint, but are key to the continuation of a stellar cycle.  In this image UGC 5797 appears in front of a background of spiral galaxies. Spiral galaxies have copious amounts of dust and gas — the main ingredient for stars — and therefore often also belong to the class of emission line galaxies.  Spiral galaxies have disk-like shapes that drastically vary in appearance depending on the angle at which they are observed. The collection of spiral galaxies in this frame exhibits this attribute acutely: Some are viewed face-on, revealing the structure of the spiral arms, while the two in the bottom left are seen edge-on, appearing as plain streaks in the sky. There are many spiral galaxies, with varying colors and at different angles, sprinkled across this image — just take a look.   Credit: ESA/Hubble & NASA, Acknowledgement: Luca Limatola",
+    "date_created": "2015-04-30T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/hubble-eyes-galactic-refurbishment_17322896925_o/hubble-eyes-galactic-refurbishment_17322896925_o~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/hubble-eyes-galactic-refurbishment_17322896925_o/hubble-eyes-galactic-refurbishment_17322896925_o~orig.jpg",
+    "localImage": "data/images/hubble-eyes-galactic-refurbishment_17322896925_o~orig_13.jpg"
+  },
+  {
+    "id": "PIA18165",
+    "name": "Hubble Against Earth Horizon 1997",
+    "summary": "The Hubble Space Telescope hovers at the boundary of Earth and space in this picture, taken after Hubble second servicing mission in 1997.  Hubble drifts 353 miles (569 km) above the Earth's surface, where it can avoid the atmosphere and clearly see objects in space.   http://photojournal.jpl.nasa.gov/catalog/PIA18165",
+    "date_created": "1997-10-10T23:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA18165/PIA18165~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA18165/PIA18165~orig.jpg",
+    "localImage": "data/images/PIA18165~orig_14.jpg"
+  },
+  {
+    "id": "PIA04222",
+    "name": "Hubble-V",
+    "summary": "Resembling curling flames from a campfire, a magnificent nebula in a nearby galaxy observed by NASA Hubble Space Telescope provides new insight into the fierce birth of stars as it may have occurred in the early universe.",
+    "date_created": "1999-12-10T00:00:02Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA04222/PIA04222~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA04222/PIA04222~orig.jpg",
+    "localImage": "data/images/PIA04222~orig_15.jpg"
+  },
+  {
+    "id": "PIA01290",
+    "name": "Hubble Probes Inner Region of Comet Hyakutake",
+    "summary": "Hubble Probes Inner Region of Comet Hyakutake",
+    "date_created": "1998-08-03T10:43:35Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA01290/PIA01290~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA01290/PIA01290~orig.jpg",
+    "localImage": "data/images/PIA01290~orig_16.jpg"
+  },
+  {
+    "id": "PIA05982",
+    "name": "Saturn from Far and Near Hubble Space Telescope",
+    "summary": "Saturn from Far and Near Hubble Space Telescope",
+    "date_created": "2004-05-26T20:22:08Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA05982/PIA05982~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA05982/PIA05982~orig.jpg",
+    "localImage": "data/images/PIA05982~orig_17.jpg"
+  },
+  {
+    "id": "PIA01269",
+    "name": "Hubble Provides Clear Images of Saturn Aurora",
+    "summary": "Hubble Provides Clear Images of Saturn Aurora",
+    "date_created": "1998-08-02T11:07:10Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA01269/PIA01269~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA01269/PIA01269~orig.jpg",
+    "localImage": "data/images/PIA01269~orig_18.jpg"
+  },
+  {
+    "id": "PIA01540",
+    "name": "Hubble Clicks Images of Io Sweeping Across Jupiter",
+    "summary": "Hubble Clicks Images of Io Sweeping Across Jupiter",
+    "date_created": "1999-05-21T20:53:42Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA01540/PIA01540~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA01540/PIA01540~orig.jpg",
+    "localImage": "data/images/PIA01540~orig_19.jpg"
+  },
+  {
+    "id": "PIA01545",
+    "name": "Hubble Views Colossal Polar Cyclone on Mars",
+    "summary": "Hubble Views Colossal Polar Cyclone on Mars",
+    "date_created": "1999-05-21T00:09:17Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA01545/PIA01545~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA01545/PIA01545~orig.jpg",
+    "localImage": "data/images/PIA01545~orig_20.jpg"
+  },
+  {
+    "id": "PIA01253",
+    "name": "Springtime on Mars: Hubble Best View of the Red Planet",
+    "summary": "Springtime on Mars: Hubble Best View of the Red Planet",
+    "date_created": "1998-05-02T16:48:05Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA01253/PIA01253~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA01253/PIA01253~orig.jpg",
+    "localImage": "data/images/PIA01253~orig_21.jpg"
+  },
+  {
+    "id": "PIA01274",
+    "name": "Hubble Discovery Image of New Moon Orbiting Saturn",
+    "summary": "Hubble Discovery Image of New Moon Orbiting Saturn",
+    "date_created": "1998-08-02T11:08:37Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA01274/PIA01274~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA01274/PIA01274~orig.jpg",
+    "localImage": "data/images/PIA01274~orig_22.jpg"
+  },
+  {
+    "id": "PIA01587",
+    "name": "A Closer Hubble Encounter With Mars - 4 Views",
+    "summary": "A Closer Hubble Encounter With Mars - 4 Views",
+    "date_created": "1999-08-23T22:53:24Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA01587/PIA01587~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA01587/PIA01587~orig.jpg",
+    "localImage": "data/images/PIA01587~orig_23.jpg"
+  },
+  {
+    "id": "PIA01273",
+    "name": "Hubble again views Saturn Rings Edge-on",
+    "summary": "Hubble again views Saturn Rings Edge-on",
+    "date_created": "1998-08-02T11:08:35Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA01273/PIA01273~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA01273/PIA01273~orig.jpg",
+    "localImage": "data/images/PIA01273~orig_24.jpg"
+  },
+  {
+    "id": "PIA01259",
+    "name": "Hubble Views the Galileo Probe Entry Site on Jupiter",
+    "summary": "Hubble Views the Galileo Probe Entry Site on Jupiter",
+    "date_created": "1998-05-02T16:51:12Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA01259/PIA01259~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA01259/PIA01259~orig.jpg",
+    "localImage": "data/images/PIA01259~orig_25.jpg"
+  },
+  {
+    "id": "PIA01260",
+    "name": "Hubble Discovers Bright New Spot on Io",
+    "summary": "Hubble Discovers Bright New Spot on Io",
+    "date_created": "1998-05-02T16:51:23Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA01260/PIA01260~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA01260/PIA01260~orig.jpg",
+    "localImage": "data/images/PIA01260~orig_26.jpg"
+  },
+  {
+    "id": "PIA01592",
+    "name": "A Closer Hubble Encounter With Mars - Syrtis Major",
+    "summary": "A Closer Hubble Encounter With Mars - Syrtis Major",
+    "date_created": "1999-08-23T22:19:57Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA01592/PIA01592~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA01592/PIA01592~orig.jpg",
+    "localImage": "data/images/PIA01592~orig_27.jpg"
+  },
+  {
+    "id": "PIA01588",
+    "name": "A Closer Hubble Encounter With Mars - Global View",
+    "summary": "A Closer Hubble Encounter With Mars - Global View",
+    "date_created": "1999-08-23T22:19:01Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA01588/PIA01588~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA01588/PIA01588~orig.jpg",
+    "localImage": "data/images/PIA01588~orig_28.jpg"
+  },
+  {
+    "id": "PIA01256",
+    "name": "Hubble Captures Volcanic Eruption Plume From Io",
+    "summary": "Hubble Captures Volcanic Eruption Plume From Io",
+    "date_created": "1998-05-02T16:48:49Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA01256/PIA01256~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA01256/PIA01256~orig.jpg",
+    "localImage": "data/images/PIA01256~orig_29.jpg"
+  },
+  {
+    "id": "PIA01589",
+    "name": "A Closer Hubble Encounter With Mars - Pathfinder Landing Site",
+    "summary": "A Closer Hubble Encounter With Mars - Pathfinder Landing Site",
+    "date_created": "1999-08-23T22:19:11Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA01589/PIA01589~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA01589/PIA01589~orig.jpg",
+    "localImage": "data/images/PIA01589~orig_30.jpg"
+  },
+  {
+    "id": "PIA01267",
+    "name": "Hubble Space Telescope Resolves Volcanoes on Io",
+    "summary": "Hubble Space Telescope Resolves Volcanoes on Io",
+    "date_created": "1998-05-02T16:52:23Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA01267/PIA01267~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA01267/PIA01267~orig.jpg",
+    "localImage": "data/images/PIA01267~orig_31.jpg"
+  },
+  {
+    "id": "PIA01276",
+    "name": "Hubble Views Saturn Ring-Plane Crossing",
+    "summary": "Hubble Views Saturn Ring-Plane Crossing",
+    "date_created": "1998-08-02T11:08:41Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA01276/PIA01276~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA01276/PIA01276~orig.jpg",
+    "localImage": "data/images/PIA01276~orig_32.jpg"
+  },
+  {
+    "id": "PIA01254",
+    "name": "Hubble Provides Complete View of Jupiter Auroras",
+    "summary": "Hubble Provides Complete View of Jupiter Auroras",
+    "date_created": "1998-05-02T16:48:19Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA01254/PIA01254~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA01254/PIA01254~orig.jpg",
+    "localImage": "data/images/PIA01254~orig_33.jpg"
+  },
+  {
+    "id": "PIA22911",
+    "name": "Installing Hubble's New Camera",
+    "summary": "Astronauts Jeffrey Hoffman and Story Musgrave install the Wide Field and Planetary Camera 2 (WFPC2) on the Hubble Space Telescope, during SM1 in December, 1993.  https://photojournal.jpl.nasa.gov/catalog/PIA22911",
+    "date_created": "2018-12-04T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA22911/PIA22911~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA22911/PIA22911~orig.jpg",
+    "localImage": "data/images/PIA22911~orig_34.jpg"
+  },
+  {
+    "id": "PIA01280",
+    "name": "Hubble Captures Detailed Image of Uranus Atmosphere",
+    "summary": "NASA Hubble Space Telescope peered deep into Uranus atmosphere to see clear and hazy layers created by a mixture of gases. Using infrared filters, Hubble captured detailed features of three layers of Uranus atmosphere.",
+    "date_created": "1998-08-02T11:09:34Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA01280/PIA01280~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA01280/PIA01280~orig.jpg",
+    "localImage": "data/images/PIA01280~orig_35.jpg"
+  },
+  {
+    "id": "PIA03154",
+    "name": "Hubble Captures Best View of Mars Ever Obtained from Earth",
+    "summary": "Hubble Captures Best View of Mars Ever Obtained from Earth",
+    "date_created": "2001-07-21T21:09:04Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA03154/PIA03154~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA03154/PIA03154~orig.jpg",
+    "localImage": "data/images/PIA03154~orig_36.jpg"
+  },
+  {
+    "id": "PIA01544",
+    "name": "Venus Cloud Tops Viewed by Hubble",
+    "summary": "Venus Cloud Tops Viewed by Hubble. This is a NASA Hubble Space Telescope ultraviolet-light image of the planet Venus, taken on January 24 1995, when Venus was at a distance of 70.6 million miles 113.6 million kilometers from Earth.",
+    "date_created": "1999-05-18T10:05:11Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA01544/PIA01544~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA01544/PIA01544~orig.jpg",
+    "localImage": "data/images/PIA01544~orig_37.jpg"
+  },
+  {
+    "id": "PIA01282",
+    "name": "Hubble Observes the Planet Uranus",
+    "summary": "This NASA Hubble Space Telescope image of the planet Uranus reveals the planet rings and bright clouds and a high altitude haze above the planet south pole.",
+    "date_created": "1998-08-02T11:09:39Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA01282/PIA01282~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA01282/PIA01282~orig.jpg",
+    "localImage": "data/images/PIA01282~orig_38.jpg"
+  },
+  {
+    "id": "hubble-observes-one-of-a-kind-star-nicknamed-nasty_17754652960_o",
+    "name": "Hubble Observes One-of-a-Kind Star Nicknamed ‘Nasty’",
+    "summary": "Astronomers using NASA’s Hubble Space Telescope have uncovered surprising new clues about a hefty, rapidly aging star whose behavior has never been seen before in our Milky Way galaxy. In fact, the star is so weird that astronomers have nicknamed it “Nasty 1,” a play on its catalog name of NaSt1. The star may represent a brief transitory stage in the evolution of extremely massive stars.  First discovered several decades ago, Nasty 1 was identified as a Wolf-Rayet star, a rapidly evolving star that is much more massive than our sun. The star loses its hydrogen-filled outer layers quickly, exposing its super-hot and extremely bright helium-burning core.  But Nasty 1 doesn’t look like a typical Wolf-Rayet star. The astronomers using Hubble had expected to see twin lobes of gas flowing from opposite sides of the star, perhaps similar to those emanating from the massive star Eta Carinae, which is a Wolf-Rayet candidate.   Instead, Hubble revealed a pancake-shaped disk of gas encircling the star. The vast disk is nearly 2 trillion miles wide, and may have formed from an unseen companion star that snacked on the outer envelope of the newly formed Wolf-Rayet.  Based on current estimates, the nebula surrounding the stars is just a few thousand years old, and as close as 3,000 light-years from Earth.  Credits: NASA/Hubble",
+    "date_created": "2015-03-21T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/hubble-observes-one-of-a-kind-star-nicknamed-nasty_17754652960_o/hubble-observes-one-of-a-kind-star-nicknamed-nasty_17754652960_o~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/hubble-observes-one-of-a-kind-star-nicknamed-nasty_17754652960_o/hubble-observes-one-of-a-kind-star-nicknamed-nasty_17754652960_o~orig.jpg",
+    "localImage": "data/images/hubble-observes-one-of-a-kind-star-nicknamed-nasty_17754652960_o~orig_39.jpg"
+  },
+  {
+    "id": "PIA22574",
+    "name": "Making Room for Hubble's New Camera",
+    "summary": "Astronaut Jeffrey Hoffman removes the Wide Field and Planetary Camera 1 (WFPC 1) during the first Hubble servicing mission (SM1), which took place in December, 1993.  https://photojournal.jpl.nasa.gov/catalog/PIA22574",
+    "date_created": "2018-12-04T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA22574/PIA22574~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA22574/PIA22574~orig.jpg",
+    "localImage": "data/images/PIA22574~orig_40.jpg"
+  },
+  {
+    "id": "PIA02400",
+    "name": "Hubble Views Ancient Storm in the Atmosphere of Jupiter - October, 1996",
+    "summary": "Hubble Views Ancient Storm in the Atmosphere of Jupiter - October, 1996",
+    "date_created": "1999-08-24T00:12:34Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA02400/PIA02400~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA02400/PIA02400~orig.jpg",
+    "localImage": "data/images/PIA02400~orig_41.jpg"
+  },
+  {
+    "id": "PIA02402",
+    "name": "Hubble Views Ancient Storm in the Atmosphere of Jupiter - June, 1999",
+    "summary": "Hubble Views Ancient Storm in the Atmosphere of Jupiter - June, 1999",
+    "date_created": "1999-08-24T00:12:42Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA02402/PIA02402~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA02402/PIA02402~orig.jpg",
+    "localImage": "data/images/PIA02402~orig_42.jpg"
+  },
+  {
+    "id": "PIA01266",
+    "name": "Jupiter Upper Atmospheric Winds Revealed in Ultraviolet Images by Hubble Telescope",
+    "summary": "Jupiter Upper Atmospheric Winds Revealed in Ultraviolet Images by Hubble Telescope",
+    "date_created": "1998-05-02T16:52:14Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA01266/PIA01266~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA01266/PIA01266~orig.jpg",
+    "localImage": "data/images/PIA01266~orig_43.jpg"
+  },
+  {
+    "id": "PIA02401",
+    "name": "Hubble Views Ancient Storm in the Atmosphere of Jupiter - April, 1997",
+    "summary": "Hubble Views Ancient Storm in the Atmosphere of Jupiter - April, 1997",
+    "date_created": "1999-08-24T00:12:38Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA02401/PIA02401~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA02401/PIA02401~orig.jpg",
+    "localImage": "data/images/PIA02401~orig_44.jpg"
+  },
+  {
+    "id": "PIA01255",
+    "name": "Hubble Provides Infrared View of Jupiter Moon, Ring, and Clouds",
+    "summary": "Hubble Provides Infrared View of Jupiter Moon, Ring, and Clouds",
+    "date_created": "1998-05-02T16:48:35Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA01255/PIA01255~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA01255/PIA01255~orig.jpg",
+    "localImage": "data/images/PIA01255~orig_45.jpg"
+  },
+  {
+    "id": "PIA01598",
+    "name": "Hubble Views Ancient Storm in the Atmosphere of Jupiter - February, 1995",
+    "summary": "Hubble Views Ancient Storm in the Atmosphere of Jupiter - February, 1995",
+    "date_created": "1999-08-24T00:12:28Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA01598/PIA01598~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA01598/PIA01598~orig.jpg",
+    "localImage": "data/images/PIA01598~orig_46.jpg"
+  },
+  {
+    "id": "PIA01594",
+    "name": "Hubble Views Ancient Storm in the Atmosphere of Jupiter - Full Disk",
+    "summary": "Hubble Views Ancient Storm in the Atmosphere of Jupiter - Full Disk",
+    "date_created": "1999-08-24T00:12:04Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA01594/PIA01594~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA01594/PIA01594~orig.jpg",
+    "localImage": "data/images/PIA01594~orig_47.jpg"
+  },
+  {
+    "id": "PIA01599",
+    "name": "Hubble Views Ancient Storm in the Atmosphere of Jupiter - October, 1995",
+    "summary": "Hubble Views Ancient Storm in the Atmosphere of Jupiter - October, 1995",
+    "date_created": "1999-08-24T00:12:31Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA01599/PIA01599~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA01599/PIA01599~orig.jpg",
+    "localImage": "data/images/PIA01599~orig_48.jpg"
+  },
+  {
+    "id": "PIA01597",
+    "name": "Hubble Views Ancient Storm in the Atmosphere of Jupiter - August, 1994",
+    "summary": "Hubble Views Ancient Storm in the Atmosphere of Jupiter - August, 1994",
+    "date_created": "1999-08-24T00:12:24Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA01597/PIA01597~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA01597/PIA01597~orig.jpg",
+    "localImage": "data/images/PIA01597~orig_49.jpg"
+  },
+  {
+    "id": "PIA11195",
+    "name": "Shake, Rattle and Roll: James Webb Telescope Components Pass Tests",
+    "summary": "This image shows a model of one of three detectors for the Mid-Infrared Instrument on NASA James Webb Space Telescope.",
+    "date_created": "2008-09-24T16:13:12Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA11195/PIA11195~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA11195/PIA11195~orig.jpg",
+    "localImage": "data/images/PIA11195~orig_50.jpg"
+  },
+  {
+    "id": "by-the-dozen-nasas-james-webb-space-telescope-mirrors_23938941370_o",
+    "name": "By the Dozen: NASA's James Webb Space Telescope Mirrors",
+    "summary": "Caption: One dozen (out of 18) flight mirror segments that make up the primary mirror on NASA's James Webb Space Telescope have been installed at NASA's Goddard Space Flight Center.  Credits: NASA/Chris Gunn  More: Since December 2015, the team of scientists and engineers have been working tirelessly to install all the primary mirror segments onto the telescope structure in the large clean room at NASA's Goddard Space Flight Center in Greenbelt, Maryland. The twelfth mirror was installed on January 2, 2016.  \"This milestone signifies that all of the hexagonal shaped mirrors on the fixed central section of the telescope structure are installed and only the 3 mirrors on each wing are left for installation,\" said Lee Feinberg, NASA's Optical Telescope Element Manager at NASA Goddard. \"The incredibly skilled and dedicated team assembling the telescope continues to find ways to do things faster and more efficiently.\"  Each hexagonal-shaped segment measures just over 4.2 feet (1.3 meters) across and weighs approximately 88 pounds (40 kilograms). After being pieced together, the 18 primary mirror segments will work together as one large 21.3-foot (6.5-meter) mirror. The primary mirror will unfold and adjust to shape after launch. The mirrors are made of ultra-lightweight beryllium. The mirrors are placed on the telescope's backplane using a robotic arm, guided by engineers. The full installation is expected to be completed in a few months.  The mirrors were built by Ball Aerospace & Technologies Corp., Boulder, Colorado. Ball is the principal subcontractor to Northrop Grumman for the optical technology and lightweight mirror system. The installation of the mirrors onto the telescope structure is performed by Harris Corporation of Rochester, New York. Harris Corporation leads integration and testing for the telescope.  While the mirror assembly is a very significant milestone, there are many more steps involved in assembling the Webb telescope. The primary mirror and the tennis-court-sized sunshield are the largest and most visible components of the Webb telescope. However, there are four smaller components that are less visible, yet critical.  The instruments that will fly aboard Webb - cameras and spectrographs with detectors able to record extremely faint signals — are part of the Integrated Science Instrument Module (ISIM), which is currently undergoing its final cryogenic vacuum test and will be integrated with the mirror later this year.",
+    "date_created": "2016-01-03T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/by-the-dozen-nasas-james-webb-space-telescope-mirrors_23938941370_o/by-the-dozen-nasas-james-webb-space-telescope-mirrors_23938941370_o~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/by-the-dozen-nasas-james-webb-space-telescope-mirrors_23938941370_o/by-the-dozen-nasas-james-webb-space-telescope-mirrors_23938941370_o~orig.jpg",
+    "localImage": "data/images/by-the-dozen-nasas-james-webb-space-telescope-mirrors_23938941370_o~orig_51.jpg"
+  },
+  {
+    "id": "GSFC_20171208_Archive_e000356",
+    "name": "James Webb Space Telescope Revealed",
+    "summary": "A rare view of the James Webb Space Telescope face-on, from the NASA Goddard cleanroom observation window.",
+    "date_created": "2017-12-08T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000356/GSFC_20171208_Archive_e000356~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000356/GSFC_20171208_Archive_e000356~orig.jpg",
+    "localImage": "data/images/GSFC_20171208_Archive_e000356~orig_52.jpg"
+  },
+  {
+    "id": "GSFC_20171208_Archive_e000357",
+    "name": "James Webb Space Telescope Revealed",
+    "summary": "A rare view of the James Webb Space Telescope face-on, from the NASA Goddard cleanroom observation window.",
+    "date_created": "2017-12-08T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000357/GSFC_20171208_Archive_e000357~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000357/GSFC_20171208_Archive_e000357~orig.jpg",
+    "localImage": "data/images/GSFC_20171208_Archive_e000357~orig_53.jpg"
+  },
+  {
+    "id": "GSFC_20171208_Archive_e000354",
+    "name": "James Webb Space Telescope Revealed",
+    "summary": "A rare view of the James Webb Space Telescope face-on, from the NASA Goddard cleanroom observation window.",
+    "date_created": "2017-12-08T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000354/GSFC_20171208_Archive_e000354~small.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000354/GSFC_20171208_Archive_e000354~small.jpg",
+    "localImage": "data/images/GSFC_20171208_Archive_e000354~small_54.jpg"
+  },
+  {
+    "id": "GSFC_20171208_Archive_e000359",
+    "name": "James Webb Space Telescope Revealed",
+    "summary": "A rare view of the James Webb Space Telescope face-on, from the NASA Goddard cleanroom observation window.",
+    "date_created": "2017-12-08T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000359/GSFC_20171208_Archive_e000359~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000359/GSFC_20171208_Archive_e000359~orig.jpg",
+    "localImage": "data/images/GSFC_20171208_Archive_e000359~orig_55.jpg"
+  },
+  {
+    "id": "GSFC_20171208_Archive_e000349",
+    "name": "James Webb Space Telescope Revealed",
+    "summary": "A rare view of the James Webb Space Telescope face-on, from the NASA Goddard cleanroom observation window.",
+    "date_created": "2017-12-08T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000349/GSFC_20171208_Archive_e000349~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000349/GSFC_20171208_Archive_e000349~orig.jpg",
+    "localImage": "data/images/GSFC_20171208_Archive_e000349~orig_56.jpg"
+  },
+  {
+    "id": "GSFC_20171208_Archive_e000350",
+    "name": "James Webb Space Telescope Revealed",
+    "summary": "A rare view of the James Webb Space Telescope face-on, from the NASA Goddard cleanroom observation window.",
+    "date_created": "2017-12-08T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000350/GSFC_20171208_Archive_e000350~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000350/GSFC_20171208_Archive_e000350~orig.jpg",
+    "localImage": "data/images/GSFC_20171208_Archive_e000350~orig_57.jpg"
+  },
+  {
+    "id": "GSFC_20171208_Archive_e000355",
+    "name": "James Webb Space Telescope Revealed",
+    "summary": "A rare view of the James Webb Space Telescope face-on, from the NASA Goddard cleanroom observation window.",
+    "date_created": "2017-12-08T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000355/GSFC_20171208_Archive_e000355~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000355/GSFC_20171208_Archive_e000355~orig.jpg",
+    "localImage": "data/images/GSFC_20171208_Archive_e000355~orig_58.jpg"
+  },
+  {
+    "id": "GSFC_20171208_Archive_e000358",
+    "name": "James Webb Space Telescope Revealed",
+    "summary": "A rare view of the James Webb Space Telescope face-on, from the NASA Goddard cleanroom observation window.",
+    "date_created": "2017-12-08T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000358/GSFC_20171208_Archive_e000358~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000358/GSFC_20171208_Archive_e000358~orig.jpg",
+    "localImage": "data/images/GSFC_20171208_Archive_e000358~orig_59.jpg"
+  },
+  {
+    "id": "PIA11196",
+    "name": "Shake, Rattle and Roll: James Webb Telescope Components Pass Tests",
+    "summary": "Mike Ressler right and Kalyani Sukhatme of NASA JPL pose in the clean room with a model component, called a focal plane module, of the Mid-Infrared Instrument on NASA James Webb Space Telescope.",
+    "date_created": "2008-09-24T16:16:54Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA11196/PIA11196~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA11196/PIA11196~orig.jpg",
+    "localImage": "data/images/PIA11196~orig_60.jpg"
+  },
+  {
+    "id": "by-the-dozen-nasas-james-webb-space-telescope-mirrors_23607727573_o",
+    "name": "By the Dozen: NASA's James Webb Space Telescope Mirrors",
+    "summary": "A view of the one dozen (out of 18) flight mirror segments that make up the primary mirror on NASA's James Webb Space Telescope have been installed at NASA's Goddard Space Flight Center.  Credits: NASA/Chris Gunn  More: Since December 2015, the team of scientists and engineers have been working tirelessly to install all the primary mirror segments onto the telescope structure in the large clean room at NASA's Goddard Space Flight Center in Greenbelt, Maryland. The twelfth mirror was installed on January 2, 2016.  \"This milestone signifies that all of the hexagonal shaped mirrors on the fixed central section of the telescope structure are installed and only the 3 mirrors on each wing are left for installation,\" said Lee Feinberg, NASA's Optical Telescope Element Manager at NASA Goddard. \"The incredibly skilled and dedicated team assembling the telescope continues to find ways to do things faster and more efficiently.\"  Each hexagonal-shaped segment measures just over 4.2 feet (1.3 meters) across and weighs approximately 88 pounds (40 kilograms). After being pieced together, the 18 primary mirror segments will work together as one large 21.3-foot (6.5-meter) mirror. The primary mirror will unfold and adjust to shape after launch. The mirrors are made of ultra-lightweight beryllium. The mirrors are placed on the telescope's backplane using a robotic arm, guided by engineers. The full installation is expected to be completed in a few months.  The mirrors were built by Ball Aerospace & Technologies Corp., Boulder, Colorado. Ball is the principal subcontractor to Northrop Grumman for the optical technology and lightweight mirror system. The installation of the mirrors onto the telescope structure is performed by Harris Corporation of Rochester, New York. Harris Corporation leads integration and testing for the telescope.  While the mirror assembly is a very significant milestone, there are many more steps involved in assembling the Webb telescope. The primary mirror and the tennis-court-sized sunshield are the largest and most visible components of the Webb telescope. However, there are four smaller components that are less visible, yet critical.  The instruments that will fly aboard Webb - cameras and spectrographs with detectors able to record extremely faint signals — are part of the Integrated Science Instrument Module (ISIM), which is currently undergoing its final cryogenic vacuum test and will be integrated with the mirror later this year.",
+    "date_created": "2016-01-03T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/by-the-dozen-nasas-james-webb-space-telescope-mirrors_23607727573_o/by-the-dozen-nasas-james-webb-space-telescope-mirrors_23607727573_o~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/by-the-dozen-nasas-james-webb-space-telescope-mirrors_23607727573_o/by-the-dozen-nasas-james-webb-space-telescope-mirrors_23607727573_o~orig.jpg",
+    "localImage": "data/images/by-the-dozen-nasas-james-webb-space-telescope-mirrors_23607727573_o~orig_61.jpg"
+  },
+  {
+    "id": "GSFC_20171208_Archive_e000352",
+    "name": "James Webb Space Telescope Revealed",
+    "summary": "A rare view of the James Webb Space Telescope face-on, from the NASA Goddard cleanroom observation window.  Credit: NASA/Goddard/Rebecca Roth",
+    "date_created": "2017-12-08T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000352/GSFC_20171208_Archive_e000352~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000352/GSFC_20171208_Archive_e000352~orig.jpg",
+    "localImage": "data/images/GSFC_20171208_Archive_e000352~orig_62.jpg"
+  },
+  {
+    "id": "GSFC_20161102_2016-21507_012",
+    "name": "James Webb Space Telescope Mirror Reveal",
+    "summary": "James Webb Space Telescope Mirror Reveal",
+    "date_created": "2016-11-02T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/GSFC_20161102_2016-21507_012/GSFC_20161102_2016-21507_012~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/GSFC_20161102_2016-21507_012/GSFC_20161102_2016-21507_012~orig.jpg",
+    "localImage": "data/images/GSFC_20161102_2016-21507_012~orig_63.jpg"
+  },
+  {
+    "id": "GSFC_20161102_2016-21507_035",
+    "name": "James Webb Space Telescope (JWST) Town Hall -  ",
+    "summary": "James Webb Space Telescope (JWST) Town Hall -",
+    "date_created": "2016-11-02T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/GSFC_20161102_2016-21507_035/GSFC_20161102_2016-21507_035~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/GSFC_20161102_2016-21507_035/GSFC_20161102_2016-21507_035~orig.jpg",
+    "localImage": "data/images/GSFC_20161102_2016-21507_035~orig_64.jpg"
+  },
+  {
+    "id": "GSFC_20161102_2016-21507_025",
+    "name": "James Webb Space Telescope Mirror Reveal",
+    "summary": "James Webb Space Telescope Mirror Reveal",
+    "date_created": "2016-11-02T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/GSFC_20161102_2016-21507_025/GSFC_20161102_2016-21507_025~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/GSFC_20161102_2016-21507_025/GSFC_20161102_2016-21507_025~orig.jpg",
+    "localImage": "data/images/GSFC_20161102_2016-21507_025~orig_65.jpg"
+  },
+  {
+    "id": "GSFC_20171208_Archive_e000360",
+    "name": "James Webb Space Telescope Revealed",
+    "summary": "A rare view of the James Webb Space Telescope face-on, from the NASA Goddard cleanroom observation window.",
+    "date_created": "2017-12-08T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000360/GSFC_20171208_Archive_e000360~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000360/GSFC_20171208_Archive_e000360~orig.jpg",
+    "localImage": "data/images/GSFC_20171208_Archive_e000360~orig_66.jpg"
+  },
+  {
+    "id": "GSFC_20171208_Archive_e000351",
+    "name": "Dr. John Mather and the James Webb Space Telescope",
+    "summary": "John Mather, Project Scientist for JWST, faces the James Webb Space Telescope primary mirror, NASA/Goddard Space Flight Center, Greenbelt, MD, May 4, 2016",
+    "date_created": "2017-12-08T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000351/GSFC_20171208_Archive_e000351~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000351/GSFC_20171208_Archive_e000351~orig.jpg",
+    "localImage": "data/images/GSFC_20171208_Archive_e000351~orig_67.jpg"
+  },
+  {
+    "id": "GSFC_20171208_Archive_e000348",
+    "name": "Dr. John Mather and the James Webb Space Telescope",
+    "summary": "John Mather, Project Scientist for JWST, faces the James Webb Space Telescope primary mirror, taking a selfie, NASA/Goddard Space Flight Center, Greenbelt, MD, May 4, 2016",
+    "date_created": "2017-12-08T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000348/GSFC_20171208_Archive_e000348~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000348/GSFC_20171208_Archive_e000348~orig.jpg",
+    "localImage": "data/images/GSFC_20171208_Archive_e000348~orig_68.jpg"
+  },
+  {
+    "id": "GSFC_20171208_Archive_e000353",
+    "name": "Dr. John Mather and the James Webb Space Telescope",
+    "summary": "Nobel Laureate and James Webb Space Telescope project scientist Dr. John Mather takes a selfie with the telescope. May 4, 2016 was a rare day for JWST, as it briefly faced the cleanroom observation window. The telescope was eventually rotated face-down in prep for the installation of the flight instruments.   Credit: Meredith Gibb",
+    "date_created": "2017-12-08T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000353/GSFC_20171208_Archive_e000353~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000353/GSFC_20171208_Archive_e000353~orig.jpg",
+    "localImage": "data/images/GSFC_20171208_Archive_e000353~orig_69.jpg"
+  },
+  {
+    "id": "GSFC_20161102_2016-21507_163",
+    "name": "James Webb Space Telescope (JWST) Town Hall - Panel question and",
+    "summary": "James Webb Space Telescope (JWST) Town Hall - Panel question and answer -",
+    "date_created": "2016-11-02T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/GSFC_20161102_2016-21507_163/GSFC_20161102_2016-21507_163~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/GSFC_20161102_2016-21507_163/GSFC_20161102_2016-21507_163~orig.jpg",
+    "localImage": "data/images/GSFC_20161102_2016-21507_163~orig_70.jpg"
+  },
+  {
+    "id": "GSFC_20161102_2016-21507_091",
+    "name": "James Webb Space Telescope (JWST) Golden Mirrors artist event.",
+    "summary": "James Webb Space Telescope (JWST) Golden Mirrors artist event.",
+    "date_created": "2016-11-02T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/GSFC_20161102_2016-21507_091/GSFC_20161102_2016-21507_091~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/GSFC_20161102_2016-21507_091/GSFC_20161102_2016-21507_091~orig.jpg",
+    "localImage": "data/images/GSFC_20161102_2016-21507_091~orig_71.jpg"
+  },
+  {
+    "id": "GSFC_20161102_2016-21507_084",
+    "name": "James Webb Space Telescope (JWST) Golden Mirrors artist event.",
+    "summary": "James Webb Space Telescope (JWST) Golden Mirrors artist event.",
+    "date_created": "2016-11-02T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/GSFC_20161102_2016-21507_084/GSFC_20161102_2016-21507_084~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/GSFC_20161102_2016-21507_084/GSFC_20161102_2016-21507_084~orig.jpg",
+    "localImage": "data/images/GSFC_20161102_2016-21507_084~orig_72.jpg"
+  },
+  {
+    "id": "GSFC_20171208_Archive_e000347",
+    "name": "James Webb Space Telescope Revealed",
+    "summary": "Webb Mirror Tilt Panorama, May 4, 2016 This image is a composite of nine wide-angle photos of the biggest clean room at NASA Goddard on May 4, 2016, when the uncovered flight primary mirror of the James Webb Space Telescope was tilted into a vertical position.  Credit: NASA/Francis Reddy (Syneren Technologies)  <b><a href=\"http://www.nasa.gov/audience/formedia/features/MP_Photo_Guidelines.html\" rel=\"nofollow\">NASA image use policy.</a></b>  <b><a href=\"http://www.nasa.gov/centers/goddard/home/index.html\" rel=\"nofollow\">NASA Goddard Space Flight Center</a></b> enables NASA’s mission through four scientific endeavors: Earth Science, Heliophysics, Solar System Exploration, and Astrophysics. Goddard plays a leading role in NASA’s accomplishments by contributing compelling scientific knowledge to advance the Agency’s mission.  <b>Follow us on <a href=\"http://twitter.com/NASAGoddardPix\" rel=\"nofollow\">Twitter</a></b>  <b>Like us on <a href=\"http://www.facebook.com/pages/Greenbelt-MD/NASA-Goddard/395013845897?ref=tsd\" rel=\"nofollow\">Facebook</a></b>  <b>Find us on <a href=\"http://instagrid.me/nasagoddard/?vm=grid\" rel=\"nofollow\">Instagram</a></b>      ",
+    "date_created": "2017-12-08T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000347/GSFC_20171208_Archive_e000347~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000347/GSFC_20171208_Archive_e000347~orig.jpg",
+    "localImage": "data/images/GSFC_20171208_Archive_e000347~orig_73.jpg"
+  },
+  {
+    "id": "GSFC_20171208_Archive_e000119",
+    "name": "Lights Out on the James Webb Space Telescope",
+    "summary": "What happens when the lights are turned out in the enormous clean room that currently houses NASA's James Webb Space Telescope?   The technicians who are inspecting the telescope and its expansive golden mirrors look like ghostly wraiths in this image as they conduct a &quot;lights out inspection&quot; in the Spacecraft Systems Development and Integration Facility (SSDIF) at NASA's Goddard Space Flight Center in Greenbelt, Maryland.  The clean room lights were turned off to inspect the telescope after it experienced vibration and acoustic testing. The contamination control engineer used a bright flashlight and special ultraviolet flashlights to inspect for contamination because it's easier to find in the dark.  NASA photographer Chris Gunn said &quot;The people have a ghostly appearance because it's a long exposure.&quot; He left the camera's shutter open for a longer than normal time so the movement of the technicians appear as a blur. He also used a special light &quot;painting&quot; technique to light up the primary mirror.  The James Webb Space Telescope is the scientific successor to NASA's Hubble Space Telescope. It will be the most powerful space telescope ever built. Webb is an international project led by NASA with its partners, ESA (European Space Agency) and the Canadian Space Agency.  For more information about the Webb telescope visit: <a href=\"http://www.jwst.nasa.gov\" rel=\"nofollow\">www.jwst.nasa.gov</a> or <a href=\"http://www.nasa.gov/webb\" rel=\"nofollow\">www.nasa.gov/webb</a>  Image Credit: NASA/Chris Gunn",
+    "date_created": "2017-12-08T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000119/GSFC_20171208_Archive_e000119~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000119/GSFC_20171208_Archive_e000119~orig.jpg",
+    "localImage": "data/images/GSFC_20171208_Archive_e000119~orig_74.jpg"
+  },
+  {
+    "id": "GSFC_20171208_Archive_e000495",
+    "name": "James Webb Space Telescope Mirror Halfway Complete",
+    "summary": "Inside NASA's Goddard Space Flight Center's massive clean room in Greenbelt, Maryland, the ninth flight mirror was installed onto the telescope structure with a robotic arm. This marks the halfway completion point for the James Webb Space Telescope's segmented primary mirror.  Nine of the James Webb Space Telescope's 18 primary flight mirrors have been installed on the telescope structure. This marks the halfway point in the James Webb Space Telescope's primary mirror installation.  Credit: NASA's Goddard Space Flight Center/Chris Gunn  Read more: <a href=\"http://go.nasa.gov/1kqK6fW\" rel=\"nofollow\">go.nasa.gov/1kqK6fW</a>",
+    "date_created": "2017-12-08T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000495/GSFC_20171208_Archive_e000495~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000495/GSFC_20171208_Archive_e000495~orig.jpg",
+    "localImage": "data/images/GSFC_20171208_Archive_e000495~orig_75.jpg"
+  },
+  {
+    "id": "GSFC_20170331_2017-11028_039",
+    "name": "Dr. Nancy Grace Roman visits James Webb Space Telescope (JWST) a",
+    "summary": "Dr. Nancy Grace Roman visits James Webb Space Telescope (JWST) and the Hubble Project Team. Dr. John Mather.",
+    "date_created": "2017-03-31T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/GSFC_20170331_2017-11028_039/GSFC_20170331_2017-11028_039~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/GSFC_20170331_2017-11028_039/GSFC_20170331_2017-11028_039~orig.jpg",
+    "localImage": "data/images/GSFC_20170331_2017-11028_039~orig_76.jpg"
+  },
+  {
+    "id": "GSFC_20170331_2017-11028_014",
+    "name": "Dr. Nancy Grace Roman visits James Webb Space Telescope (JWST) a",
+    "summary": "Dr. Nancy Grace Roman visits James Webb Space Telescope (JWST) and the Hubble Project Team.",
+    "date_created": "2017-03-31T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/GSFC_20170331_2017-11028_014/GSFC_20170331_2017-11028_014~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/GSFC_20170331_2017-11028_014/GSFC_20170331_2017-11028_014~orig.jpg",
+    "localImage": "data/images/GSFC_20170331_2017-11028_014~orig_77.jpg"
+  },
+  {
+    "id": "GSFC_20170331_2017-11028_037",
+    "name": "Dr. Nancy Grace Roman visits James Webb Space Telescope (JWST) a",
+    "summary": "Dr. Nancy Grace Roman visits James Webb Space Telescope (JWST) and the Hubble Project Team.",
+    "date_created": "2017-03-31T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/GSFC_20170331_2017-11028_037/GSFC_20170331_2017-11028_037~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/GSFC_20170331_2017-11028_037/GSFC_20170331_2017-11028_037~orig.jpg",
+    "localImage": "data/images/GSFC_20170331_2017-11028_037~orig_78.jpg"
+  },
+  {
+    "id": "GSFC_20170331_2017-11028_015",
+    "name": "Dr. Nancy Grace Roman visits James Webb Space Telescope (JWST) a",
+    "summary": "Dr. Nancy Grace Roman visits James Webb Space Telescope (JWST) and the Hubble Project Team.",
+    "date_created": "2017-03-31T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/GSFC_20170331_2017-11028_015/GSFC_20170331_2017-11028_015~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/GSFC_20170331_2017-11028_015/GSFC_20170331_2017-11028_015~orig.jpg",
+    "localImage": "data/images/GSFC_20170331_2017-11028_015~orig_79.jpg"
+  },
+  {
+    "id": "dr-john-mather-and-the-james-webb-space-telescope_26226851914_o",
+    "name": "dr-john-mather-and-the-james-webb-space-telescope_26226851914_o",
+    "summary": "John Mather, Project Scientist for JWST, faces the James Webb Space Telescope primary mirror, taking a selfie, NASA/Goddard Space Flight Center, Greenbelt, MD, May 4, 2016",
+    "date_created": "2016-05-04T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/dr-john-mather-and-the-james-webb-space-telescope_26226851914_o/dr-john-mather-and-the-james-webb-space-telescope_26226851914_o~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/dr-john-mather-and-the-james-webb-space-telescope_26226851914_o/dr-john-mather-and-the-james-webb-space-telescope_26226851914_o~orig.jpg",
+    "localImage": "data/images/dr-john-mather-and-the-james-webb-space-telescope_26226851914_o~orig_80.jpg"
+  },
+  {
+    "id": "NHQ202206290023",
+    "name": "James Webb Space Telescope Briefing",
+    "summary": "NASA Deputy Administrator Pam Melroy, center, meets with NASA James Webb Space Telescope Timeline Controller Matt Wasiak, left, and NASA James Webb Space Telescope Deputy Mission Operations Manager Ron Jones, right, during a tour of the NASA James Webb Space Telescope Mission Operations Center, Wednesday, June 29, 2022, at the Space Telescope Science Institute (STScI) in Baltimore. Prior to the tour the deputy spoke at a briefing that focused on the status of NASA’s James Webb Space Telescope in its final weeks of preparing for its science mission, as well as overviews of planned science for Webb’s first year of operations. Photo Credit: (NASA/Bill Ingalls)",
+    "date_created": "2022-06-29T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/NHQ202206290023/NHQ202206290023~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/NHQ202206290023/NHQ202206290023~orig.jpg",
+    "localImage": "data/images/NHQ202206290023~orig_81.jpg"
+  },
+  {
+    "id": "PIA20686",
+    "name": "Inspecting the MIRI Cryocooler",
+    "summary": "Technicians inspect a component of the cryocooler for the Mid-Infrared Instrument, or MIRI, part of NASA's James Webb Space Telescope. This photo was taken after the cooler had completed testing, and was taken out of the test chamber in preparation for being placed into its shipping container.  The cooler was shipped to the Northrop Grumman Aerospace Systems facility in Redondo Beach, California, on May 26, 2016. There, the cooler will be attached to the body of the Webb telescope.  http://photojournal.jpl.nasa.gov/catalog/PIA20686",
+    "date_created": "2016-06-13T16:55:18Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA20686/PIA20686~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA20686/PIA20686~orig.jpg",
+    "localImage": "data/images/PIA20686~orig_82.jpg"
+  },
+  {
+    "id": "PIA20688",
+    "name": "MIRI Cryocooler Packing",
+    "summary": "This image shows the cooling device for the Mid-Infrared Instrument, or MIRI, one of the James Webb Space Telescope's four instruments. This photo was taken after the cryocooler had completed testing, and was taken out of the test chamber in preparation for being placed into its shipping container.  The cooler was shipped to the Northrop Grumman Aerospace Systems facility in Redondo Beach, California, on May 26, 2016. There, the cooler will be attached to the body of the Webb telescope.  http://photojournal.jpl.nasa.gov/catalog/PIA20688",
+    "date_created": "2016-06-13T16:55:19Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA20688/PIA20688~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA20688/PIA20688~orig.jpg",
+    "localImage": "data/images/PIA20688~orig_83.jpg"
+  },
+  {
+    "id": "GSFC_20171208_Archive_e000172",
+    "name": "James Webb Space Telescope Town Hall",
+    "summary": "Goddard employees were invited to a town hall with NASA Administrator Charlie Bolden, Associate Administrator for the NASA Science Mission Directorate Thomas Zurbuchen and Goddard Center Director Chris Scolese, Nov. 2, at 11:30 a.m. in the Hinners Auditorium in Building 8.  Bolden thanked the James Webb Space Telescope team at Goddard as well as our international and corporate partners for their exceptional support.   Credit: NASA/Goddard ",
+    "date_created": "2017-12-08T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000172/GSFC_20171208_Archive_e000172~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000172/GSFC_20171208_Archive_e000172~orig.jpg",
+    "localImage": "data/images/GSFC_20171208_Archive_e000172~orig_84.jpg"
+  },
+  {
+    "id": "GSFC_20171208_Archive_e000182",
+    "name": "James Webb Space Telescope Town Hall",
+    "summary": "Goddard employees were invited to a town hall with NASA Administrator Charlie Bolden, Associate Administrator for the NASA Science Mission Directorate Thomas Zurbuchen and Goddard Center Director Chris Scolese, Nov. 2, at 11:30 a.m. in the Hinners Auditorium in Building 8.  Bolden thanked the James Webb Space Telescope team at Goddard as well as our international and corporate partners for their exceptional support.   Credit: NASA/Goddard ",
+    "date_created": "2017-12-08T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000182/GSFC_20171208_Archive_e000182~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000182/GSFC_20171208_Archive_e000182~orig.jpg",
+    "localImage": "data/images/GSFC_20171208_Archive_e000182~orig_85.jpg"
+  },
+  {
+    "id": "GSFC_20171208_Archive_e000183",
+    "name": "James Webb Space Telescope Town Hall",
+    "summary": "Goddard employees were invited to a town hall with NASA Administrator Charlie Bolden, Associate Administrator for the NASA Science Mission Directorate Thomas Zurbuchen and Goddard Center Director Chris Scolese, Nov. 2, at 11:30 a.m. in the Hinners Auditorium in Building 8.  Bolden thanked the James Webb Space Telescope team at Goddard as well as our international and corporate partners for their exceptional support.   Credit: NASA/Goddard ",
+    "date_created": "2017-12-08T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000183/GSFC_20171208_Archive_e000183~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000183/GSFC_20171208_Archive_e000183~orig.jpg",
+    "localImage": "data/images/GSFC_20171208_Archive_e000183~orig_86.jpg"
+  },
+  {
+    "id": "GSFC_20171208_Archive_e000186",
+    "name": "James Webb Space Telescope Town Hall",
+    "summary": "Goddard employees were invited to a town hall with NASA Administrator Charlie Bolden, Associate Administrator for the NASA Science Mission Directorate Thomas Zurbuchen and Goddard Center Director Chris Scolese, Nov. 2, at 11:30 a.m. in the Hinners Auditorium in Building 8.  Bolden thanked the James Webb Space Telescope team at Goddard as well as our international and corporate partners for their exceptional support.   Credit: NASA/Goddard ",
+    "date_created": "2017-12-08T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000186/GSFC_20171208_Archive_e000186~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000186/GSFC_20171208_Archive_e000186~orig.jpg",
+    "localImage": "data/images/GSFC_20171208_Archive_e000186~orig_87.jpg"
+  },
+  {
+    "id": "GSFC_20171208_Archive_e000177",
+    "name": "James Webb Space Telescope Town Hall",
+    "summary": "Goddard employees were invited to a town hall with NASA Administrator Charlie Bolden, Associate Administrator for the NASA Science Mission Directorate Thomas Zurbuchen and Goddard Center Director Chris Scolese, Nov. 2, at 11:30 a.m. in the Hinners Auditorium in Building 8.  Bolden thanked the James Webb Space Telescope team at Goddard as well as our international and corporate partners for their exceptional support.   Credit: NASA/Goddard ",
+    "date_created": "2017-12-08T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000177/GSFC_20171208_Archive_e000177~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000177/GSFC_20171208_Archive_e000177~orig.jpg",
+    "localImage": "data/images/GSFC_20171208_Archive_e000177~orig_88.jpg"
+  },
+  {
+    "id": "GSFC_20171208_Archive_e000179",
+    "name": "James Webb Space Telescope Town Hall",
+    "summary": "Goddard employees were invited to a town hall with NASA Administrator Charlie Bolden, Associate Administrator for the NASA Science Mission Directorate Thomas Zurbuchen and Goddard Center Director Chris Scolese, Nov. 2, at 11:30 a.m. in the Hinners Auditorium in Building 8.  Bolden thanked the James Webb Space Telescope team at Goddard as well as our international and corporate partners for their exceptional support.   Credit: NASA/Goddard ",
+    "date_created": "2017-12-08T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000179/GSFC_20171208_Archive_e000179~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000179/GSFC_20171208_Archive_e000179~orig.jpg",
+    "localImage": "data/images/GSFC_20171208_Archive_e000179~orig_89.jpg"
+  },
+  {
+    "id": "GSFC_20171208_Archive_e000180",
+    "name": "James Webb Space Telescope Town Hall",
+    "summary": "Goddard employees were invited to a town hall with NASA Administrator Charlie Bolden, Associate Administrator for the NASA Science Mission Directorate Thomas Zurbuchen and Goddard Center Director Chris Scolese, Nov. 2, at 11:30 a.m. in the Hinners Auditorium in Building 8.  Bolden thanked the James Webb Space Telescope team at Goddard as well as our international and corporate partners for their exceptional support.   Credit: NASA/Goddard ",
+    "date_created": "2017-12-08T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000180/GSFC_20171208_Archive_e000180~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000180/GSFC_20171208_Archive_e000180~orig.jpg",
+    "localImage": "data/images/GSFC_20171208_Archive_e000180~orig_90.jpg"
+  },
+  {
+    "id": "GSFC_20171208_Archive_e000187",
+    "name": "James Webb Space Telescope Town Hall",
+    "summary": "Goddard employees were invited to a town hall with NASA Administrator Charlie Bolden, Associate Administrator for the NASA Science Mission Directorate Thomas Zurbuchen and Goddard Center Director Chris Scolese, Nov. 2, at 11:30 a.m. in the Hinners Auditorium in Building 8.  Bolden thanked the James Webb Space Telescope team at Goddard as well as our international and corporate partners for their exceptional support.   Credit: NASA/Goddard ",
+    "date_created": "2017-12-08T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000187/GSFC_20171208_Archive_e000187~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000187/GSFC_20171208_Archive_e000187~orig.jpg",
+    "localImage": "data/images/GSFC_20171208_Archive_e000187~orig_91.jpg"
+  },
+  {
+    "id": "GSFC_20171208_Archive_e000185",
+    "name": "James Webb Space Telescope Town Hall",
+    "summary": "Goddard employees were invited to a town hall with NASA Administrator Charlie Bolden, Associate Administrator for the NASA Science Mission Directorate Thomas Zurbuchen and Goddard Center Director Chris Scolese, Nov. 2, at 11:30 a.m. in the Hinners Auditorium in Building 8.  Bolden thanked the James Webb Space Telescope team at Goddard as well as our international and corporate partners for their exceptional support.   Credit: NASA/Goddard ",
+    "date_created": "2017-12-08T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000185/GSFC_20171208_Archive_e000185~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000185/GSFC_20171208_Archive_e000185~orig.jpg",
+    "localImage": "data/images/GSFC_20171208_Archive_e000185~orig_92.jpg"
+  },
+  {
+    "id": "GSFC_20171208_Archive_e000181",
+    "name": "James Webb Space Telescope Town Hall",
+    "summary": "Goddard employees were invited to a town hall with NASA Administrator Charlie Bolden, Associate Administrator for the NASA Science Mission Directorate Thomas Zurbuchen and Goddard Center Director Chris Scolese, Nov. 2, at 11:30 a.m. in the Hinners Auditorium in Building 8.  Bolden thanked the James Webb Space Telescope team at Goddard as well as our international and corporate partners for their exceptional support.   Credit: NASA/Goddard ",
+    "date_created": "2017-12-08T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000181/GSFC_20171208_Archive_e000181~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000181/GSFC_20171208_Archive_e000181~orig.jpg",
+    "localImage": "data/images/GSFC_20171208_Archive_e000181~orig_93.jpg"
+  },
+  {
+    "id": "GSFC_20170331_2017-11028_024",
+    "name": "Dr. Nancy Grace Roman visits James Webb Space Telescope (JWST) a",
+    "summary": "Dr. Nancy Grace Roman visits James Webb Space Telescope (JWST) and the Hubble Project Team. Center Director Chris Scolese",
+    "date_created": "2017-03-31T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/GSFC_20170331_2017-11028_024/GSFC_20170331_2017-11028_024~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/GSFC_20170331_2017-11028_024/GSFC_20170331_2017-11028_024~orig.jpg",
+    "localImage": "data/images/GSFC_20170331_2017-11028_024~orig_94.jpg"
+  },
+  {
+    "id": "GSFC_20170331_2017-11028_034",
+    "name": "Dr. Nancy Grace Roman visits James Webb Space Telescope (JWST) a",
+    "summary": "Dr. Nancy Grace Roman visits James Webb Space Telescope (JWST) and the Hubble Project Team. Center Director Chris Scolese",
+    "date_created": "2017-03-31T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/GSFC_20170331_2017-11028_034/GSFC_20170331_2017-11028_034~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/GSFC_20170331_2017-11028_034/GSFC_20170331_2017-11028_034~orig.jpg",
+    "localImage": "data/images/GSFC_20170331_2017-11028_034~orig_95.jpg"
+  },
+  {
+    "id": "NHQ202112230021",
+    "name": "Ariane 5 Rollout with James Webb Space Telescope",
+    "summary": "NASA James Webb Space Telescope Program Scientist Eric Smith, wearing Webb themed socks, waits for Arianespace's Ariane 5 rocket with NASA’s James Webb Space Telescope onboard, to rollout to the launch pad, Thursday, Dec. 23, 2021, at Europe’s Spaceport, the Guiana Space Center in Kourou, French Guiana. The James Webb Space Telescope (sometimes called JWST or Webb) is a large infrared telescope with a 21.3 foot (6.5 meter) primary mirror. The observatory will study every phase of cosmic history—from within our solar system to the most distant observable galaxies in the early universe. Photo Credit: (NASA/Bill Ingalls)",
+    "date_created": "2021-12-23T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/NHQ202112230021/NHQ202112230021~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/NHQ202112230021/NHQ202112230021~orig.jpg",
+    "localImage": "data/images/NHQ202112230021~orig_96.jpg"
+  },
+  {
+    "id": "GSFC_20171208_Archive_e001803",
+    "name": "James Webb Space Telescope Mirrors",
+    "summary": "The James Webb Space Telescope mirrors have completed deep-freeze tests and are removed from the X-ray and Cryogenic test Facility at Marshall Space Flight Center.  To read more go to: <a href=\"http://www.nasa.gov/topics/technology/features/webb-mirror-cryo.html\" rel=\"nofollow\">www.nasa.gov/topics/technology/features/webb-mirror-cryo....</a>  Credit: Emmett Given, NASA Marshall  <b><a href=\"http://www.nasa.gov/audience/formedia/features/MP_Photo_Guidelines.html\" rel=\"nofollow\">NASA image use policy.</a></b>  <b><a href=\"http://www.nasa.gov/centers/goddard/home/index.html\" rel=\"nofollow\">NASA Goddard Space Flight Center</a></b> enables NASA’s mission through four scientific endeavors: Earth Science, Heliophysics, Solar System Exploration, and Astrophysics. Goddard plays a leading role in NASA’s accomplishments by contributing compelling scientific knowledge to advance the Agency’s mission.  <b>Follow us on <a href=\"http://twitter.com/NASA_GoddardPix\" rel=\"nofollow\">Twitter</a></b>  <b>Like us on <a href=\"http://www.facebook.com/pages/Greenbelt-MD/NASA-Goddard/395013845897?ref=tsd\" rel=\"nofollow\">Facebook</a></b>  <b>Find us on <a href=\"http://instagrid.me/nasagoddard/?vm=grid\" rel=\"nofollow\">Instagram</a></b>",
+    "date_created": "2017-12-08T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001803/GSFC_20171208_Archive_e001803~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001803/GSFC_20171208_Archive_e001803~orig.jpg",
+    "localImage": "data/images/GSFC_20171208_Archive_e001803~orig_97.jpg"
+  },
+  {
+    "id": "NHQ202206290021",
+    "name": "James Webb Space Telescope Briefing",
+    "summary": "NASA James Webb Space Telescope Mission Operations Manager Carl Starr gives a tour of the NASA James Webb Space Telescope Mission Operations Center, Wednesday, June 29, 2022, at the Space Telescope Science Institute (STScI) in Baltimore. Prior to the tour the NASA Deputy Administrator Pam Melroy and NASA Associate Administrator for the Science Mission Directorate Thomas Zurbuchen spoke at a briefing that focused on the status of NASA’s James Webb Space Telescope in its final weeks of preparing for its science mission, as well as overviews of planned science for Webb’s first year of operations. Photo Credit: (NASA/Bill Ingalls)",
+    "date_created": "2022-06-29T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/NHQ202206290021/NHQ202206290021~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/NHQ202206290021/NHQ202206290021~orig.jpg",
+    "localImage": "data/images/NHQ202206290021~orig_98.jpg"
+  },
+  {
+    "id": "NHQ202112250019",
+    "name": "James Webb Space Telescope Launch",
+    "summary": "NASA James Webb Space Telescope Program Scientist Eric Smith reacts after hearing confirmation that the James Webb Space Telescope successfully separated from the Ariane 5 rocket, Saturday, Dec. 25, 2021, in the Jupiter Hall of the Guiana Space Centre in Kourou, French Guiana. The James Webb Space Telescope (sometimes called JWST or Webb) is a large infrared telescope with a 21.3 foot (6.5 meter) primary mirror. The observatory will study every phase of cosmic history—from within our solar system to the most distant observable galaxies in the early universe. Photo Credit: (NASA/Bill Ingalls)",
+    "date_created": "2021-12-25T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/NHQ202112250019/NHQ202112250019~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/NHQ202112250019/NHQ202112250019~orig.jpg",
+    "localImage": "data/images/NHQ202112250019~orig_99.jpg"
+  },
+  {
+    "id": "PIA18166",
+    "name": "Chandra Spacecraft in Orbit Artist Concept",
+    "summary": "An artist illustration of the Chandra spacecraft in orbit.  http://photojournal.jpl.nasa.gov/catalog/PIA18166",
+    "date_created": "2010-02-05T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA18166/PIA18166~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA18166/PIA18166~orig.jpg",
+    "localImage": "data/images/PIA18166~orig_0.jpg"
+  },
+  {
+    "id": "PIA06908",
+    "name": "Kepler Supernova Remnant: A View from Chandra X-Ray Observatory",
+    "summary": "The images indicate that the bubble of gas that makes up the supernova remnant appears different in various types of light. Chandra reveals the hottest gas [colored blue and colored green], which radiates in X-rays.  http://photojournal.jpl.nasa.gov/catalog/PIA06908",
+    "date_created": "2004-10-06T17:24:50Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA06908/PIA06908~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA06908/PIA06908~orig.jpg",
+    "localImage": "data/images/PIA06908~orig_1.jpg"
+  },
+  {
+    "id": "0301104",
+    "name": "History of Chandra X-Ray Observatory",
+    "summary": "Giving scientists their first look, Chandra observed x-rays produced by fluorescent radiation from oxygen atoms of the Sun in the sparse upper atmosphere of Mars, about 120 kilometers (75 miles) above its surface. The x-ray power detected from the Martian atmosphere is very small, amounting to only 4 megawatts, comparable to the x-ray power of about ten thousand medical x-ray machines. At the time of the Chandra observation, a huge dust storm developed on Mars that covered about one hemisphere, later to cover the entire planet. This hemisphere rotated out of view over the 9-hour observation, but no change was observed in the x-ray intensity indicating that the dust storm did not affect the upper atmosphere. Scientists also observed a halo of x-rays extending out to 7,000 kilometers above the surface of Mars believed to be produced by collisions of ions racing away from the Sun (the solar wind).",
+    "date_created": "2001-07-04T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/0301104/0301104~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/0301104/0301104~orig.jpg",
+    "localImage": "data/images/0301104~orig_2.jpg"
+  },
+  {
+    "id": "0301101",
+    "name": "History of Chandra X-Ray Observatory",
+    "summary": "This Chandra image, the first x-ray image ever made of Venus, shows a half crescent due to the relative orientation of the Sun, Earth, and Venus. The x-rays are produced by fluorescent radiation from oxygen and other atoms in the atmosphere between 120 and 140 kilometers above the surface of the planet. In contrast, the optical light from Venus is caused by the reflection from clouds 50 to 70 kilometers above the surface.",
+    "date_created": "2001-01-10T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/0301101/0301101~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/0301101/0301101~orig.jpg",
+    "localImage": "data/images/0301101~orig_3.jpg"
+  },
+  {
+    "id": "0301100",
+    "name": "History of Chandra X-Ray Observatory",
+    "summary": "This Chandra image of Jupiter shows concentrations of aurora x-rays near the north and south poles due to a single `hot spot' that pulsates with a period of 45 minutes, similar to high-latitude radio pulsation previously detected by NASA's Galileo and Cassini spacecraft. Previous x-ray detections of Jupiter have been made with other x-ray telescopes, but did not reveal that the sources of the x-rays, energetic oxygen and sulfur ions, would be located so near the poles. Previous theories held that ions were mostly coming from Jupiter's moon, lo. Chandra's ability to pinpoint the source of the x-rays discards this theory since ions coming from near lo's orbit carnot reach the observed high latitudes. One possibility is that particles flowing out from the Sun are captured in the outer regions of Jupiter's magnetic field, then accelerated and directed toward its magnetic pole. Once captured, the ions would bounce back and forth in the magnetic field from Jupiter's north pole to the south pole in an oscillating motion that could explain the pulsation.",
+    "date_created": "2000-12-18T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/0301100/0301100~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/0301100/0301100~orig.jpg",
+    "localImage": "data/images/0301100~orig_4.jpg"
+  },
+  {
+    "id": "0301102",
+    "name": "History of Chandra X-Ray Observatory",
+    "summary": "This Chandra image shows the central regions of two colliding galaxies known collectively as the Antennae (NGC-4038/4039). The Chandra image reveals a large population of extremely bright x-ray sources in this area of intense star formation. These x-ray sources, which emit 10 to several hundred times more x-ray power than similar sources in our own galaxy, are believed to be either massive black holes, or black holes that are beaming their energy toward Earth. In this x-ray image, red represents the low energy band, green intermediate, and blue the highest observed energies. The white and yellow sources are those that emit significant amounts of both low and high energy x-rays. About 60 million light years from Earth in the constellation Corvus, the Antennae Galaxies got their nickname from the wispy anntennae-like streams of gas as seen by optical telescopes. These ongoing wisps are believed to have been produced approximately 100 million years ago by the collision between the gala",
+    "date_created": "1999-12-01T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/0301102/0301102~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/0301102/0301102~orig.jpg",
+    "localImage": "data/images/0301102~orig_5.jpg"
+  },
+  {
+    "id": "0401556",
+    "name": "History of Chandra X-Ray Observatory",
+    "summary": "NASA’s Chandra X-Ray Observatory (CXO) was launched July 22, 1999 aboard the Space Shuttle Columbia, STS-93 mission. This image was produced by combining a dozen CXO observations made of a 130 light-year region in the center of the Milky Way over the last 5 years. The colors represent low (red), medium (green) and high (blue) energy x-rays. Thanks to Chandra's unique resolving power, astronomers have now been able to identify thousands of point-like x-ray sources due to neutron stars, black holes, white dwarfs, foreground stars, and background galaxies. What remains is a diffuse x-ray glow extending from the upper left to the lower right, along the direction of the disk of the galaxy. NASA’s Marshall Space Flight Center in Huntsville, Alabama manages the Chandra program. (NASA/CXC/UCLA/M. Muno et al.)",
+    "date_created": "2004-08-12T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/0401556/0401556~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/0401556/0401556~orig.jpg",
+    "localImage": "data/images/0401556~orig_6.jpg"
+  },
+  {
+    "id": "0200209",
+    "name": "History of Chandra X-Ray Observatory",
+    "summary": "NGC 3603 is a bustling region of star birth in the Carina spiral arm of the Milky Way galaxy, about 20,000 light-years from Earth. For the first time, this Chandra image resolves the multitude of individual x-ray sources in this star-forming region. (The intensity of the x-rays observed by Chandra are depicted by the various colors in this image. Green represents lower intensity sources, while purple and red indicate increasing x-ray intensity.) Specifically, the Chandra image reveals dozens of extremely massive stars born in a burst of star formation about 2 million years ago. This region's activities may be indicative of what is happening in other distant \"starburst\" galaxies (bright galaxies flush with new stars). In the case of NGC 3603, scientists now believe that these x-rays are emitted from massive stars and stellar winds, since the stars are too young to have produced supernovae or have evolved into neutron stars. The Chandra observations of NGC 3603 may provide new clues about x-ray emission in starburst galaxies as well as star formation itself. (Photo credit: NASA/GSFC/M. Corcoran et al)",
+    "date_created": "2001-01-01T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/0200209/0200209~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/0200209/0200209~orig.jpg",
+    "localImage": "data/images/0200209~orig_7.jpg"
+  },
+  {
+    "id": "0202374",
+    "name": "History of Chandra X-Ray Observatory",
+    "summary": "This is a photo taken by NASA's Chandra X-ray Observatory that reveals the remains of an explosion in the form of two enormous arcs of multimillion-degree gas in the galaxy Centaurus A that appear to be part of a ring 25,000 light years in diameter. The size and location of the ring suggest that it could have been an explosion that occurred about 10 million years ago. A composite image made with radio (red and green), optical (yellow-orange), and X-ray data (blue) presents a sturning tableau of a turbulent galaxy. A broad band of dust and cold gas is bisected at an angle by opposing jets of high-energy particles blasting away from the supermassive black hole in the nucleus. Lying in a plane perpendicular to the jets are the two large arcs of x-ray emitting multi-million degree gas. This discovery can help astronomers better understand the cause and effect of violent outbursts from the vicinity of supermassive black holes of active galaxies. The Chandra program is managed by the Marshall Space Flight Center in Huntsville, Alabama.",
+    "date_created": "2002-07-31T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/0202374/0202374~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/0202374/0202374~orig.jpg",
+    "localImage": "data/images/0202374~orig_8.jpg"
+  },
+  {
+    "id": "KSC-chandra-xo2",
+    "name": "KSC-chandra-xo2",
+    "summary": "The Chandra X-ray Observatory (CXO), NASA's newest space telescope, is seen above at the unveiling ceremony at TRW Space and Electronics Group in Redondo Beach, Calif. The photo was taken by Marshall Space Flight Center and appears on its <a href=\"http://www.msfc.nasa.gov/news\">Marshall News Center Web site</a>, along with other digital images of the completely assembled observatory. Formerly called the Advanced X-ray Astrophysics Facility, the CXO is the world's most powerful X-ray telescope. Scientists believe its ability to see previously invisible black holes and high-temperature gas clouds give the observatory the potential to rewrite the books on the structure and evolution of our universe",
+    "date_created": "1999-01-21T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/KSC-chandra-xo2/KSC-chandra-xo2~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/KSC-chandra-xo2/KSC-chandra-xo2~orig.jpg",
+    "localImage": "data/images/KSC-chandra-xo2~orig_9.jpg"
+  },
+  {
+    "id": "0300607",
+    "name": "History of Chandra X-Ray Observatory",
+    "summary": "A 2 week observation through the optic eye of the Chandra X-Ray Observatory revealed this sturning explosion occurring in the super massive black hole at the Milky Way's center, known as Sagittarius A or Sgr A*. Huge lobes of 20-million degree Centigrade gas ( red loops in image) flank both sides of the black hole and extend over dozens of light years indicating that enormous explosions occurred several times over the last 10 thousand years. Weighing in at 3-million times the mass of the sun, the Sgr A* is a starved black hole, possibly because explosive events in the past have cleared much of the gas around it.",
+    "date_created": "2003-01-06T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/0300607/0300607~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/0300607/0300607~orig.jpg",
+    "localImage": "data/images/0300607~orig_10.jpg"
+  },
+  {
+    "id": "0300606",
+    "name": "History of Chandra X-Ray Observatory",
+    "summary": "This Chandra X-ray observatory image of M83 shows numerous point-like neutron stars and black hole x-ray sources scattered throughout the disk of this spiral galaxy. The bright nuclear region of the galaxy glows prominently due to a burst of star formation that is estimated to have begun about 20 million years ago in the galaxy's time frame. The nuclear region, enveloped by a 7 million degree Celsius gas cloud of carbon, neon, magnesium, silicon, and sulfur atoms, contains a much higher concentration of neutron stars and black holes than the rest of the galaxy. Hot gas with a slightly lower temperature of 4 million degrees observed along the spiral arms of the galaxy suggests that star formation in this region may be occurring at a more sedate rate.",
+    "date_created": "2003-01-22T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/0300606/0300606~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/0300606/0300606~orig.jpg",
+    "localImage": "data/images/0300606~orig_11.jpg"
+  },
+  {
+    "id": "9906646",
+    "name": "History of Chandra X-Ray Observatory",
+    "summary": "A crew member of the STS-93 mission took this photograph of the Chandra X-Ray Observatory, still attached to the Inertial Upper Stage (IUS), backdropped against the darkness of space not long after its release from Orbiter Columbia. Two firings of an attached IUS rocket placed the Observatory into its working orbit. The primary duty of the crew of this mission was to deploy the 50,162-pound Observatory, the world's most powerful x-ray telescope.",
+    "date_created": "1999-07-01T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/9906646/9906646~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/9906646/9906646~orig.jpg",
+    "localImage": "data/images/9906646~orig_12.jpg"
+  },
+  {
+    "id": "MSFC-201901196",
+    "name": "20 Years Of Science With NASA's Chandra X-ray Observatory",
+    "summary": "The 20th year of the Chandra X-ray Telescope was celebrated at the U.S. Space and Rocket Center's planetarium. The speakers were retired Astronaut Eileen Collins, Astrophysicist at the \"Chandra X-ray Center Aneta Siemiginowska, \"Senior Astrophysicist at the Chandra X-ray center Harvey Tananbaum, and Chandra Project Scientist Dr. Martin Weisskopf.  The panel discussion was moderated by Kim Kowal Arcand, \"Visualizaton Lead at the Chandra  X-ray Center.",
+    "date_created": "2019-09-05T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/MSFC-201901196/MSFC-201901196~large.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/MSFC-201901196/MSFC-201901196~large.jpg",
+    "localImage": "data/images/MSFC-201901196~large_13.jpg"
+  },
+  {
+    "id": "0300728",
+    "name": "History of Chandra X-Ray Observatory",
+    "summary": "Leon Van Speybroeck of the Harvard-Smithsonian Center for Astrophysics in Cambridge Massachusetts was awarded the 2002 Bruno Rossi Prize of the High-Energy Astrophysics Division of the American Astronomy Society. The Rossi Prize is an arnual recognition of significant contributions in high-energy astrophysics in honor of the Massachusetts Institute of Technology's late Professor Bruno Rossi, an authority on cosmic ray physics and a pioneer in the field of x-ray astronomy. Van Speybroeck, who led the effort to design and make the x-ray mirrors for NASA's premier Chandra X-Ray Observatory, was recognized for a career of stellar achievements in designing precision x-ray optics. As Telescope Scientist for Chandra, he has worked for more than 20 years with a team that includes scientists and engineers from the Harvard-Smithsonian, NASA's Marshall Space Flight Center, TRW, Inc., Huhes-Danbury (now B.F. Goodrich Aerospace), Optical Coating Laboratories, Inc., and Eastman-Kodak on all aspects of the x-ray mirror assembly that is the heart of the observatory.",
+    "date_created": "2002-01-23T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/0300728/0300728~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/0300728/0300728~orig.jpg",
+    "localImage": "data/images/0300728~orig_14.jpg"
+  },
+  {
+    "id": "0300729",
+    "name": "History of Chandra X-Ray Observatory",
+    "summary": "At a distance of 6,000 light years from Earth, the star cluster RCW 38 is a relatively close star-forming region. This area is about 5 light years across, and contains thousands of hot, very young stars formed less than a million years ago, 190 of which exposed x-rays to Chandra. Enveloping the star cluster, the diffused cloud of x-rays shows an excess of high energy x-rays, which indicates that the x-rays come from trillion-volt electrons moving in a magnetic field. Such particles are typically produced by exploding stars, or in the strong magnetic fields around neutron stars or black holes, none of which are evident in RCW 38. One possible origin for the particles, could be an undetected supernova that occurred in the cluster, possibly thousands of years ago, producing a shock wave that is interacting with the young stars. Regardless of the origin of these energetic electrons, their presence could change the chemistry of the disks that will eventually form planets around the stars in the cluster.",
+    "date_created": "2002-12-18T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/0300729/0300729~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/0300729/0300729~orig.jpg",
+    "localImage": "data/images/0300729~orig_15.jpg"
+  },
+  {
+    "id": "0301103",
+    "name": "History of Chandra X-Ray Observatory",
+    "summary": "This Chandra image shows the central regions of two colliding galaxies known collectively as the Antennae (NGC-4038/4039). The dozens of bright pointy-like sources are neutron stars or black holes pulling gas off nearby stars. The bright fuzzy patches are multimillion degree gas superbubbles, thousands of light years in diameter that were produced by the accumulated power of thousands of supernovae. The remaining glow of x-ray emission could be due to many faint x-ray sources or to clouds of hot gas in the galaxies. About 60 million light years from Earth in the constellation Corvus, the Antennae Galaxies got their nickname from the wispy anntennae-like streams of gas as seen by optical telescopes. These ongoing wisps are believed to have been produced approximately 100 million years ago by the collision between the galaxies. Although it is rare for stars to hit each other during a galactic collision, clouds of dust and gas do collide. Compression of these clouds can lead to the rebirth of millions of stars, and a few million years later, to thousands of supernovae.",
+    "date_created": "1999-12-01T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/0301103/0301103~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/0301103/0301103~orig.jpg",
+    "localImage": "data/images/0301103~orig_16.jpg"
+  },
+  {
+    "id": "0401581",
+    "name": "History of Chandra X-Ray Observatory",
+    "summary": "Astronomers have used an x-ray image to make the first detailed study of the behavior of high-energy particles around a fast moving pulsar. This image, from NASA's Chandra X-Ray Observatory (CXO), shows the shock wave created as a pulsar plows supersonically through interstellar space. These results will provide insight into theories for the production of powerful winds of matter and antimatter by pulsars. Chandra's image of the glowing cloud, known as the Mouse, shows a stubby bright column of high-energy particles, about four light years in length, swept back by the pulsar's interaction with interstellar gas. The intense source at the head of the X-ray column is the pulsar, estimated to be moving through space at about 1.3 million miles per hour.  A cone-shaped cloud of radio-wave-emitting particles envelopes the x-ray column. The Mouse, a.k.a. G359.23-0.82, was discovered in 1987 by radio astronomers using the National Science Foundation's Very Large Array in New Mexico. G359.23-0.82 gets its name from its appearance in radio images that show a compact snout, a bulbous body, and a remarkable long, narrow, tail that extends for about 55 light years. NASA’s Marshall Space Flight Center in Huntsville, Alabama manages the Chandler program.  ",
+    "date_created": "2004-09-24T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/0401581/0401581~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/0401581/0401581~orig.jpg",
+    "localImage": "data/images/0401581~orig_17.jpg"
+  },
+  {
+    "id": "9907459",
+    "name": "History of Chandra X-Ray Observatory",
+    "summary": "This is an extraordinary first image from the Chandra X-Ray Observatory (CXO), the supernova remnant Cassiopeia A, tracing the aftermath of a gigantic stellar explosion in such sturning detail that scientists can see evidence of what may be a neutron star or black hole near the center. The red, green, and blue regions in this image of the supernova remnant Cassiopeia A show where the intensity of low, medium, and high energy X-rays, respectively, is greatest. The red material on the left outer edge is enriched in iron, whereas the bright greenish white region on the low left is enriched in silicon and sulfur. In the blue region on the right edge, low and medium energy X-rays have been filtered out by a cloud of dust and gas in the remnant . The image was made with the CXO's Advanced Charged-Coupled Device (CCD) Imaging Spectrometer (ACIS). Photo credit: NASA/CXC/SAO/Rutgers/J.Hughes",
+    "date_created": "1999-08-01T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/9907459/9907459~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/9907459/9907459~orig.jpg",
+    "localImage": "data/images/9907459~orig_18.jpg"
+  },
+  {
+    "id": "0200208",
+    "name": "History of Chandra X-Ray Observatory",
+    "summary": "The Chandra X-Ray Observatory has captured this spectacular image of G292.0+1.8, a young, oxygen-rich supernova remnant with a pulsar at its center surrounded by outflowing material. This image shows a rapidly expanding shell of gas that is 36 light-years across and contains large amounts of elements such as oxygen, neon, magnesium, silicon and sulfur. Embedded in this cloud of multimillion-degree gas is a key piece of evidence linking neutron stars and supernovae produced by the collapse of massive stars. With an age estimated at 1,600 years, G292.0+1.8 is one of three known oxygen-rich supernovae in our galaxy. These supernovae are of great interest to astronomers because they are one of the primary sources of the heavy elements necessary to form planets and people. Scattered through the image are bluish knots of emissions containing material that is highly enriched in newly created oxygen, neon, and magnesium produced deep within the original star and ejected by the supernova explosion.",
+    "date_created": "2000-03-01T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/0200208/0200208~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/0200208/0200208~orig.jpg",
+    "localImage": "data/images/0200208~orig_19.jpg"
+  },
+  {
+    "id": "0401563",
+    "name": "History of Chandra X-Ray Observatory",
+    "summary": "This spectacular Chandra X-Ray Observatory (CXO)  image of the supernova remnant Cassiopeia A is the most detailed image ever made of the remains of an exploded star. The one-million-second image shows a bright outer ring (green) 10 light years in diameter that marks the location of a shock wave generated by the supernova explosion.  In the upper left corner is a large jet-like structure that protrudes beyond the shock wave, and a counter-jet can be seen on the lower right.  The x-ray spectra show that the jets are rich in silicon atoms, and relatively poor in iron atoms.  This indicates that the jets formed soon after the initial explosion of the star, otherwise, the jets should have contained large quantities of iron from the star’s central regions. The bright blue areas are composed almost purely of iron gas, which was produced in the central, hottest regions of the star and somehow ejected in a direction almost perpendicular to the jets.  The bright source at the center of the image is presumed to be a neutron star created during the supernova. Unlike most others, this neutron star is quiet, faint, and so far shows no evidence of pulsed radiation. A working hypothesis is that the explosion that created Cassiopeia A produced high speed jets similar to, but less energetic than, the hyper nova jets thought to produce gamma-ray bursts. During the explosion, the star may have developed an extremely strong magnetic filed that helped to accelerate the jets and later stifled any pulsar wind activity. CXO project management is the responsibility of NASA’s Marshall Space Flight Center in Huntsville, Alabama.",
+    "date_created": "2004-08-23T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/0401563/0401563~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/0401563/0401563~orig.jpg",
+    "localImage": "data/images/0401563~orig_20.jpg"
+  },
+  {
+    "id": "PIA21061",
+    "name": "X-Rays from Pluto",
+    "summary": "The first detection of Pluto in X-rays has been made using NASA's Chandra X-ray Observatory in conjunction with observations from NASA's New Horizons spacecraft.  As New Horizons approached Pluto in late 2014 and then flew by the planet during the summer of 2015, Chandra obtained data during four separate observations. During each observation, Chandra detected low-energy X-rays from the small planet. The main panel in this graphic is an optical image taken from New Horizons on its approach to Pluto, while the inset shows an image of Pluto in X-rays from Chandra.  There is a significant difference in scale between the optical and X-ray images. New Horizons made a close flyby of Pluto but Chandra is located near the Earth, so the level of detail visible in the two images is very different. The Chandra image is 180,000 miles across at the distance of Pluto, but the planet is only 1,500 miles across. Pluto is detected in the X-ray image as a point source, showing the sharpest level of detail available for Chandra or any other X-ray observatory. This means that details over scales that are smaller than the X-ray source cannot be seen here.  Detecting X-rays from Pluto is a somewhat surprising result given that Pluto - a cold, rocky world without a magnetic field - has no natural mechanism for emitting X-rays. However, scientists knew from previous observations of comets that the interaction between the gases surrounding such planetary bodies and the solar wind - the constant streams of charged particles from the sun that speed throughout the solar system -- can create X-rays.  The researchers were particularly interested in learning more about the interaction between the gases in Pluto's atmosphere and the solar wind. The New Horizon spacecraft carries an instrument designed to measure that activity up-close -- Solar Wind Around Pluto (SWAP) -- and scientists examined that data and proposed that Pluto contains a very mild, close-in bowshock, where the solar wind first \"meets\" Pluto (similar to a shock wave that forms ahead of a supersonic aircraft) and a small wake or tail behind the planet.  The immediate mystery is that Chandra's readings on the brightness of the X-rays are much higher than expected from the solar wind interacting with Pluto's atmosphere. The Chandra detection is also surprising since New Horizons discovered Pluto's atmosphere was much more stable than the rapidly escaping, \"comet-like\" atmosphere that many scientists expected before the spacecraft flew past in July 2015. In fact, New Horizons found that Pluto's interaction with the solar wind is much more like the interaction of the solar wind with Mars, than with a comet. While Pluto is releasing enough gas from its atmosphere to make the observed X-rays, there isn't enough solar wind flowing directly at Pluto at its great distance from the Sun to make them according to certain theoretical models.  There are several suggested possibilities for the enhanced X-ray emission from Pluto. These include a much wider and longer tail of gases trailing Pluto than New Horizons detected using its SWAP instrument. Because Pluto is so small compared to the size of a Chandra point source, scientists may be unable to detect such a tail in X-rays. Other possibilities are that interplanetary magnetic fields are focusing more particles than expected from the solar wind into the region around Pluto, or the low density of the solar wind in the outer solar system at the distance of Pluto could allow for the formation of a doughnut, or torus, of neutral gas centered around Pluto's orbit. It will take deeper and higher resolution images of X-rays from Pluto's environment than we currently have from Chandra to distinguish between these possibilities.  http://photojournal.jpl.nasa.gov/catalog/PIA21061",
+    "date_created": "2016-09-14T23:12:01Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA21061/PIA21061~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA21061/PIA21061~orig.jpg",
+    "localImage": "data/images/PIA21061~orig_21.jpg"
+  },
+  {
+    "id": "0200207",
+    "name": "History of Chandra X-Ray Observatory",
+    "summary": "This most distant x-ray cluster of galaxies yet has been found by astronomers using Chandra X-ray Observatory (CXO). Approximately 10 billion light-years from Earth, the cluster 3C294 is 40 percent farther than the next most distant x-ray galaxy cluster. The existence of such a faraway cluster is important for understanding how the universe evolved. CXO's image reveals an hourglass-shaped region of x-ray emissions centered on the previously known central radio source (seen in this image as the blue central object) that extends outward for 60,000 light- years. The vast clouds of hot gas that surround such galaxies in clusters are thought to be heated by collapse toward the center of the cluster. Until CXO, x-ray telescopes have not had the needed sensitivity to identify such distant clusters of galaxies. Galaxy clusters are the largest gravitationally bound structures in the universe. The intensity of the x-rays in this CXO image of 3C294 is shown as red for low energy x-rays, green for intermediate, and blue for the most energetic x-rays. (Photo credit: NASA/loA/A. Fabian et al)",
+    "date_created": "2000-10-01T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/0200207/0200207~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/0200207/0200207~orig.jpg",
+    "localImage": "data/images/0200207~orig_22.jpg"
+  },
+  {
+    "id": "9905485",
+    "name": "History of Chandra X-Ray Observatory",
+    "summary": "This x-ray image of the Cassiopeia A (CAS A) supernova remnant is the official first light image of the Chandra X-Ray Observatory (CXO). The 5,000-second image was made with the Advanced Charged Coupled Device (CCD) Image Spectrometer (ACIS). Two shock waves are visible: A fast outer shock and a slower irner shock. The inner shock wave is believed to be due to the collision of ejecta from the supernova explosion with a circumstellar shell of material, heating it to a temperature of 10 million-degrees Celsius. The outer shock wave is analogous to an awesome sonic boom resulting from this collision The x-rays reveal a bright object near the center, which may be the long-sought neutron star or black hole remnant of the explosion that produced Cassiopeia A. Cassiopeia A is the 320-year-old remnant of a massive star that exploded. Located in the constellation Cassiopeia, it is 10 light-years across and 10,000 light-years from Earth. A supernova occurs when a massive star has used up its nuclear fuel and the pressure drops in the central core of the star. The matter in the core is crushed by gravity to higher and higher densities, and temperatures reach billions of degrees. Under these extreme conditions, nuclear reactions occur violently and catastrophically, reversing the collapse. A thermonuclear shock wave races through the now expanding stellar debris, fusing lighter elements into heavier ones and producing a brilliant visual outburst.",
+    "date_created": "1999-08-01T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/9905485/9905485~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/9905485/9905485~orig.jpg",
+    "localImage": "data/images/9905485~orig_23.jpg"
+  },
+  {
+    "id": "9905980",
+    "name": "History of Chandra X-Ray Observatory",
+    "summary": "After barely 2 months in space, the Chandra X-Ray Observatory (CXO) took this sturning image of the Crab Nebula, the spectacular remains of a stellar explosion, revealing something never seen before, a brilliant ring around the nebula's heart. The image shows the central pulsar surrounded by tilted rings of high-energy particles that appear to have been flung outward over a distance of more than a light-year from the pulsar. Perpendicular to the rings, jet-like structures produced by high-energy particles blast away from the pulsar. Hubble Space Telescope images have shown moving knots and wisps around the neutron star, and previous x-ray images have shown the outer parts of the jet and hinted at the ring structure. With CXO's exceptional resolution, the jet can be traced all the way in to the neutron star, and the ring pattern clearly appears. The image was made with CXO's Advanced Charge-Coupled Device (CCD) Imaging Spectrometer (ACIS) and High Energy Transmission Grating. The Crab Nebula, easily the most intensively studied object beyond our solar system, has been observed using virtually every astronomical instrument that could see that part of the sky",
+    "date_created": "1999-09-01T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/9905980/9905980~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/9905980/9905980~orig.jpg",
+    "localImage": "data/images/9905980~orig_24.jpg"
+  },
+  {
+    "id": "PIA10092",
+    "name": "Stacks of Light",
+    "summary": "These two images show tacked Chandra images for two different classes of distant, massive galaxy detected with NASA Spitzer. Image stacking is a procedure used to detect emission from objects that is too faint to be detected in single images.",
+    "date_created": "2007-10-25T16:55:02Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA10092/PIA10092~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA10092/PIA10092~orig.jpg",
+    "localImage": "data/images/PIA10092~orig_25.jpg"
+  },
+  {
+    "id": "0401555",
+    "name": "History of Chandra X-Ray Observatory",
+    "summary": "This image of the galaxy cluster Abell 2125, provided by the Chandra X-Ray Observatory (CXO), reveals several massive multimillion degree Celsius gas clouds that appear to be in the process of merging. Ten of the point-like sources are associated with galaxies in the cluster and the rest are probably distant background galaxies. The small bright feature in the extreme lower right-hand corner is probably a background galaxy cluster not associated with Abell 2125. The bright gas cloud on the upper left is the core of the cluster and envelopes hundreds of galaxies. It consists of several elongated clouds that are merging. Chandra, Hubble Space Telescope (HST), and Very Large Array radio telescope data show that several galaxies in the Abell 2125 core cluster are being stripped of their gas as they fall through surrounding high-pressure hot gas. This stripping process has enriched the core cluster's gas in heavy elements such as iron. In contrast, the bright large cloud on the lower right envelopes hundreds of galaxies and has an extraordinarily low concentration of iron atoms. It is thought that this cloud, which is several million light years from the core cluster, has not yet been enriched by the stripping of iron-rich gas from its member galaxies. Over time, as this cloud merges into the core and the hot gas pressure increases, iron atoms should be swept from the galaxies. Building a massive galaxy cluster is a step-by-step enterprise that takes billions of years and affects the growth and evolution of the member galaxies. The observations of A 2125 provide a rare glimpse into the early steps in this process. NASA’s Marshall Space Flight Center in Huntsville, Alabama manages both the Chandra and Hubble programs.  (NASA/UMass/D. Wang et al.))",
+    "date_created": "2004-08-13T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/0401555/0401555~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/0401555/0401555~orig.jpg",
+    "localImage": "data/images/0401555~orig_26.jpg"
+  },
+  {
+    "id": "0200205",
+    "name": "History of Chandra X-Ray Observatory",
+    "summary": "This image shows the central region of the spiral galaxy NGC 4631 as seen edge-on from the Chandra X-Ray Observatory (CXO) and the Hubble Space Telescope (HST). The Chandra data, shown in blue and purple, provide the first unambiguous evidence for a halo of hot gas surrounding a galaxy that is very similar to our Milky Way. The structure across the middle of the image and the extended faint filaments, shown in orange, represent the observation from the HST that reveals giant bursting bubbles created by clusters of massive stars. Scientists have debated for more than 40 years whether the Milky Way has an extended corona, or halo, of hot gas. Observations of NGC 4631 and similar galaxies provide astronomers with an important tool in the understanding our own galactic environment. A team of astronomers, led by Daniel Wang of the University of Massachusetts at Amherst, observed NGC 4631 with CXO's Advanced Charge-Coupled Device (CCD) Imaging Spectrometer (ACIS). The observation took place on April 15, 2000, and its duration was approximately 60,000 seconds.",
+    "date_created": "2001-07-01T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/0200205/0200205~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/0200205/0200205~orig.jpg",
+    "localImage": "data/images/0200205~orig_27.jpg"
+  },
+  {
+    "id": "9906671",
+    "name": "History of Chandra X-Ray Observatory",
+    "summary": "This Chandra X-Ray Observatory image of the mysterious superstar Eta Carinae reveals a surprising hot irner core, creating more questions than answers for astronomers. The image shows three distinct structures: An outer, horseshoe shaped ring about 2 light-years in diameter, a hot inner core about 3 light-months in diameter, and a hot central source less than a light-month in diameter which may contain the superstar. In 1 month, light travels a distance of approximately 489 billion miles (about 788 billion kilometers). All three structures are thought to represent shock waves produced by matter rushing away from the superstar at supersonic speeds. The temperature of the shock-heated gas ranges from 60 million degrees Kelvin in the central regions to 7 million degrees Kelvin on the outer structure. Eta Carinae is one of the most enigmatic and intriguing objects in our galaxy. Between 1837 and 1856, it increased dramatically in brightness to become the most prominent star in the sky except for Sirius, even through it is 7,500 light-years away, more than 80 times the distance to Sirius. This \"Great Eruption,\" as it is called, had an energy comparable to a supernova, yet did not destroy the star, which faded to become a dim star, invisible to the naked eye. Since 1940, Eta Carinae has begun to brighten again, becoming visible to the naked eye. Photo credit: NASA/CXC/SAO",
+    "date_created": "1999-01-01T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/9906671/9906671~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/9906671/9906671~orig.jpg",
+    "localImage": "data/images/9906671~orig_28.jpg"
+  },
+  {
+    "id": "0200206",
+    "name": "History of Chandra X-Ray Observatory",
+    "summary": "This Chandra X-Ray Observatory (CXO) image is a spectrum of a black hole, which is similar to the colorful spectrum of sunlight produced by a prism. The x-rays of interest are shown here recorded in bright stripes that run rightward and leftward from the center of the image. These x-rays are sorted precisely according to their energy with the highest-energy x-rays near the center of the image and the lower-energy x-rays farther out. The spectrum was obtained by using the Low Energy Transmission Grating (LETG), which intercepts x-rays and changes their direction by the amounts that depend sensitively on the x-ray energy. The assembly holds 540 gold transmission gratings. When in place behind the mirrors, the gratings intercept the x-rays reflected from the telescope. The bright spot at the center is due to a fraction of the x-ray radiation that is not deflected by the LETG. The spokes that intersect the central spot and the faint diagonal rays that flank the spectrum itself are artifacts due to the structure that supports the LETG grating elements. (Photo credit: NASA Cfa/J. McClintock et al)",
+    "date_created": "2000-04-01T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/0200206/0200206~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/0200206/0200206~orig.jpg",
+    "localImage": "data/images/0200206~orig_29.jpg"
+  },
+  {
+    "id": "0002272",
+    "name": "History of Chandra X-Ray Observatory",
+    "summary": "Chandra X-Ray Observatory took this first x-ray picture of the Andromeda Galaxy (M31) on October 13, 1999. The blue dot in the center of the image is a \"cool\" million-degree x-ray source where a supermassive black hole with the mass of 30-million suns is located. The x-rays are produced by matter furneling toward the black hole. Numerous other hotter x-ray sources are also apparent. Most of these are probably due to x-ray binary systems, in which a neutron star or black hole is in close orbit around a normal star. While the gas falling into the central black hole is cool, it is only cool by comparison to the 100 other x-ray sources in the Andromeda Galaxy. To be detected by an x-ray telescope, the gas must have a temperature of more than a million degrees. The Andromeda Galaxy is our nearest neighbor spiral galaxy at a distance of two million light years. It is similar to our own Milky Way in size, shape, and also contains a supermassive black hole at the center. (Photo Credit: NASA/CXC/SAO/S. Murray, M. Garcia)",
+    "date_created": "1999-10-13T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/0002272/0002272~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/0002272/0002272~orig.jpg",
+    "localImage": "data/images/0002272~orig_30.jpg"
+  },
+  {
+    "id": "PIA19347",
+    "name": "Cosmic Sparklers",
+    "summary": "This new composite image of stellar cluster NGC 1333 combines X-rays from NASA's Chandra X-ray Observatory (pink); infrared data from NASA's Spitzer Space Telescope (red); and optical data from the Digitized Sky Survey and the National Optical Astronomical Observatories' Mayall 4-meter telescope on Kitt Peak near Tucson, Arizona. The Chandra data reveal 95 young stars glowing in X-ray light, 41 of which had not been seen previously using Spitzer because they lacked infrared emission from a surrounding disk.  http://photojournal.jpl.nasa.gov/catalog/PIA19347",
+    "date_created": "2015-07-02T16:50:41Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA19347/PIA19347~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA19347/PIA19347~orig.jpg",
+    "localImage": "data/images/PIA19347~orig_31.jpg"
+  },
+  {
+    "id": "PIA12982",
+    "name": "Dusty Dead Star",
+    "summary": "A composite image from NASA Chandra and Spitzer space telescopes shows the dusty remains of a collapsed star, a supernova remnant called G54.1+0.3. The white source at the center is a dead star called a pulsar.",
+    "date_created": "2010-03-29T17:00:37Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA12982/PIA12982~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA12982/PIA12982~orig.jpg",
+    "localImage": "data/images/PIA12982~orig_32.jpg"
+  },
+  {
+    "id": "PIA18462",
+    "name": "Black Hole Jets Make Shock Waves",
+    "summary": "A composite image of the spiral galaxy NGC 4258 showing X-ray emission observed with NASA Chandra X-ray Observatory blue and infrared emission observed with NASA Spitzer Space Telescope red and green.",
+    "date_created": "2014-07-02T18:47:49Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA18462/PIA18462~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA18462/PIA18462~orig.jpg",
+    "localImage": "data/images/PIA18462~orig_33.jpg"
+  },
+  {
+    "id": "9904742",
+    "name": "History of Chandra X-Ray Observatory",
+    "summary": "In this photograph, the Chandra X-Ray Observatory (CXO) was installed and mated to the Inertial Upper Stage (IUS) inside the Shuttle Columbia's cargo bay at the Kennedy Space Center. The CXO will help astronomers world-wide better understand the structure and evolution of the universe by studying powerful sources of x-rays such as exploding stars, matter falling into black holes, and other exotic celestial objects. X-ray astronomy can only be done from space because Earth's atmosphere blocks x-rays from reaching the surface. The Observatory provides images that are 50 times more detailed than previous x-ray missions. At more than 45 feet in length and weighing more than 5 tons, the CXO was carried into low-Earth orbit by the Space Shuttle Columbia (STS-93 mission) on July 22, 1999. The Observatory was deployed from the Shuttle's cargo bay at 155 miles above the Earth. Two firings of an attached IUS rocket, and several firings of its own onboard rocket motors, after separating from the IUS, placed the Observatory into its working orbit. The IUS is a solid rocket used to place spacecraft into orbit or boost them away from the Earth on interplanetary missions. Since its first use by NASA in 1983, the IUS has supported a variety of important missions, such as the Tracking and Data Relay Satellite, Galileo spacecraft, Magellan spacecraft, and Ulysses spacecraft. The IUS was built by the Boeing Aerospace Co., at Seattle, Washington and managed by the Marshall Space Flight Center.",
+    "date_created": "1999-01-01T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/9904742/9904742~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/9904742/9904742~orig.jpg",
+    "localImage": "data/images/9904742~orig_34.jpg"
+  },
+  {
+    "id": "0200010",
+    "name": "History of Chandra X-Ray Observatory",
+    "summary": "The Chandra X-Ray Observatory (CXO) has made a sturning, high-energy panorama of the central regions of our Milky Way galaxy. The findings are an important step toward understanding the most active area of the Milky Way as well as other galaxies throughout the universe. This 400 by 900-light-year mosaic of several CXO images reveals hundreds of white dwarf stars, neutron stars, and black holes bathed in an incandescent fog of miltimillion-degree gas. The diffuse x-ray emission seems to be related to the turmoil and density of matter in the inner Milky Way. Stars are forming there at a much more rapid rate than in the galactic \"suburbs.\" Many of the most massive stars in the galaxy are located in the galactic center and are furiously boiling off their outer layers in searing stellar winds. Supernova explosions are far more common in the region and send shock waves booming through the inner galaxy. The super massive black hole at the center of the galaxy is located inside the bright white patch in the center of the image. The colors indicate x-ray energy bands-red (low), green (medial), and blue (high). A supernova occurs when a massive star has used up its nuclear fuel and the pressure drops in the central core of the star. The matter in the core is crushed by gravity to higher and higher densities, and temperatures reach billions of degrees. Under these extreme conditions, nuclear reactions occur violently and catastrophically reversing the collapse. A thermonuclear shock wave races through the now expanding stellar debris, fusing lighter elements into heavier ones and producing a brilliant visual outburst. (Photo credit: NASA/UMass/D. Wang et al)",
+    "date_created": "2001-07-01T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/0200010/0200010~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/0200010/0200010~orig.jpg",
+    "localImage": "data/images/0200010~orig_35.jpg"
+  },
+  {
+    "id": "PIA21089",
+    "name": "Supernova SN 2014C X-ray",
+    "summary": "This image from NASA's Chandra X-ray Observatory shows spiral galaxy NGC 7331, center, in a three-color X-ray image. Red, green and blue colors are used for low, medium and high-energy X-rays, respectively. An unusual supernova called SN 2014C has been spotted in this galaxy.  http://photojournal.jpl.nasa.gov/catalog/PIA21089",
+    "date_created": "2017-01-24T17:50:02Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA21089/PIA21089~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA21089/PIA21089~orig.jpg",
+    "localImage": "data/images/PIA21089~orig_36.jpg"
+  },
+  {
+    "id": "9703626",
+    "name": "History of Chandra X-Ray Observatory",
+    "summary": "This photograph captures the installation of the Chandra X-Ray Observatory, formerly Advanced X-Ray Astrophysics Facility (AXAF), Advanced Charged-Coupled Device (CCD) Imaging Spectrometer (ACIS) into the Vacuum Chamber at the X-Ray Calibration Facility (XRCF) at Marshall Space Flight Center (MSFC). The AXAF was renamed Chandra X-Ray Observatory (CXO) in 1999. The CXO is the most sophisticated and the world's most powerful x-ray telescope ever built. It observes x-rays from high-energy regions of the universe, such as hot gas in the remnants of exploded stars. The ACIS is one of two focal plane instruments. As the name suggests, this instrument is an array of CCDs similar to those used in a camcorder. This instrument will be especially useful because it can make x-ray images and measure the energies of incoming x-rays. It is the instrument of choice for studying the temperature variation across x-ray sources, such as vast clouds of hot-gas intergalactic space. MSFC's XRCF is the world's largest, most advanced laboratory for simulating x-ray emissions from distant celestial objects. It produces a space-like environment in which components related to x-ray telescope imaging are tested and the quality of their performances in space is predicted. TRW, Inc. was the prime contractor for the development of the CXO and NASA's MSFC was responsible for its project management. The Smithsonian Astrophysical Observatory controls science and flight operations of the CXO for NASA from Cambridge, Massachusetts. The CXO was launched July 22, 1999 aboard the Space Shuttle Columbia (STS-93).",
+    "date_created": "1997-04-15T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/9703626/9703626~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/9703626/9703626~orig.jpg",
+    "localImage": "data/images/9703626~orig_37.jpg"
+  },
+  {
+    "id": "9900144",
+    "name": "History of Chandra X-Ray Observatory",
+    "summary": "This photograph shows TRW technicians preparing the assembled Chandra X-Ray Observatory (CXO) for an official unveiling at TRW Space and Electronics Group of Redondo Beach, California. The CXO is formerly known as the Advanced X-Ray Astrophysics Facility (AXAF), which was renamed in honor of the late Indian-American Astronomer, Subrahmanyan Chandrasekhar in 1999. The CXO will help astronomers world-wide better understand the structure and evolution of the universe by studying powerful sources of x-rays such as exploding stars, matter falling into black holes, and other exotic celestial objects. X-ray astronomy can only be done from space because Earth's atmosphere blocks x-rays from reaching the surface. The Observatory provides images that are 50 times more detailed than previous x-ray missions. At more than 45 feet in length and weighing more than 5 tons, it will be one of the largest objects ever placed in Earth orbit by the Space Shuttle. TRW, Inc. was the prime contractor and assembled and tested the observatory for NASA. The CXO program is managed by the Marshall Space Flight Center. The Observatory was launched on July 22, 1999 aboard the Space Shuttle Columbia, STS-93 mission. (Image courtesy of TRW)",
+    "date_created": "1999-01-01T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/9900144/9900144~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/9900144/9900144~orig.jpg",
+    "localImage": "data/images/9900144~orig_38.jpg"
+  },
+  {
+    "id": "9704166",
+    "name": "History of Chandra X-Ray Observatory",
+    "summary": "This photograph shows the mirrors of the High Resolution Mirror Assembly (HRMA) for the Chandra X-Ray Observatory (CXO), formerly Advanced X-Ray Astrophysics Facility (AXAF), being assembled in the Eastman Kodak Company in Rochester, New York. The AXAF was renamed CXO in 1999. The CXO is the most sophisticated and the world's most powerful x-ray telescope ever built. It observes x-rays from high-energy regions of the universe, such as hot gas in the remnants of exploded stars. The HRMA, the heart of the telescope system, is contained in the cylindrical \"telescope\" portion of the observatory. Since high-energy x-rays would penetrate a normal mirror, special cylindrical mirrors were created. The two sets of four nested mirrors resemble tubes within tubes. Incoming x-rays graze off the highly polished mirror surface and are furneled to the instrument section for detection and study. TRW, Inc. was the prime contractor for the development of the CXO and NASA's Marshall Space Flight Center was responsible for its project management. The Observatory was launched July 22, 1999 aboard the Space Shuttle Columbia, STS-93 mission.",
+    "date_created": "1997-01-01T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/9704166/9704166~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/9704166/9704166~orig.jpg",
+    "localImage": "data/images/9704166~orig_39.jpg"
+  },
+  {
+    "id": "9809344",
+    "name": "History of Chandra X-Ray Observatory",
+    "summary": "This photograph shows a TRW technician inspecting the completely assembled Chandra X-ray Observatory (CXO) in the Thermal Vacuum Chamber at TRW Space and Electronics Group of Redondo Beach, California. The CXO is formerly known as the Advanced X-Ray Astrophysics Facility (AXAF), which was renamed in honor of the late Indian-American Astronomer, Subrahmanyan Chandrasekhar in 1999. The CXO will help astronomers worldwide better understand the structure and evolution of the universe by studying powerful sources of x-rays such as exploding stars, matter falling into black holes and other exotic celestial objects. X-ray astronomy can only be done from space because Earth's atmosphere blocks x-rays from reaching the surface. The Observatory provides images that are 50 times more detailed than previous x-ray missions. At more than 45 feet in length and weighing more than 5 tons, it will be one of the largest objects ever placed in Earth orbit by the Space Shuttle. TRW, Inc. was the prime contractor and assembled and tested the observatory for NASA. The CXO program is managed by the Marshall Space Flight Center. The Observatory was launched on July 22, 1999 aboard the Space Shuttle Columbia, STS-93 mission. (Image courtesy of TRW)",
+    "date_created": "1998-01-01T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/9809344/9809344~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/9809344/9809344~orig.jpg",
+    "localImage": "data/images/9809344~orig_40.jpg"
+  },
+  {
+    "id": "0200145",
+    "name": "History of Chandra X-Ray Observatory",
+    "summary": "This image is a color composite of the supernova remnant E0102-72: x-ray (blue), optical (green), and radio (red). E0102-72 is the remnant of a star that exploded in a nearby galaxy known as the Small Magellanic Cloud. The star exploded outward at speeds in excess of 20 million kilometers per hour (12 million mph) and collided with surrounding gas. This collision produced two shock waves, or cosmic sonic booms, one traveling outward, and the other rebounding back into the material ejected by the explosion. The radio image, shown in red, was made using the Australia Telescope Compact Array. The radio waves are due to extremely high-energy electrons spiraling around magnetic field lines in the gas and trace the outward moving shock wave. The Chandra X-ray Observatory image, shown in blue, shows gas that has been heated to millions of degrees by the rebounding, or reverse shock wave. The x-ray data show that this gas is rich in oxygen and neon. These elements were created by nuclear reactions inside the star and hurled into space by the supernova. The Hubble Space Telescope optical image, shown in green, shows dense clumps of oxygen gas that have \"cooled\" to about 30,000 degrees. Photo Credit: X-ray (NASA/CXC/SAO); optical (NASA/HST): radio: (ACTA)",
+    "date_created": "2000-11-01T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/0200145/0200145~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/0200145/0200145~orig.jpg",
+    "localImage": "data/images/0200145~orig_41.jpg"
+  },
+  {
+    "id": "PIA14415",
+    "name": "A New View of the Tarantula Nebula",
+    "summary": "This composite of 30 Doradus, the Tarantula Nebula, contains data from Chandra blue, Hubble green, and Spitzer red. Located in the Large Magellanic Cloud, the Tarantula Nebula is one of the largest star-forming regions close to the Milky Way.",
+    "date_created": "2012-04-17T15:30:22Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA14415/PIA14415~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA14415/PIA14415~orig.jpg",
+    "localImage": "data/images/PIA14415~orig_42.jpg"
+  },
+  {
+    "id": "PIA18468",
+    "name": "Supernova Seen In Two Lights",
+    "summary": "Puppis A, around 7,000 light-years away, is seen in this image from NASA Spitzer Space Telescope and Chandra X-Ray Observatory, and the European Space Agency XMM-Newton.",
+    "date_created": "2014-08-21T14:23:42Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA18468/PIA18468~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA18468/PIA18468~orig.jpg",
+    "localImage": "data/images/PIA18468~orig_43.jpg"
+  },
+  {
+    "id": "PIA18461",
+    "name": "Galactic Pyrotechnics on Display",
+    "summary": "Anomalous arms are seen in this composite image of NGC 4258 from NASA Chandra X-ray Observator, NSF Karl Jansky Very Large Array, NASA Hubble Space Telescope and Spitzer Space Telescope.",
+    "date_created": "2014-07-02T18:47:48Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA18461/PIA18461~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA18461/PIA18461~orig.jpg",
+    "localImage": "data/images/PIA18461~orig_44.jpg"
+  },
+  {
+    "id": "PIA15079",
+    "name": "30 Doradus: The Growing Tarantula Within",
+    "summary": "About 2,400 massive stars in the center of 30 Doradus, the Tarantula Nebula, produce intense radiation and powerful winds as they blow off material seen as infrared emission from NASA Spitzer Space Telescope and X-rays from Chandra X-ray Observatory.",
+    "date_created": "2011-11-16T21:51:01Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA15079/PIA15079~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA15079/PIA15079~orig.jpg",
+    "localImage": "data/images/PIA15079~orig_45.jpg"
+  },
+  {
+    "id": "PIA18249",
+    "name": "Inside the Flame Nebula",
+    "summary": "This composite image shows one of the clusters, NGC 2024, which is found in the center of the so-called Flame Nebula about 1,400 light years from Earth. Astronomers have studied two star clusters using NASA Chandra and infrared telescopes.",
+    "date_created": "2014-05-07T16:45:54Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA18249/PIA18249~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA18249/PIA18249~orig.jpg",
+    "localImage": "data/images/PIA18249~orig_46.jpg"
+  },
+  {
+    "id": "9501245",
+    "name": "History of Chandra X-Ray Observatory",
+    "summary": "This is an artist's concept of the Chandra X-Ray Observatory (CXO), formerly Advanced X-Ray Astrophysics Facility (AXAF), fully developed in orbit in a star field with Earth. In 1999, the AXAF was renamed the CXO in honor of the late Indian-American Novel Laureate Subrahmanyan Chandrasekhar. The CXO is the most sophisticated and the world's most powerful x-ray telescope ever built. It is designed to observe x-rays from high energy regions of the Universe, such as hot gas in the renmants of exploded stars. It produces picture-like images of x-ray emissions analogous to those made in visible light, as well as gathers data on the chemical composition of x-ray radiating objects. The CXO helps astronomers world-wide better understand the structure and evolution of the universe by studying powerful sources of x-ray such as exploding stars, matter falling into black holes, and other exotic celestial objects. The Observatory has three major parts: (1) the x-ray telescope, whose mirrors will focus x-rays from celestial objects; (2) the science instruments that record the x-rays so that x-ray images can be produced and analyzed; and (3) the spacecraft, which provides the environment necessary for the telescope and the instruments to work. TRW, Inc. was the prime contractor for the development the CXO and NASA's Marshall Space Flight Center was responsible for its project management. The Smithsonian Astrophysical Observatory controls science and flight operations of the CXO for NASA from Cambridge, Massachusetts. The Observatory was launched July 22, 1999 aboard the Space Shuttle Columbia, STS-93 mission. (Image courtesy of TRW).",
+    "date_created": "1995-01-14T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/9501245/9501245~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/9501245/9501245~orig.jpg",
+    "localImage": "data/images/9501245~orig_47.jpg"
+  },
+  {
+    "id": "9809284",
+    "name": "History of Chandra X-Ray Observatory",
+    "summary": "This is a computer rendering of the fully developed Chandra X-Ray Observatory (CXO), formerly Advanced X-Ray Astrophysics Facility (AXAF). In 1999, the AXAF was renamed the CXO in honor of the late Indian-American Novel Laureate Subrahmanyan Chandrasekhar. The CXO is the most sophisticated and the world's most powerful x-ray telescope ever built. It is designed to observe x-rays from high energy regions of the Universe, such as hot gas in the renmants of exploded stars. It produces picture-like images of x-ray emissions analogous to those made in visible light, as well as gathers data on the chemical composition of x-ray radiating objects. The CXO helps astronomers world-wide better understand the structure and evolution of the universe by studying powerful sources of x-ray such as exploding stars, matter falling into black holes, and other exotic celestial objects. The Observatory has three major parts: (1) the x-ray telescope, whose mirrors will focus x-rays from celestial objects; (2) the science instruments that record the x-rays so that x-ray images can be produced and analyzed; and (3) the spacecraft, which provides the environment necessary for the telescope and the instruments to work. TRW, Inc. was the prime contractor for the development of the CXO and NASA's Marshall Space Flight Center was responsible for its project management. The Smithsonian Astrophysical Observatory controls science and flight operations of the CXO for NASA from Cambridge, Massachusetts. The Observatory was launched July 22, 1999 aboard the Space Shuttle Columbia, STS-93 mission. (Image courtesy of TRW).",
+    "date_created": "1998-01-01T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/9809284/9809284~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/9809284/9809284~orig.jpg",
+    "localImage": "data/images/9809284~orig_48.jpg"
+  },
+  {
+    "id": "9903924",
+    "name": "History of Chandra X-Ray Observatory",
+    "summary": "This is a computer rendering of the fully developed Chandra X-ray Observatory (CXO), formerly Advanced X-Ray Astrophysics Facility (AXAF), in orbit in a star field. In 1999, the AXAF was renamed the CXO in honor of the late Indian-American Novel Laureate Subrahmanyan Chandrasekhar. The CXO is the most sophisticated and the world's most powerful x-ray telescope ever built. It is designed to observe x-rays from high energy regions of the Universe, such as hot gas in the renmants of exploded stars. It produces picture-like images of x-ray emissions analogous to those made in visible light, as well as gathers data on the chemical composition of x-ray radiating objects. The CXO helps astronomers world-wide better understand the structure and evolution of the universe by studying powerful sources of x-rays such as exploding stars, matter falling into black holes, and other exotic celestial objects. The Observatory has three major parts: (1) the x-ray telescope, whose mirrors will focus x-rays from celestial objects; (2) the science instruments that record the x-rays so that x-ray images can be produced and analyzed; and (3) the spacecraft, which provides the environment necessary for the telescope and the instruments to work. TRW, Inc. was the prime contractor for the development of the CXO and NASA's Marshall Space Flight Center was responsible for its project management. The Smithsonian Astrophysical Observatory controls science and flight operations of the CXO for NASA from Cambridge, Massachusetts. The Observatory was launched July 22, 1999 aboard the Space Shuttle Columbia, STS-93 mission. (Image courtesy of TRW).",
+    "date_created": "1999-01-01T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/9903924/9903924~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/9903924/9903924~orig.jpg",
+    "localImage": "data/images/9903924~orig_49.jpg"
+  },
+  {
+    "id": "PIA20913",
+    "name": "Spitzer Beyond Artist Concept",
+    "summary": "This artist's concept shows NASA's Spitzer Space Telescope. Spitzer begins its \"Beyond\" mission phase on Oct. 1, 2016. Spitzer is depicted in the orientation it assumes to establish communications with ground stations.  Spitzer is over 130 million miles (210 million kilometers) away from Earth, or about 1.5 times the distance between Earth and the Sun. The selected research proposals for Spitzer's Beyond phase include a variety of objects that the mission was not originally planned to address -- such as galaxies in the early universe, the black hole at the center of the Milky Way and exoplanets.  Spitzer faces increasing challenges and risks in its Beyond phase. To enable this riskier mode of operations, the mission team will have to override some autonomous safety systems. Mission engineers are hard at work preparing for these new challenges.  http://photojournal.jpl.nasa.gov/catalog/PIA20913",
+    "date_created": "2016-08-25T22:22:03Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA20913/PIA20913~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA20913/PIA20913~orig.jpg",
+    "localImage": "data/images/PIA20913~orig_50.jpg"
+  },
+  {
+    "id": "PIA23648",
+    "name": "Spitzer Project Manager Declares End of Mission",
+    "summary": "Spitzer Project Manager Joseph Hunt stands in Mission Control at NASA's Jet Propulsion Laboratory in Pasadena, California, on Jan. 30, 2020, declaring the spacecraft decommissioned and the Spitzer mission concluded.  https://photojournal.jpl.nasa.gov/catalog/PIA23648",
+    "date_created": "2020-01-30T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA23648/PIA23648~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA23648/PIA23648~orig.jpg",
+    "localImage": "data/images/PIA23648~orig_51.jpg"
+  },
+  {
+    "id": "PIA23650",
+    "name": "Spitzer California Nebula Mosaic",
+    "summary": "This series of image taken by NASA's Spitzer Space Telescope on Jan. 25, 2020, shows part of the California Nebula, which is located about 1,000 light-years from Earth. This is the final mosaic taken by the mission before it was decommissioned on Jan. 30, 2020.  Spitzer's infrared detectors reveal the presence of warm dust, similar to soot, mixed in with the gas. The dust absorbs visible and ultraviolet light from nearby stars and then re-emits the absorbed energy as infrared light.  The image displays Spitzer's observations much the way that research astronomers would view them: From 2009 to 2020, Spitzer operated two detectors simultaneously that imaged adjacent areas of the sky. The detectors captured different wavelengths of infrared light (referred to by their physical wavelength): 3.6 micrometers (shown in cyan) and 4.5 micrometers (shown in red). Different wavelengths of light can reveal different objects or features. Spitzer would scan the sky, taking multiple pictures in a grid pattern, so that both detectors would image the region at the center of the grid. By combining those images into a mosaic, it was possible to see what a given region looked like in multiple wavelengths, such as in the gray-hued part of the image above.   https://photojournal.jpl.nasa.gov/catalog/PIA23650",
+    "date_created": "2020-04-17T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA23650/PIA23650~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA23650/PIA23650~orig.jpg",
+    "localImage": "data/images/PIA23650~orig_52.jpg"
+  },
+  {
+    "id": "PIA13900",
+    "name": "Spitzer Sunflower Galaxy",
+    "summary": "This view of the Sunflower galaxy highlights a variety of infrared wavelengths captured by NASA Spitzer Space Telescope.",
+    "date_created": "2011-03-03T23:08:49Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA13900/PIA13900~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA13900/PIA13900~orig.jpg",
+    "localImage": "data/images/PIA13900~orig_53.jpg"
+  },
+  {
+    "id": "PIA23643",
+    "name": "Spitzer Space Telescope (Illustration)",
+    "summary": "In this artist's rendering of NASA's Spitzer Space Telescope in space, the background is shown in infrared light.  https://photojournal.jpl.nasa.gov/catalog/PIA23643",
+    "date_created": "2020-01-22T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA23643/PIA23643~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA23643/PIA23643~orig.jpg",
+    "localImage": "data/images/PIA23643~orig_54.jpg"
+  },
+  {
+    "id": "PIA23123",
+    "name": "A Field of Galaxies Seen by Spitzer and Hubble",
+    "summary": "This deep-field view of the sky, taken by NASA's Spitzer Space Telescope, is dominated by galaxies - including some very faint, very distant ones - circled in red. The bottom right inset shows one of those distant galaxies, made visible thanks to a long-duration observation by Spitzer. The wide-field view also includes data from NASA's Hubble Space Telescope. The Spitzer observations came from the GREATS survey, short for GOODS Re-ionization Era wide-Area Treasury from Spitzer. GOODS is itself an acronym: Great Observatories Origins Deep Survey.  https://photojournal.jpl.nasa.gov/catalog/PIA23123",
+    "date_created": "2019-05-08T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA23123/PIA23123~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA23123/PIA23123~orig.jpg",
+    "localImage": "data/images/PIA23123~orig_55.jpg"
+  },
+  {
+    "id": "PIA13930",
+    "name": "It Twins! Spitzer Finds Hidden Jet",
+    "summary": "NASA Spitzer Space Telescope took this image of a baby star sprouting two identical jets green lines emanating from fuzzy star. The left jet was hidden behind a dark cloud, which Spitzer can see through.",
+    "date_created": "2011-04-04T22:30:02Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA13930/PIA13930~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA13930/PIA13930~orig.jpg",
+    "localImage": "data/images/PIA13930~orig_56.jpg"
+  },
+  {
+    "id": "PIA15423",
+    "name": "Spitzer, Planck and Kepler Extended by NASA Artist Concept",
+    "summary": "From left to right, artist concepts of the Spitzer, Planck and Kepler space telescopes. NASA extended Spitzer and Kepler for two additional years; and the U.S. portion of Planck, a European Space Agency mission, for one year.",
+    "date_created": "2012-04-05T20:50:44Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA15423/PIA15423~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA15423/PIA15423~orig.jpg",
+    "localImage": "data/images/PIA15423~orig_57.jpg"
+  },
+  {
+    "id": "PIA22918",
+    "name": "Star Gaia 17pbi Seen by Spitzer",
+    "summary": "The location of Gaia 17bpi, which lies in the Sagitta constellation, is indicated in this image taken by NASA's Spitzer Space Telescope.  https://photojournal.jpl.nasa.gov/catalog/PIA22918",
+    "date_created": "2018-12-18T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA22918/PIA22918~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA22918/PIA22918~orig.jpg",
+    "localImage": "data/images/PIA22918~orig_58.jpg"
+  },
+  {
+    "id": "PIA24575",
+    "name": "Hidden Supernova Spotted by Spitzer",
+    "summary": "This image shows galaxy Arp 148, captured by NASA's Spitzer and Hubble telescopes. Inside the white circle is specially-processed Spitzer data, which reveals infrared light from a supernova that is hidden by dust. Supernovae are massive stars that have exploded after running out of fuel. They radiate most brightly in visible light (the kind the human eye can detect), but these wavelengths are obscured by dust. Infrared light, however, can pass through dust.  The analysis of Arp 148 was part of an effort to find hidden supernovae in 40 dust-choked galaxies that also emit high levels of infrared light. These galaxies are known as luminous and ultra-luminous infrared galaxies (LIRGs and ULIRGs, respectively). The dust in LIRGs and ULIRGs absorbs optical light from objects like supernovae but allows infrared light from these same objects to pass through unobstructed for telescopes like Spitzer to detect.  https://photojournal.jpl.nasa.gov/catalog/PIA24575",
+    "date_created": "2021-08-04T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA24575/PIA24575~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA24575/PIA24575~orig.jpg",
+    "localImage": "data/images/PIA24575~orig_59.jpg"
+  },
+  {
+    "id": "PIA09338",
+    "name": "Spitzer Digs Up Hidden Stars",
+    "summary": "Two rambunctious young stars are destroying their natal dust cloud with powerful jets of radiation, in an infrared image from NASA Spitzer Space Telescope. ",
+    "date_created": "2007-05-01T19:35:20Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA09338/PIA09338~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA09338/PIA09338~orig.jpg",
+    "localImage": "data/images/PIA09338~orig_60.jpg"
+  },
+  {
+    "id": "PIA17443",
+    "name": "Spitzer Spies a Comet Coma and Tail",
+    "summary": "With the help of NASA Spitzer Space Telescope, astronomers have discovered that what was thought to be a large asteroid called Don Quixote is in fact a comet.",
+    "date_created": "2013-09-10T20:13:49Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA17443/PIA17443~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA17443/PIA17443~orig.jpg",
+    "localImage": "data/images/PIA17443~orig_61.jpg"
+  },
+  {
+    "id": "PIA12164",
+    "name": "Spitzer First Warm Images",
+    "summary": "This image is one of the first to be taken during Spitzer warm mission -- a new phase that began after the telescope, which operated for more than five-and-a-half years, ran out of liquid coolant.",
+    "date_created": "2009-08-05T17:00:23Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA12164/PIA12164~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA12164/PIA12164~orig.jpg",
+    "localImage": "data/images/PIA12164~orig_62.jpg"
+  },
+  {
+    "id": "PIA09263",
+    "name": "The Seven Sisters Pose for Spitzer",
+    "summary": "The Seven Sisters, also known as the Pleiades star cluster, seem to float on a bed of feathers in a new infrared image from NASA Spitzer Space Telescope. Clouds of dust sweep around the stars, swaddling them in a cushiony veil. ",
+    "date_created": "2007-04-16T16:19:07Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA09263/PIA09263~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA09263/PIA09263~orig.jpg",
+    "localImage": "data/images/PIA09263~orig_63.jpg"
+  },
+  {
+    "id": "PIA17251",
+    "name": "Spitzer Eyes Comet ISON",
+    "summary": "These images from NASA Spitzer Space Telescope of C/2012 S1 Comet ISON were taken on June 13, when ISON was 310 million miles about 500 million kilometers from the sun.",
+    "date_created": "2013-07-23T20:16:09Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA17251/PIA17251~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA17251/PIA17251~orig.jpg",
+    "localImage": "data/images/PIA17251~orig_64.jpg"
+  },
+  {
+    "id": "PIA20069",
+    "name": "Hot N Hotter Planet Measured by Spitzer",
+    "summary": "The varying brightness of an exoplanet called 55 Cancri e is shown in this plot of infrared data captured by NASA Spitzer Space Telescope.",
+    "date_created": "2016-03-30T18:26:02Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA20069/PIA20069~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA20069/PIA20069~orig.jpg",
+    "localImage": "data/images/PIA20069~orig_65.jpg"
+  },
+  {
+    "id": "PIA20920",
+    "name": "Pandora Cluster Seen by Spitzer",
+    "summary": "This image of galaxy cluster Abell 2744, also called Pandora's Cluster, was taken by the Spitzer Space Telescope. The gravity of this galaxy cluster is strong enough that it acts as a lens to magnify images of more distant background galaxies. This technique is called gravitational lensing.  The fuzzy blobs in this Spitzer image are the massive galaxies at the core of this cluster, but astronomers will be poring over the images in search of the faint streaks of light created where the cluster magnifies a distant background galaxy.  The cluster is also being studied by NASA's Hubble Space Telescope and Chandra X-Ray Observatory in a collaboration called the Frontier Fields project.   In this image, light from Spitzer's infrared channels is colored blue at 3.6 microns and green at 4.5 microns.  http://photojournal.jpl.nasa.gov/catalog/PIA20920",
+    "date_created": "2016-09-28T17:51:51Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA20920/PIA20920~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA20920/PIA20920~orig.jpg",
+    "localImage": "data/images/PIA20920~orig_66.jpg"
+  },
+  {
+    "id": "PIA23644",
+    "name": "Spitzer Space Telescope Ready for Launch",
+    "summary": "The Spitzer Space Telescope (formerly the Space Infrared Telescope Facility or SIRTF) is readied for launch at Cape Canaveral Air Force Station, in 2003.  https://photojournal.jpl.nasa.gov/catalog/PIA23644",
+    "date_created": "2020-01-22T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA23644/PIA23644~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA23644/PIA23644~orig.jpg",
+    "localImage": "data/images/PIA23644~orig_67.jpg"
+  },
+  {
+    "id": "PIA09962",
+    "name": "Spitzer Celebrates Fourth Anniversary with Celestial Fireworks",
+    "summary": "A newly expanded image of the Helix nebula lends a festive touch to the fourth anniversary of the launch of NASA Spitzer Space Telescope",
+    "date_created": "2007-08-24T17:19:19Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA09962/PIA09962~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA09962/PIA09962~orig.jpg",
+    "localImage": "data/images/PIA09962~orig_68.jpg"
+  },
+  {
+    "id": "PIA11046",
+    "name": "Spitzer Reveals Stellar Family Tree",
+    "summary": "Generations of stars can be seen in this new infrared portrait from NASA Spitzer Space Telescope. In this wispy star-forming region, called W5, the oldest stars can be seen as blue dots in the centers of the two hollow cavities.",
+    "date_created": "2008-08-22T16:04:53Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA11046/PIA11046~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA11046/PIA11046~orig.jpg",
+    "localImage": "data/images/PIA11046~orig_69.jpg"
+  },
+  {
+    "id": "PIA11047",
+    "name": "Spitzer Reveals Stellar Family Tree",
+    "summary": "Generations of stars can be seen in this new infrared portrait from NASA Spitzer Space Telescope. In this wispy star-forming region, called W5, the oldest stars can be seen as blue dots in the centers of the two hollow cavities.",
+    "date_created": "2008-08-22T16:04:54Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA11047/PIA11047~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA11047/PIA11047~orig.jpg",
+    "localImage": "data/images/PIA11047~orig_70.jpg"
+  },
+  {
+    "id": "PIA15634",
+    "name": "Hidden Patterns of Light Revealed by Spitzer",
+    "summary": "Astronomers have uncovered patterns of light that appear to be from the first stars and galaxies that formed in the universe. The light patterns were hidden within a strip of sky observed by NASA Spitzer Space Telescope.",
+    "date_created": "2012-06-07T19:02:58Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA15634/PIA15634~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA15634/PIA15634~orig.jpg",
+    "localImage": "data/images/PIA15634~orig_71.jpg"
+  },
+  {
+    "id": "PIA17444",
+    "name": "Spitzer Trains Its Eyes on Exoplanets Artist Concept",
+    "summary": "This artist concept shows NASA Spitzer Space Telescope surrounded by examples of exoplanets the telescope has examined in over its ten years in space.",
+    "date_created": "2013-09-24T20:30:27Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA17444/PIA17444~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA17444/PIA17444~orig.jpg",
+    "localImage": "data/images/PIA17444~orig_72.jpg"
+  },
+  {
+    "id": "PIA23865",
+    "name": "Spitzer Image of Star Factory W51",
+    "summary": "The star-forming nebula W51 is one of the largest \"star factories\" in the Milky Way galaxy. Interstellar dust blocks the visible light emitted by the region, but it is revealed by NASA's Spitzer Space Telescope, which captures infrared light that can penetrate dust clouds.  https://photojournal.jpl.nasa.gov/catalog/PIA23865",
+    "date_created": "2020-08-25T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA23865/PIA23865~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA23865/PIA23865~orig.jpg",
+    "localImage": "data/images/PIA23865~orig_73.jpg"
+  },
+  {
+    "id": "PIA19872",
+    "name": "NASA Spitzer 12th Anniversary Space Calendar",
+    "summary": "NASA Spitzer Space Telescope celebrated its 12th anniversary with a new digital calendar showcasing some of the mission most notable discoveries and popular cosmic eye candy.  The digital calendar is online at http://www.jpl.nasa.gov/images/spitzer/20150820/Spitzer12thAnniversaryCalendar.pdf  The calendar follows the life of the mission, with each month highlighting top infrared images and discoveries from successive years -- everything from a dying star resembling the eye of a monster to a star-studded, swirling galaxy. The final month includes a brand new image of the glittery star-making factory known as the Monkey Head nebula.  Spitzer, which launched into space on August 25, 2003, from Cape Canaveral, Florida, is still going strong. It continues to use its ultra-sensitive infrared vision to probe asteroids, comets, exoplanets (planets outside our solar system) and some of the farthest known galaxies. Recently, Spitzer helped discover the closest known rocky exoplanet to us, named HD219134b, at 21 light-years away.  In fact, Spitzer's exoplanet studies continue to surprise the astronomy community. The telescope wasn't originally designed to study exoplanets, but as luck -- and some creative engineering -- would have it, Spitzer has turned out to be a critical tool in the field, probing the climates and compositions of these exotic worlds. This pioneering work began in 2005, when Spitzer became the first telescope to detect light from an exoplanet.  http://photojournal.jpl.nasa.gov/catalog/PIA19872",
+    "date_created": "2015-08-20T15:50:42Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA19872/PIA19872~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA19872/PIA19872~orig.jpg",
+    "localImage": "data/images/PIA19872~orig_74.jpg"
+  },
+  {
+    "id": "PIA09965",
+    "name": "Spitzer Sees Water Loud and Clear",
+    "summary": "This plot of infrared data, called a spectrum, shows the strong signature of water vapor deep within the core of an embryonic star system, called NGC 1333-IRAS 4B. The data were captured by NASA Spitzer Space Telescope.",
+    "date_created": "2007-08-29T16:54:14Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA09965/PIA09965~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA09965/PIA09965~orig.jpg",
+    "localImage": "data/images/PIA09965~orig_75.jpg"
+  },
+  {
+    "id": "PIA07899",
+    "name": "Spitzer Spies Spectacular Sombrero",
+    "summary": "NASA's Spitzer Space Telescope set its infrared eyes on one of the most famous objects in the sky, Messier 104, also called the Sombrero galaxy. In this striking infrared picture, Spitzer sees an exciting new view of a galaxy that in visible light has been likened to a \"sombrero,\" but here looks more like a \"bulls-eye.\"  Recent observations using Spitzer's infrared array camera uncovered the bright, smooth ring of dust circling the galaxy, seen in red. In visible light, because this galaxy is seen nearly edge-on, only the near rim of dust can be clearly seen in silhouette. Spitzer's full view shows the disk is warped, which is often the result of a gravitational encounter with another galaxy, and clumpy areas spotted in the far edges of the ring indicate young star-forming regions.  Spitzer's infrared view of the starlight from this galaxy, seen in blue, can pierce through obscuring murky dust that dominates in visible light. As a result, the full extent of the bulge of stars and an otherwise hidden disk of stars within the dust ring are easily seen.  The Sombrero galaxy is located some 28 million light years away. Viewed from Earth, it is just six degrees south of its equatorial plane. Spitzer detected infrared emission not only from the ring, but from the center of the galaxy too, where there is a huge black hole, believed to be a billion times more massive than our Sun.  This picture is composed of four images taken at 3.6 (blue), 4.5 (green), 5.8 (orange), and 8.0 (red) microns. The contribution from starlight (measured at 3.6 microns) has been subtracted from the 5.8 and 8-micron images to enhance the visibility of the dust features.  http://photojournal.jpl.nasa.gov/catalog/PIA07899",
+    "date_created": "2005-05-04T20:41:31Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA07899/PIA07899~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA07899/PIA07899~orig.jpg",
+    "localImage": "data/images/PIA07899~orig_76.jpg"
+  },
+  {
+    "id": "PIA16216",
+    "name": "Spitzer Sees Stray Starlight Artist Concept",
+    "summary": "This artist concepts shows new research from scientists using NASA Spitzer Space Telescope suggests that a mysterious infrared glow across our whole sky is coming from stray stars torn from galaxies.",
+    "date_created": "2012-10-24T17:00:02Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA16216/PIA16216~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA16216/PIA16216~orig.jpg",
+    "localImage": "data/images/PIA16216~orig_77.jpg"
+  },
+  {
+    "id": "PIA21910",
+    "name": "Spitzer Observes Neutron Star Collision",
+    "summary": "NASA's Spitzer Space Telescope has provisionally detected the faint afterglow of the explosive merger of two neutron stars in the galaxy NGC 4993. The event, labeled GW170817, was initially detected in gravitational waves and gamma rays. Subsequent observations by dozens of telescopes have monitored its afterglow across the entire spectrum of light. The event is located about 130 million light-years from Earth.  Spitzer's observation on September 29, 2017, came late in the game, just over 6 weeks after the event was first seen. But if this weak detection is verified, it will play an important role in helping astronomers understand how many of the heaviest elements in the periodic table are created in explosive neutron star mergers.  The left panel is a color composite of the 3.6 and 4.5 micron channels of the Spitzer IRAC instrument, rendered in cyan and red. The center panel is a median-filtered color composite showing a faint red dot at the known location of the event. The right panel shows the residual 4.5 micron data after subtracting out the light of the galaxy using an archival image that predates the event.  An annotated version is at https://photojournal.jpl.nasa.gov/catalog/PIA21910",
+    "date_created": "2017-10-16T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA21910/PIA21910~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA21910/PIA21910~orig.jpg",
+    "localImage": "data/images/PIA21910~orig_78.jpg"
+  },
+  {
+    "id": "PIA23122",
+    "name": "Spitzer Captures Messier 87",
+    "summary": "This image from NASA's Spitzer Space Telescope shows the elliptical galaxy Messier 87 (M87), the home galaxy of the supermassive black hole recently imaged by the Event Horizon Telescope (EHT). Spitzer's infrared view shows a faint trace of a jet of material spewing to the right of the galaxy - a feature that was previously one key indicator that a supermassive black hole lived at the galaxy's center.  More prominent in the image is the shockwave created by that jet. The inset in the image below shows a close-up view of the shockwave on the right side of the galaxy, as well as the shockwave from a second jet traveling to the left of the galaxy.  Located about 55 million light-years from Earth, M87 has been a subject of astronomical study for more than 100 years and has been imaged by many NASA observatories, including the Hubble Space Telescope, the Chandra X-ray Observatory and NuSTAR. In 1918, astronomer Heber Curtis first noticed \"a curious straight ray\" extending from the galaxy's center. This bright jet (which appears to extend to the right of the galaxy) is visible in multiple wavelengths of light, from radio waves through X-rays. The jet is produced by a disk of material spinning rapidly around the black hole, and spewing in opposite directions away from the galaxy. When the particles in the jet impact the interstellar medium (the sparse material filling the space between stars in M87), they create a shockwave that radiates in infrared and radio wavelengths of light, but not visible light.  The jet on the right is traveling almost directly toward Earth, and its brightness is amplified due to its high speed in our direction. But the jet's trajectory is just slightly offset from our line of sight with the galaxy, so we can still see some of the length of the jet. The shockwave begins around the point where the jet appears to curve down, highlighting the regions where the fast-moving particles are colliding with gas in the galaxy and slowing down.  There is also a second jet on the left that is moving so rapidly away from us it is rendered invisible at all wavelengths. But the shockwave it creates in the interstellar medium can still be seen here. In the Spitzer image, the shockwave is on the left side of the galaxy and looks like an inverted letter \"C.\"   Scientists are still striving for a solid theoretical understanding of how inflowing gas around black holes creates outflowing jets.  Infrared light at wavelengths of 3.6 and 4.5 microns are rendered in blue and green, showing the distribution of stars, while dust features that glow brightly at 8.0 microns are shown in red. The image was taken during Spitzer's initial \"cold\" mission.  https://photojournal.jpl.nasa.gov/catalog/PIA23122",
+    "date_created": "2019-04-25T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA23122/PIA23122~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA23122/PIA23122~orig.jpg",
+    "localImage": "data/images/PIA23122~orig_79.jpg"
+  },
+  {
+    "id": "PIA10750",
+    "name": "Spitzer Finds Clarity in the Inner Milky Way",
+    "summary": "More than 800,000 frames from NASA Spitzer Space Telescope were stitched together to create this infrared portrait of dust and stars radiating in the inner Milky Way. ",
+    "date_created": "2008-06-03T17:58:24Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA10750/PIA10750~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA10750/PIA10750~orig.jpg",
+    "localImage": "data/images/PIA10750~orig_80.jpg"
+  },
+  {
+    "id": "PIA23129",
+    "name": "NASA's Spitzer Spots a Perfectly Sideways Galaxy",
+    "summary": "Galaxy NGC 5866 lies 44 million light-years from Earth and has a diameter of roughly 60,000 light-years — a little more than half the diameter of our own Milky Way galaxy. From our viewpoint, NGC 5866 is oriented almost exactly edge-on, yielding most of its structural features invisible.  Spitzer detects infrared light, and the red color here corresponds to a wavelength typically emitted by dust. The clean edges of the dust emission from NGC 5866 indicate that there is a very flat ring or disk of dust circling the outer region of the galaxy.  Spitzer took this image during its \"cold\" mission, which ended in 2009. The colors represent three infrared wavelengths captured by the Infrared Array Camera instrument. Blue light corresponds to a wavelength of 3.6 microns, produced mainly by stars; green corresponds to 4.5 microns, and red corresponds to 8 microns.  https://photojournal.jpl.nasa.gov/catalog/PIA23129",
+    "date_created": "2019-07-31T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA23129/PIA23129~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA23129/PIA23129~orig.jpg",
+    "localImage": "data/images/PIA23129~orig_81.jpg"
+  },
+  {
+    "id": "PIA05734",
+    "name": "Spitzer Makes Invisible Visible",
+    "summary": "Hidden behind a shroud of dust in the constellation Cygnus is a stellar nursery called DR21, which is giving birth to some of the most massive stars in our galaxy. Visible light images reveal no trace of this interstellar cauldron because of heavy dust obscuration. In fact, visible light is attenuated in DR21 by a factor of more than 10,000,000,000,000,000,000,000,000,000,000,000,000,000 (ten thousand trillion heptillion).      New images from NASA's Spitzer Space Telescope allow us to peek behind the cosmic veil and pinpoint one of the most massive natal stars yet seen in our Milky Way galaxy. The never-before-seen star is 100,000 times as bright as the Sun. Also revealed for the first time is a powerful outflow of hot gas emanating from this star and bursting through a giant molecular cloud.      The colorful image is a large-scale composite mosaic assembled from data collected at a variety of different wavelengths. Views at visible wavelengths appear blue, near-infrared light is depicted as green, and mid-infrared data from the InfraRed Array Camera (IRAC) aboard NASA's Spitzer Space Telescope is portrayed as red. The result is a contrast between structures seen in visible light (blue) and those observed in the infrared (yellow and red). A quick glance shows that most of the action in this image is revealed to the unique eyes of Spitzer. The image covers an area about two times that of a full moon.  http://photojournal.jpl.nasa.gov/catalog/PIA05734",
+    "date_created": "2004-04-13T17:58:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA05734/PIA05734~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA05734/PIA05734~orig.jpg",
+    "localImage": "data/images/PIA05734~orig_82.jpg"
+  },
+  {
+    "id": "PIA15623",
+    "name": "Super Earth Reveals Itself to Spitzer Artist Animation",
+    "summary": "This artist concept depicts 55 Cancri e as it orbits its star. NASA Spitzer Space Telescope has, for the first time, captured the light emanating from a distant super Earth, a planet more massive than Earth but lighter than Neptune.",
+    "date_created": "2012-05-08T18:30:03Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA15623/PIA15623~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA15623/PIA15623~orig.jpg",
+    "localImage": "data/images/PIA15623~orig_83.jpg"
+  },
+  {
+    "id": "PIA24579",
+    "name": "Godzilla Nebula Imaged by Spitzer",
+    "summary": "This colorful image shows a nebula – a cloud of gas and dust in space – captured by NASA's now-retired Spitzer Space Telescope located is in the constellation Sagittarius, along the plane of the Milky Way, which was as part of Spitzer's GLIMPSE Survey (short for Galactic Legacy Infrared Mid-Plane Survey Extraordinaire). With a little imagination, you might be able to see the outlines of Godzilla.  Stars in the upper right (where this cosmic Godzilla's eyes and snout would be) are an unknown distance from Earth but within our galaxy. Located about 7,800 light-years from Earth, the bright region in the lower left (Godzilla's right hand) is known as W33.  When viewed in visible light, this region is almost entirely obscured by dust clouds. But infrared light (wavelengths longer than what our eyes can perceive) can penetrate the clouds, revealing hidden regions like this one.  Blue, cyan, green, and red are used to represent different wavelengths of infrared light; yellow and white are combinations of those wavelengths. Blue and cyan represent wavelengths primarily emitted by stars; dust and organic molecules called hydrocarbons appear green; and warm dust that's been heated by stars or supernovae (exploding stars) appears red.  When massive stars die and explode into supernovae, they reshape the regions around them, carving them into different shapes; they also push material together and initiate the birth of new stars that continue the cycle.  https://photojournal.jpl.nasa.gov/catalog/PIA24579",
+    "date_created": "2021-10-25T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA24579/PIA24579~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA24579/PIA24579~orig.jpg",
+    "localImage": "data/images/PIA24579~orig_84.jpg"
+  },
+  {
+    "id": "PIA23646",
+    "name": "Tarantula Nebula Spitzer 2-Color Image",
+    "summary": "This image from NASA's Spitzer Space Telescope shows the Tarantula Nebula in two wavelengths of infrared light, each represented by a different color. The red color at the heart of the nebula shows the presence of particularly hot gas emitting infrared light at a wavelength of 4.5 micrometers. The blue regions are dust composed of molecules called polycyclic aromatic hydrocarbons (PAHs), which are also found in ash from coal, wood and oil fires on Earth. Regions emitting both wavelengths appear white.  https://photojournal.jpl.nasa.gov/catalog/PIA23646",
+    "date_created": "2020-01-27T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA23646/PIA23646~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA23646/PIA23646~orig.jpg",
+    "localImage": "data/images/PIA23646~orig_85.jpg"
+  },
+  {
+    "id": "PIA10364",
+    "name": "NASA Spitzer Finds Water Vapor on Hot, Alien Planet Artist Concept",
+    "summary": "This artist impression shows a gas-giant exoplanet transiting across the face of its star. Infrared analysis by NASA Spitzer Space Telescope of this type of system provided the breakthrough. ",
+    "date_created": "2008-03-27T20:47:15Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA10364/PIA10364~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA10364/PIA10364~orig.jpg",
+    "localImage": "data/images/PIA10364~orig_86.jpg"
+  },
+  {
+    "id": "PIA11796",
+    "name": "Spitzer Space Telescope View of Galaxy Messier 101",
+    "summary": "The galaxy Messier 101 is a swirling spiral of stars, gas, and dust. Messier 101 is nearly twice as wide as our Milky Way galaxy in this image as seen by NASA Spitzer Space Telescope.",
+    "date_created": "2009-02-10T13:52:01Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA11796/PIA11796~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA11796/PIA11796~orig.jpg",
+    "localImage": "data/images/PIA11796~orig_87.jpg"
+  },
+  {
+    "id": "PIA23647",
+    "name": "Tarantula Nebula Spitzer 3-Color Image",
+    "summary": "This image from NASA's Spitzer Space Telescope shows the Tarantula Nebula in three wavelengths of infrared light, each represented by a different color. The magenta-colored regions are dust composed of molecules called polycyclic aromatic hydrocarbons (PAHs), which are also found in ash from coal, wood and oil fires on Earth. PAHs emit in multiple wavelengths. The PAHs emit in multiple wavelengths, so the magenta color is a combination of red (corresponding to an infrared wavelength of 8 micrometers) and blue (3.6 micrometers). The green color in this image shows the presence of particularly hot gas emitting infrared light at a wavelength of 4.5 micrometers. The stars in the image are mostly a combination of green and blue. White hues indicate regions that radiate in all three wavelengths.  https://photojournal.jpl.nasa.gov/catalog/PIA23647",
+    "date_created": "2020-01-27T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA23647/PIA23647~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA23647/PIA23647~orig.jpg",
+    "localImage": "data/images/PIA23647~orig_88.jpg"
+  },
+  {
+    "id": "PIA22564",
+    "name": "Spitzer Spies Supernova Remnant HBH 3",
+    "summary": "Thin, red veins of energized gas mark the location of the supernova remnant HBH 3 in this image from NASA's Spitzer Space Telescope. The puffy, white feature in the image is a portion of the star forming regions W3, W4 and W5. Infrared wavelengths of 3.6 microns have been mapped to blue, and 4.5 microns to red. The white color of the star-forming region is a combination of both wavelengths, while the HBH 3 filaments radiate only at the longer 4.5 micron wavelength.  https://photojournal.jpl.nasa.gov/catalog/PIA22564",
+    "date_created": "2018-08-02T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA22564/PIA22564~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA22564/PIA22564~orig.jpg",
+    "localImage": "data/images/PIA22564~orig_89.jpg"
+  },
+  {
+    "id": "PIA23126",
+    "name": "Cepheus C and Cepheus B Region by Spitzer (Two-Instrument)",
+    "summary": "This image was compiled using data from NASA's Spitzer Space Telescope using the Infrared Array Camera (IRAC) and the Multiband Imaging Photometer (MIPS) during Spitzer's \"cold\" mission, before the spacecraft's liquid helium coolant ran out in 2009. The colors correspond with IRAC wavelengths of 3.6 microns (blue), 4.5 microns (cyan) and 8 microns (green), and 24 microns (red) from the MIPS instrument.  The green-and-orange delta filling most of this image is a nebula, or a cloud of gas and dust. This region formed from a much larger cloud of gas and dust that has been carved away by radiation from stars.  The bright region at the tip of the nebula is dust that has been heated by the stars' radiation, which creates the surrounding red glow. The white color is the combination of four colors (blue, green, orange and red), each representing a different wavelength of infrared light, which is invisible to human eyes.  The massive stars illuminating this region belong to a star cluster that extends above the white spot.  On the left side of this image, a dark filament runs horizontally through the green cloud. A smattering of baby stars (the red and yellow dots) appear inside it. Known as Cepheus C, the area is a particularly dense concentration of gas and dust where infant stars form. This region is called Cepheus C because it lies in the constellation Cepheus, which can be found near the constellation Cassiopeia. Cepheus-C is about 6 light-years long, and lies about 40 light-years from the bright spot at the tip of the nebula.  The small, red hourglass shape just below Cepheus C is V374 Ceph. Astronomers studying this massive star have speculated that it might be surrounded by a nearly edge-on disk of dark, dusty material. The dark cones extending to the right and left of the star are a shadow of that disk.  The smaller nebula on the right side of the image includes a blue star crowned by a small, red arc of light. This \"runaway star\" is plowing through the gas and dust at a rapid clip, creating a shock wave or \"bow shock\" in front of itself.  https://photojournal.jpl.nasa.gov/catalog/PIA23126",
+    "date_created": "2019-05-30T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA23126/PIA23126~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA23126/PIA23126~orig.jpg",
+    "localImage": "data/images/PIA23126~orig_90.jpg"
+  },
+  {
+    "id": "PIA23127",
+    "name": "Cepheus C and Cepheus B Region by Spitzer (One-Instrument)",
+    "summary": "This image shows data from NASA's Spitzer Space Telescope, from the IRAC instrument, with colors corresponding to wavelengths of 3.6, 4.5, 5.8 and 8.0 µm (shown as blue, green, orange and red).  The grand red delta filling most of the image is a far-away nebula, or a cloud of gas and dust. A second nebula is located in the lower right portion of the image.  Within the first nebula, on the left side of this image, a dark filament runs horizontally through the green cloud. A smattering of baby stars (the red and yellow dots) appear inside it. Known as Cepheus C, the area is a particularly dense concentration of gas and dust where infant stars form. This region is called Cepheus C because it lies in the constellation Cepheus, which can be found near the constellation Cassiopeia. Cepheus-C is about 6 light years long, and lies about 40 light-years from the bright spot at the tip of the nebula.  Two features identified in the annotated image are visible only in the multi-instrument version of the image, found here. The first is V374 Ceph in the larger nebula. The second is the \"runaway star\" in the smaller nebula.  A second star cluster is located just above the second large nebula on the right side of the image. Known as Cepheus B, the cluster sits within a few thousand light-years of our Sun. A study of this region using Spitzer found that the dramatic collection is about 4 million to 5 million years old â€” slightly older than those in Cepheus C.  Also found in the second nebula is a small cluster of newborn stars that illuminates the dense cloud of gas and dust where they formed. It appears as a bright teal splash.  https://photojournal.jpl.nasa.gov/catalog/PIA23127",
+    "date_created": "2019-05-30T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA23127/PIA23127~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA23127/PIA23127~orig.jpg",
+    "localImage": "data/images/PIA23127~orig_91.jpg"
+  },
+  {
+    "id": "PIA08007",
+    "name": "Galaxy NGC 4579",
+    "summary": "Galaxy NGC 4579 was captured by the Spitzer Infrared Nearby Galaxy Survey, or Sings, Legacy project using the Spitzer Space Telescope infrared array camera. I",
+    "date_created": "2006-02-15T00:51:52Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA08007/PIA08007~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA08007/PIA08007~orig.jpg",
+    "localImage": "data/images/PIA08007~orig_92.jpg"
+  },
+  {
+    "id": "PIA05989",
+    "name": "Stellar Jewels Shine in New Spitzer Image",
+    "summary": "One of the most prolific birthing grounds in our Milky Way galaxy, a nebula called RCW 49, is exposed in superb detail for the first time in this new image from NASA's Spitzer Space Telescope. Located 13,700 light-years away in the southern constellation Centaurus, RCW 49 is a dark and dusty stellar nursery that houses more than 2,200 stars.      Because many of the stars in RCW 49 are deeply embedded in plumes of dust, they cannot be seen at visible wavelengths. When viewed with Spitzer's infrared eyes, however, RCW 49 becomes transparent. Like cracking open a quartz rock to discover its jewels inside, the nebula's newborn stars have been dramatically exposed.      This image taken by Spitzer's infrared array camera highlights the nebula's older stars (blue stars in center pocket), its gas filaments (green) and dusty tendrils (pink). Speckled throughout the murky clouds are more than 300 never-before-seen newborn stars.      Astronomers are interested in further studying these newfound proto-stars because they offer a fresh look at star formation in our own galaxy.      This image was taken on Dec. 23, 2003, and is composed of photographs obtained at four wavelengths: 3.6 microns (blue), 4.5 microns (green), 5.8 microns (orange) and 8 microns (red).  http://photojournal.jpl.nasa.gov/catalog/PIA05989",
+    "date_created": "2004-05-27T16:58:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA05989/PIA05989~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA05989/PIA05989~orig.jpg",
+    "localImage": "data/images/PIA05989~orig_93.jpg"
+  },
+  {
+    "id": "PIA23402",
+    "name": "Spitzer Spots Bubbles and Bow Shocks",
+    "summary": "This infrared image from NASA's Spitzer Space Telescope shows a cloud of gas and dust full of bubbles, which are inflated by wind and radiation from massive young stars. Each bubble is filled with hundreds to thousands of stars, which form from dense clouds of gas and dust.  The bubbles are estimated to be 10 to 30 light-years across, based on what astronomers know about them and other cosmic bubbles. However, determining the exact sizes of individual bubbles can be difficult, because their distance from Earth is challenging to measure and objects appear smaller the farther away they are.  Flows of particles called stellar winds emitted by the stars, as well as the pressure of the light those winds produce, can push the surrounding material outward, sometimes creating a distinct perimeter.  In Figure 1, the yellow circles and ovals outline more than 30 bubbles.  This active region of star formation is located inside the Milky Way galaxy, in the constellation Aquila (also known as the Eagle). Black veins running throughout the cloud are regions of especially dense cold dust and gas where even more new stars are likely to form.  The colors in this image represent different wavelengths of infrared light. Blue represents a wavelength of light primarily emitted by stars; dust and organic molecules called hydrocarbons appear green, and warm dust that's been heated by stars appears red.  Also visible are four bow shocks — red arcs of warm dust formed as winds from fast-moving stars push aside dust grains scattered sparsely through most of the nebula. The locations of the bow shocks are indicated by squares in Figure 1. Figure 2 shows zoomed-in views of the four bow shocks.  The bubbles and bow shocks in this image were identified as part of The Milky Way Project, a citizen science initiative on Zooniverse.org that seeks to map star formation throughout the galaxy. Participating citizen scientists looked through images from Spitzer's public data archive and identified as many bubbles as they could. More than 78,000 unique user accounts contributed. Astronomers running this program recently published a catalog of the bubble candidates that multiple citizen scientists had identified. The full Milky Way Project catalogs, which list a total of 2,600 bubbles and 599 bow shocks, are described in a paper published recently in Monthly Notices of the Royal Astronomical Society.  Animation available at https://photojournal.jpl.nasa.gov/catalog/PIA23402",
+    "date_created": "2019-09-30T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA23402/PIA23402~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA23402/PIA23402~orig.jpg",
+    "localImage": "data/images/PIA23402~orig_94.jpg"
+  },
+  {
+    "id": "PIA23684",
+    "name": "Spitzer Brown Dwarf Wind (Artist's Concept)",
+    "summary": "This artist's concept shows a brown dwarf, an object that is at least 13 times the mass of Jupiter but not massive enough to begin nuclear fusion in its core, which is the defining characteristic of a star. Scientist using NASA's Spitzer Space Telescope recently made the first ever direct measurement of wind on a brown dwarf.  https://photojournal.jpl.nasa.gov/catalog/PIA23684",
+    "date_created": "2020-04-09T00:00:00Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA23684/PIA23684~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA23684/PIA23684~orig.jpg",
+    "localImage": "data/images/PIA23684~orig_95.jpg"
+  },
+  {
+    "id": "PIA09925",
+    "name": "Coronet: A Star-Formation Neighbor",
+    "summary": "This composite image shows the Coronet in X-rays from Chandra and infrared from NASA Spitzer Space Telescope orange, green, and cyan. The Spitzer data show young stars plus diffuse emission from dust.",
+    "date_created": "2007-09-13T15:46:23Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA09925/PIA09925~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA09925/PIA09925~orig.jpg",
+    "localImage": "data/images/PIA09925~orig_96.jpg"
+  },
+  {
+    "id": "PIA13929",
+    "name": "Undercover Jet Exposed",
+    "summary": "This image layout shows two views of the same baby star from NASA Spitzer Space Telescope. Spitzer view shows that this star has a second, identical jet shooting off in the opposite direction of the first.",
+    "date_created": "2011-04-04T22:30:01Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA13929/PIA13929~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA13929/PIA13929~orig.jpg",
+    "localImage": "data/images/PIA13929~orig_97.jpg"
+  },
+  {
+    "id": "PIA13901",
+    "name": "Sunflower Galaxy Glows with Infrared Light",
+    "summary": "This image from NASA Spitzer Space Telescope shows infrared light from the Sunflower galaxy, otherwise known as Messier 63. Spitzer view highlights the galaxy dusty spiral arms.",
+    "date_created": "2011-03-03T23:08:50Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA13901/PIA13901~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA13901/PIA13901~orig.jpg",
+    "localImage": "data/images/PIA13901~orig_98.jpg"
+  },
+  {
+    "id": "PIA11390",
+    "name": "Light from Red-Hot Planet",
+    "summary": "This figure charts 30 hours of observations taken by NASA Spitzer Space Telescope of a strongly irradiated exoplanet an planet orbiting a star beyond our own. Spitzer measured changes in the planet heat, or infrared light.",
+    "date_created": "2009-01-28T16:59:01Z",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA11390/PIA11390~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA11390/PIA11390~orig.jpg",
+    "localImage": "data/images/PIA11390~orig_99.jpg"
+  }
+]

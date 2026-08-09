@@ -451,8 +451,7 @@ const translationTargetLocales = {
   pl: 'pl'
 };
 
-const GALAXY_PAGE_SIZE = 6;
-const GALAXY_DATABASE = [
+let GALAXY_DATABASE = [
   {
     id: 'andromeda',
     name: 'Andromeda Galaxy',
@@ -611,6 +610,91 @@ const GALAXY_DATABASE = [
   }
 ];
 
+// Allow augmenting / filtering the galaxy database from an external JSON file.
+const EXTERNAL_GALAXY_DB_PATH = 'data/galaxies.json';
+let ORIGINAL_GALAXY_DATABASE = GALAXY_DATABASE.slice();
+
+function redshiftToAgeGyr(z, options = {}) {
+  // Approximate Lambda-CDM with H0=70 km/s/Mpc, Om=0.3, Ol=0.7
+  // Numerical integration to estimate lookback time and galaxy age.
+  if (typeof z !== 'number' || Number.isNaN(z)) return null;
+  const H0 = 70; // km/s/Mpc
+  const Om = 0.3;
+  const Ol = 0.7;
+  const Mpc_m = 3.085677581e22; // meters
+  const H0_s = (H0 * 1000) / Mpc_m; // s^-1
+  const secondsPerGyr = 3.15576e16; // seconds in a gigayear
+  const tH0_Gyr = 1 / H0_s / secondsPerGyr; // Hubble time in Gyr
+
+  function E(zp) {
+    return Math.sqrt(Om * Math.pow(1 + zp, 3) + Ol);
+  }
+
+  const steps = options.steps || 1000;
+  let sum = 0;
+  const dz = z / steps;
+  for (let i = 0; i <= steps; i++) {
+    const zp = i * dz;
+    const weight = i === 0 || i === steps ? 0.5 : 1;
+    sum += weight * (1 / ((1 + zp) * E(zp)));
+  }
+  const integral = sum * dz;
+  const lookbackGyr = tH0_Gyr * integral;
+  const ageUniverseGyr = 13.8; // approximate
+  const ageGyr = Math.max(0, ageUniverseGyr - lookbackGyr);
+  return ageGyr;
+}
+
+async function loadExternalGalaxyDatabase() {
+  try {
+    const resp = await fetch(EXTERNAL_GALAXY_DB_PATH, { cache: 'no-store' });
+    if (!resp.ok) {
+      return;
+    }
+
+    const items = await resp.json();
+    if (!Array.isArray(items)) return;
+
+    for (const entry of items) {
+      if (!entry || !entry.id) continue;
+      const exists = GALAXY_DATABASE.find((g) => g.id === entry.id);
+      if (exists) continue;
+
+      const copy = { ...entry };
+      if ((!copy.ageGyr || copy.ageGyr === null) && copy.redshift != null) {
+        const z = Number(copy.redshift);
+        const age = redshiftToAgeGyr(z);
+        if (age != null) copy.ageGyr = Number(age.toFixed(2));
+      }
+
+      // Ensure required fields
+      copy.name = copy.name || copy.id;
+      copy.imageQuery = copy.imageQuery || copy.name;
+      copy.summary = copy.summary || '';
+
+      GALAXY_DATABASE.push(copy);
+    }
+
+    ORIGINAL_GALAXY_DATABASE = GALAXY_DATABASE.slice();
+  } catch (e) {
+    // ignore
+  }
+}
+
+function applyAgeFilter(minAge, maxAge) {
+  if (minAge == null && maxAge == null) {
+    GALAXY_DATABASE = ORIGINAL_GALAXY_DATABASE.slice();
+    return;
+  }
+
+  GALAXY_DATABASE = ORIGINAL_GALAXY_DATABASE.filter((g) => {
+    if (typeof g.ageGyr !== 'number') return false;
+    if (minAge != null && g.ageGyr < minAge) return false;
+    if (maxAge != null && g.ageGyr > maxAge) return false;
+    return true;
+  });
+}
+
 const form = document.getElementById('controls');
 const languageSelect = document.getElementById('language-select');
 const endDateInput = document.getElementById('end-date');
@@ -626,8 +710,10 @@ const modalTitle = document.getElementById('modal-title');
 const modalDate = document.getElementById('modal-date');
 const modalExplanation = document.getElementById('modal-explanation');
 const modalLink = document.getElementById('modal-link');
-const galaxySeedSelect = document.getElementById('galaxy-seed');
-const galaxyNextButton = document.getElementById('galaxy-next');
+const galaxyAgeMinInput = document.getElementById('age-min');
+const galaxyAgeMaxInput = document.getElementById('age-max');
+const galaxyAgeApplyButton = document.getElementById('age-apply');
+const galaxyAgeResetButton = document.getElementById('age-reset');
 const galaxyHelp = document.getElementById('galaxy-help');
 const galaxySummary = document.getElementById('galaxy-summary');
 const galaxyStatus = document.getElementById('galaxy-status');
@@ -650,9 +736,6 @@ let activeModalSourceItem = null;
 
 let lastTrigger = null;
 let galleryRenderToken = 0;
-let currentGalaxySeedId = GALAXY_DATABASE[0]?.id || 'andromeda';
-let currentGalaxyPageIndex = 0;
-let currentGalaxyMatches = [];
 let galaxyRenderToken = 0;
 
 const galaxyImageCache = new Map();
@@ -1204,10 +1287,6 @@ async function loadGallery(endDateString) {
   }
 }
 
-function getGalaxyById(id) {
-  return GALAXY_DATABASE.find((galaxy) => galaxy.id === id) || GALAXY_DATABASE[0];
-}
-
 function formatGalaxyAge(ageGyr) {
   return `${ageGyr.toFixed(1)} billion years`;
 }
@@ -1220,65 +1299,20 @@ function formatRedshift(value) {
   return value === 0 ? 'z = 0' : `z = ${value.toFixed(4)}`;
 }
 
-function formatSimilarityScore(score) {
-  const normalized = Math.max(45, Math.min(99, Math.round(100 - score * 5)));
-  return `${normalized}% match`;
-}
-
-function logDifference(left, right) {
-  if (left <= 0 || right <= 0) {
-    return Math.abs(left - right);
-  }
-
-  return Math.abs(Math.log10(left) - Math.log10(right));
-}
-
-function scoreGalaxySimilarity(seed, candidate) {
-  const morphologyBonus = seed.morphology === candidate.morphology ? 0 : 3;
-  const environmentBonus = seed.environment === candidate.environment ? 0 : 1.5;
-
-  return (
-    Math.abs(seed.ageGyr - candidate.ageGyr) * 1.7 +
-    logDifference(seed.blackHoleMassSolar, candidate.blackHoleMassSolar) * 6 +
-    logDifference(seed.stellarMassSolar, candidate.stellarMassSolar) * 2.2 +
-    Math.abs(seed.starFormationRate - candidate.starFormationRate) * 2 +
-    Math.abs(seed.redshift - candidate.redshift) * 40 +
-    morphologyBonus +
-    environmentBonus
-  );
-}
-
-function getSimilarGalaxies(seed) {
-  return GALAXY_DATABASE.filter((galaxy) => galaxy.id !== seed.id)
-    .map((galaxy) => ({
-      galaxy,
-      score: scoreGalaxySimilarity(seed, galaxy)
-    }))
-    .sort((left, right) => left.score - right.score);
-}
-
 function setGalaxyLoading(isLoading) {
   galaxyLoading.hidden = !isLoading;
   galaxyAtlas.setAttribute('aria-busy', String(isLoading));
 }
 
-function populateGalaxySeedOptions() {
-  const fragment = document.createDocumentFragment();
-
-  for (const galaxy of GALAXY_DATABASE) {
-    const option = document.createElement('option');
-    option.value = galaxy.id;
-    option.textContent = galaxy.name;
-    fragment.append(option);
-  }
-
-  galaxySeedSelect.replaceChildren(fragment);
-  galaxySeedSelect.value = currentGalaxySeedId;
-}
-
 async function fetchGalaxyImage(galaxy) {
   if (galaxyImageCache.has(galaxy.imageQuery)) {
     return galaxyImageCache.get(galaxy.imageQuery);
+  }
+  // If the galaxy entry already provides an image URL (from external DB), use it.
+  if (galaxy.imageUrl) {
+    const provided = Promise.resolve({ imageUrl: galaxy.localImage || galaxy.imageUrl, sourceUrl: galaxy.sourceUrl || galaxy.imageUrl });
+    galaxyImageCache.set(galaxy.imageQuery, provided);
+    return provided;
   }
 
   const request = (async () => {
@@ -1329,7 +1363,7 @@ function createGalaxyPlaceholder(galaxy) {
   return placeholder;
 }
 
-function createGalaxyCard(galaxy, score) {
+function createGalaxyCard(galaxy) {
   const article = document.createElement('article');
   article.className = 'gallery-item galaxy-card';
 
@@ -1344,7 +1378,7 @@ function createGalaxyCard(galaxy, score) {
   const placeholder = createGalaxyPlaceholder(galaxy);
   const badge = document.createElement('span');
   badge.className = 'galaxy-score';
-  badge.textContent = formatSimilarityScore(score);
+  badge.textContent = formatGalaxyAge(galaxy.ageGyr);
   media.append(placeholder, badge);
 
   const body = document.createElement('div');
@@ -1406,14 +1440,71 @@ function renderGalaxyFacts(galaxy) {
   );
 }
 
-function updateGalaxySummary(seed, totalMatches) {
-  galaxySummary.textContent = `Seed: ${seed.name}. The atlas compares age, black hole mass, star formation rate, stellar mass, morphology, and redshift.`;
-  const totalPages = Math.max(1, Math.ceil(totalMatches / GALAXY_PAGE_SIZE));
-  const pageLabel = `${currentGalaxyPageIndex + 1}/${totalPages}`;
-  const startNumber = Math.min(currentGalaxyPageIndex * GALAXY_PAGE_SIZE + 1, totalMatches);
-  const endNumber = Math.min((currentGalaxyPageIndex + 1) * GALAXY_PAGE_SIZE, totalMatches);
-  galaxyStatus.textContent = `${startNumber}-${endNumber} of ${totalMatches} similar galaxies • page ${pageLabel}`;
-  galaxyNextButton.hidden = totalMatches <= GALAXY_PAGE_SIZE;
+function parseGalaxyAgeBound(value) {
+  if (value == null || value === '') {
+    return null;
+  }
+
+  const parsed = Number.parseFloat(value);
+  return Number.isFinite(parsed) ? parsed : null;
+}
+
+function getAgeFilterBounds() {
+  let minAge = parseGalaxyAgeBound(galaxyAgeMinInput?.value);
+  let maxAge = parseGalaxyAgeBound(galaxyAgeMaxInput?.value);
+
+  if (minAge != null && maxAge != null && minAge > maxAge) {
+    [minAge, maxAge] = [maxAge, minAge];
+  }
+
+  return { minAge, maxAge };
+}
+
+function getFilteredGalaxies() {
+  const { minAge, maxAge } = getAgeFilterBounds();
+
+  return GALAXY_DATABASE
+    .filter((galaxy) => {
+      if (typeof galaxy.ageGyr !== 'number') {
+        return false;
+      }
+
+      if (minAge != null && galaxy.ageGyr < minAge) {
+        return false;
+      }
+
+      if (maxAge != null && galaxy.ageGyr > maxAge) {
+        return false;
+      }
+
+      return true;
+    })
+    .slice()
+    .sort((left, right) => {
+      if (left.ageGyr !== right.ageGyr) {
+        return left.ageGyr - right.ageGyr;
+      }
+
+      return left.name.localeCompare(right.name);
+    });
+}
+
+function updateGalaxySummary(totalMatches) {
+  const { minAge, maxAge } = getAgeFilterBounds();
+  const parts = [];
+
+  if (minAge != null && maxAge != null) {
+    parts.push(`Age range: ${minAge.toFixed(1)}-${maxAge.toFixed(1)} Gyr`);
+  } else if (minAge != null) {
+    parts.push(`Age ${minAge.toFixed(1)} Gyr and older`);
+  } else if (maxAge != null) {
+    parts.push(`Age ${maxAge.toFixed(1)} Gyr and younger`);
+  } else {
+    parts.push('All galaxies sorted by age');
+  }
+
+  galaxySummary.textContent = `${parts.join(' • ')}.`;
+  galaxyStatus.textContent = `${totalMatches} galaxies match the current age filter.`;
 }
 
 function openGalaxyModal(galaxy, trigger) {
@@ -1469,38 +1560,24 @@ function closeGalaxyModal() {
 }
 
 async function renderGalaxyAtlas() {
-  const seed = getGalaxyById(currentGalaxySeedId);
-  const matches = getSimilarGalaxies(seed);
   const token = ++galaxyRenderToken;
 
-  currentGalaxyMatches = matches;
-  currentGalaxySeedId = seed.id;
-  galaxySeedSelect.value = seed.id;
-
-  const totalPages = Math.max(1, Math.ceil(matches.length / GALAXY_PAGE_SIZE));
-  if (currentGalaxyPageIndex >= totalPages) {
-    currentGalaxyPageIndex = 0;
-  }
-
   setGalaxyLoading(true);
-  updateGalaxySummary(seed, matches.length);
+  const matches = getFilteredGalaxies();
+  updateGalaxySummary(matches.length);
 
-  const startIndex = currentGalaxyPageIndex * GALAXY_PAGE_SIZE;
-  const visibleMatches = matches.slice(startIndex, startIndex + GALAXY_PAGE_SIZE);
-  const cards = visibleMatches.map(({ galaxy, score }) => createGalaxyCard(galaxy, score));
+  const cards = matches.map((galaxy) => createGalaxyCard(galaxy));
   galaxyAtlas.replaceChildren(...cards);
 
-  await Promise.all(cards.map((card, index) => hydrateGalaxyCard(card, visibleMatches[index].galaxy, token)));
+  await Promise.all(cards.map((card, index) => hydrateGalaxyCard(card, matches[index], token)));
 
   if (token === galaxyRenderToken) {
     setGalaxyLoading(false);
-    updateGalaxySummary(seed, matches.length);
+    updateGalaxySummary(matches.length);
   }
 }
 
 function initializeGalaxyAtlas() {
-  populateGalaxySeedOptions();
-  galaxyHelp.textContent = galaxyHelp.textContent;
   renderGalaxyAtlas();
 }
 
@@ -1523,21 +1600,28 @@ modal.addEventListener('click', (event) => {
   }
 });
 
-galaxySeedSelect.addEventListener('change', (event) => {
-  const target = event.target;
-  if (target instanceof HTMLSelectElement) {
-    currentGalaxySeedId = target.value;
-    currentGalaxyPageIndex = 0;
-    renderGalaxyAtlas();
-  }
+galaxyAgeApplyButton?.addEventListener('click', () => {
+  renderGalaxyAtlas();
 });
 
-galaxyNextButton.addEventListener('click', () => {
-  const totalPages = Math.max(1, Math.ceil(currentGalaxyMatches.length / GALAXY_PAGE_SIZE));
-  if (totalPages > 1) {
-    currentGalaxyPageIndex = (currentGalaxyPageIndex + 1) % totalPages;
-    renderGalaxyAtlas();
+galaxyAgeMinInput?.addEventListener('input', () => {
+  renderGalaxyAtlas();
+});
+
+galaxyAgeMaxInput?.addEventListener('input', () => {
+  renderGalaxyAtlas();
+});
+
+galaxyAgeResetButton?.addEventListener('click', () => {
+  if (galaxyAgeMinInput) {
+    galaxyAgeMinInput.value = '';
   }
+
+  if (galaxyAgeMaxInput) {
+    galaxyAgeMaxInput.value = '';
+  }
+
+  renderGalaxyAtlas();
 });
 
 galaxyModal.addEventListener('click', (event) => {
@@ -1557,7 +1641,13 @@ document.addEventListener('keydown', (event) => {
   }
 });
 
-applyLocale(initialLocale);
-clampEndDate();
-loadGallery(endDateInput.value);
-initializeGalaxyAtlas();
+(async function boot() {
+  await applyLocale(initialLocale);
+  clampEndDate();
+
+  // Try to load external galaxy records (data/galaxies.json) and merge.
+  await loadExternalGalaxyDatabase();
+
+  loadGallery(endDateInput.value);
+  initializeGalaxyAtlas();
+})();

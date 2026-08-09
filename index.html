@@ -87,18 +87,21 @@
         <div class="section-heading galaxy-heading">
           <div>
             <p class="section-label">Galaxy Atlas</p>
-            <h2 id="galaxy-title">Similar galaxies database</h2>
+              <h2 id="galaxy-title">Galaxies by age</h2>
           </div>
           <div class="atlas-controls">
-            <label for="galaxy-seed">Seed galaxy</label>
-            <select id="galaxy-seed" name="galaxy-seed"></select>
-            <button id="galaxy-next" class="atlas-button" type="button" hidden>Show next 6</button>
+              <div class="age-filters" style="display:inline-flex;gap:8px;align-items:center;margin-left:12px;">
+                <label for="age-min">Age (Gyr)</label>
+                <input id="age-min" type="number" min="0" max="20" step="0.1" placeholder="min" style="width:72px" />
+                <input id="age-max" type="number" min="0" max="20" step="0.1" placeholder="max" style="width:72px" />
+                <button id="age-apply" class="atlas-button" type="button">Apply</button>
+                <button id="age-reset" class="atlas-button" type="button">Reset</button>
+              </div>
           </div>
         </div>
 
         <p class="helper-text" id="galaxy-help">
-          Estimated age is merged with a NASA image search result and ranked by age,
-          central black hole mass, star formation rate, stellar mass, morphology, and redshift.
+          Filter galaxies by age in billions of years, then view every matching galaxy sorted from youngest to oldest.
         </p>
 
         <div class="atlas-summary">
@@ -108,7 +111,7 @@
 
         <div id="galaxy-loading" class="loading" hidden aria-live="polite" aria-busy="true">
           <span class="spinner" aria-hidden="true"></span>
-          <p>Loading NASA galaxy matches...</p>
+          <p>Loading galaxies in the selected age range...</p>
         </div>
 
         <div id="galaxy-atlas" class="gallery similar-gallery" aria-live="polite"></div>
