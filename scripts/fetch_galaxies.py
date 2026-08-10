@@ -27,6 +27,7 @@ BASE_SEARCH = 'https://images-api.nasa.gov/search'
 ASSET_ENDPOINT = 'https://images-api.nasa.gov/asset/'
 APOD_API = 'https://api.nasa.gov/planetary/apod'
 APOD_ARCHIVE = 'https://apod.nasa.gov/apod/archivepix.html'
+APOD_ARCHIVE_FULL = 'https://apod.nasa.gov/apod/archivepixFull.html'
 APOD_BASE = 'https://apod.nasa.gov/apod/'
 APOD_START_DATE = date(1995, 6, 24)
 DEFAULT_QUERIES = [
@@ -197,8 +198,8 @@ def fetch_apod_range(start_date, end_date):
         return data if isinstance(data, list) else [data]
 
 
-def fetch_apod_archive():
-    req = Request(APOD_ARCHIVE, headers={'User-Agent': 'fetch_galaxies/1.0'})
+def fetch_apod_archive(url=APOD_ARCHIVE):
+    req = Request(url, headers={'User-Agent': 'fetch_galaxies/1.0'})
     with urlopen(req, timeout=60) as resp:
         return resp.read().decode('utf-8', 'ignore')
 
@@ -256,6 +257,72 @@ def fetch_apod_page(href):
     with urlopen(req, timeout=45) as resp:
         return resp.read().decode('utf-8', 'ignore')
 
+
+def add_entry(results, seen, entry):
+    key = entry_key(entry)
+    if not key or key in seen:
+        return False
+
+    seen.add(key)
+    results.append(entry)
+    return True
+
+
+def harvest_apod_galaxies(results, seen, limit):
+    try:
+        archive_html = fetch_apod_archive(APOD_ARCHIVE)
+        archive_html_full = fetch_apod_archive(APOD_ARCHIVE_FULL)
+        apod_entries = extract_apod_entries(archive_html) + extract_apod_entries(archive_html_full)
+    except Exception as e:
+        print('APOD archive failed:', e, file=sys.stderr)
+        return
+
+    seen_hrefs = set()
+    for apod_entry in apod_entries:
+        if len(results) >= limit:
+            return
+
+        href = apod_entry['href']
+        if href in seen_hrefs:
+            continue
+        seen_hrefs.add(href)
+
+        title = apod_entry['title']
+        if not is_galaxy_record(title, '', []):
+            continue
+
+        try:
+            page_html = fetch_apod_page(href)
+        except Exception as e:
+            print('APOD page failed:', href, e, file=sys.stderr)
+            continue
+
+        image_url, desc, keywords = extract_apod_media_and_text(page_html)
+        if not image_url or not desc:
+            continue
+
+        if not is_galaxy_record(title, desc, keywords):
+            continue
+
+        redshift = parse_redshift(desc)
+        entry = {
+            'id': f"apod-{apod_entry['date']}",
+            'name': title,
+            'summary': desc,
+            'date_created': apod_entry['date'],
+            'keywords': keywords,
+            'sourceQuery': 'apod archive galaxy titles',
+            'dataset': 'nasa-apod-galaxy-archive',
+            'redshift': redshift,
+            'imageUrl': image_url,
+            'sourceUrl': image_url
+        }
+
+        if redshift is not None:
+            entry['ageGyr'] = redshift_to_age_gyr(redshift)
+
+        add_entry(results, seen, entry)
+
 def main():
     p = argparse.ArgumentParser()
     p.add_argument(
@@ -284,6 +351,8 @@ def main():
         key = entry_key(entry)
         if key:
             seen.add(key)
+
+    harvest_apod_galaxies(results, seen, args.limit)
 
     queries = args.queries or DEFAULT_QUERIES
     pages_scanned = 0
@@ -359,65 +428,7 @@ def main():
                 if redshift is not None:
                     entry['ageGyr'] = redshift_to_age_gyr(redshift)
 
-                key = entry_key(entry)
-                if not key or key in seen:
-                    continue
-
-                seen.add(key)
-                results.append(entry)
-
-    if len(results) < args.limit:
-        try:
-            archive_html = fetch_apod_archive()
-            apod_entries = extract_apod_entries(archive_html)
-        except Exception as e:
-            print('APOD archive failed:', e, file=sys.stderr)
-            apod_entries = []
-
-        for apod_entry in apod_entries:
-            if len(results) >= args.limit:
-                break
-
-            title = apod_entry['title']
-            if not is_galaxy_record(title, '', []):
-                continue
-
-            try:
-                page_html = fetch_apod_page(apod_entry['href'])
-            except Exception as e:
-                print('APOD page failed:', apod_entry['href'], e, file=sys.stderr)
-                continue
-
-            image_url, desc, keywords = extract_apod_media_and_text(page_html)
-            if not image_url or not desc:
-                continue
-
-            if not is_galaxy_record(title, desc, keywords):
-                continue
-
-            redshift = parse_redshift(desc)
-            entry = {
-                'id': f"apod-{apod_entry['date']}",
-                'name': title,
-                'summary': desc,
-                'date_created': apod_entry['date'],
-                'keywords': keywords,
-                'sourceQuery': 'apod archive galaxy titles',
-                'dataset': 'nasa-apod-galaxy-archive',
-                'redshift': redshift,
-                'imageUrl': image_url,
-                'sourceUrl': image_url
-            }
-
-            if redshift is not None:
-                entry['ageGyr'] = redshift_to_age_gyr(redshift)
-
-            key = entry_key(entry)
-            if not key or key in seen:
-                continue
-
-            seen.add(key)
-            results.append(entry)
+                add_entry(results, seen, entry)
 
     merged = existing_entries[:]
     merged_seen = set()
