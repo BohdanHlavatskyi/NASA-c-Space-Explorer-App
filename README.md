@@ -3,7 +3,7 @@ This is my vision for the app that may be used by NASA for promotions and public
 
 ## NASA APOD Explorer
 
-This project is a static, accessible APOD gallery that fetches 9 consecutive days of NASA Astronomy Picture of the Day data, shows an image/video gallery, and opens a modal with full details.
+This project is a static, accessible APOD gallery that loads recent NASA Astronomy Picture of the Day entries from a locally cached archive, shows an image/video gallery, and opens a modal with full details.
 
 ### Galaxy database
 ----------------
@@ -40,9 +40,15 @@ python3 -m http.server 8000
 
 Then open `http://localhost:8000` in your browser.
 
+If you want to refresh the APOD cache from NASA's archive pages, run:
+
+```bash
+python3 scripts/fetch_apod_cache.py --days 60 --output data/apod-cache.json
+```
+
 ### Features
 
-- Fetches a 9-day consecutive APOD range from the NASA API.
+- Loads recent APOD entries from a local cache generated from NASA's archive pages.
 - Dynamically renders gallery cards with image, title, and date.
 - Opens an accessible modal with the full-size media, title, date, and explanation.
 - Handles APOD video entries with an embed or working link.

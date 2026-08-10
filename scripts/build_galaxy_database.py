@@ -28,6 +28,20 @@ NON_GALAXY_TERMS = re.compile(
     r'uranus|pluto)\b',
     re.IGNORECASE
 )
+GALAXY_CATEGORY_RULES = {
+    'spiral': re.compile(
+        r'\bspiral\b|\bbarred\b|\bdisk\b|\bwhirlpool\b|\bandromeda\b|\bmilky way\b|\bpinwheel\b|\bcartwheel\b|\bgrand-design\b',
+        re.IGNORECASE
+    ),
+    'elliptical': re.compile(
+        r'\belliptical\b|\bellipsoid\b|\bspheroid\b|\bgiant elliptical\b',
+        re.IGNORECASE
+    ),
+    'interacting': re.compile(
+        r'\binteracting\b|\bmerging\b|\bmerger\b|\btidal\b|\bcollision\b|\bcompanion\b|\bpair\b|\bdistorted\b|\bantennae\b|\binteraction\b',
+        re.IGNORECASE
+    )
+}
 
 
 def normalize_text(value):
@@ -45,6 +59,25 @@ def normalize_url(value):
         return normalize_text(value)
 
     return f'{parsed.netloc.lower()}{parsed.path.rstrip("/")}'.lower()
+
+
+def galaxy_text(entry):
+    return ' '.join(
+        normalize_text(entry.get(field))
+        for field in ['name', 'summary', 'fullSummary', 'sourceQuery', 'dataset', 'morphology', 'environment']
+        if entry.get(field)
+    )
+
+
+def infer_galaxy_categories(entry):
+    text = galaxy_text(entry)
+    categories = []
+
+    for key, pattern in GALAXY_CATEGORY_RULES.items():
+        if pattern.search(text):
+            categories.append(key)
+
+    return categories
 
 
 def record_keys(entry):
@@ -158,6 +191,8 @@ def clean_entry(entry):
     cleaned['sourceQuery'] = cleaned.get('sourceQuery') or 'galaxy'
     cleaned['dataset'] = cleaned.get('dataset') or 'nasa-galaxy-archive'
     cleaned['ageGyr'] = ensure_age(cleaned)
+    cleaned['categoryTags'] = infer_galaxy_categories(cleaned)
+    cleaned['galaxyType'] = cleaned.get('galaxyType') or (cleaned['categoryTags'][0] if cleaned['categoryTags'] else None)
 
     if cleaned.get('localImage'):
         cleaned['localImage'] = str(cleaned['localImage']).replace('\\\\', '/')

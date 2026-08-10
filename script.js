@@ -1,8 +1,7 @@
-const API_URL = 'https://api.nasa.gov/planetary/apod';
 const TRANSLATION_API_URL = 'https://api.mymemory.translated.net/get';
-const DEFAULT_API_KEY = 'DEMO_KEY';
 const DAYS_TO_SHOW = 9;
 const EARLIEST_END_DATE = '1995-06-24';
+const APOD_CACHE_PATH = 'data/apod-cache.json';
 
 const LOCALES = {
   en: {
@@ -610,6 +609,87 @@ let GALAXY_DATABASE = [
   }
 ];
 
+const GALAXY_CATEGORY_OPTIONS = [
+  { key: 'spiral', label: 'Spiral galaxy' },
+  { key: 'elliptical', label: 'Elliptical galaxy' },
+  { key: 'interacting', label: 'Interacting galaxies' }
+];
+
+const GALAXY_CATEGORY_LABELS = Object.fromEntries(
+  GALAXY_CATEGORY_OPTIONS.map(({ key, label }) => [key, label])
+);
+
+function normalizeGalaxyCategories(value) {
+  if (value == null) {
+    return [];
+  }
+
+  const values = Array.isArray(value) ? value : [value];
+  return [...new Set(values.map((category) => String(category).trim().toLowerCase()).filter(Boolean))];
+}
+
+function inferGalaxyCategories(galaxy) {
+  const text = [
+    galaxy.galaxyType,
+    galaxy.categoryTags,
+    galaxy.morphology,
+    galaxy.environment,
+    galaxy.summary,
+    galaxy.fullSummary,
+    galaxy.name,
+    galaxy.sourceQuery,
+    galaxy.dataset,
+    Array.isArray(galaxy.keywords) ? galaxy.keywords.join(' ') : galaxy.keywords
+  ]
+    .flatMap((value) => (Array.isArray(value) ? value : [value]))
+    .filter(Boolean)
+    .map((value) => String(value).toLowerCase())
+    .join(' ');
+
+  const categories = new Set(normalizeGalaxyCategories(galaxy.categoryTags));
+
+  if (/\bspiral\b|\bbarred\b|\bdisk\b|\bwhirlpool\b|\bandromeda\b|\bmilky way\b|\bpinwheel\b|\bcartwheel\b|\bgrand-design\b/.test(text)) {
+    categories.add('spiral');
+  }
+
+  if (/\belliptical\b|\bellipsoid\b|\bspheroid\b|\bgiant elliptical\b/.test(text)) {
+    categories.add('elliptical');
+  }
+
+  if (/\binteracting\b|\bmerging\b|\bmerger\b|\btidal\b|\bcollision\b|\bcompanion\b|\bpair\b|\bdistorted\b|\bantennae\b|\binteraction\b/.test(text)) {
+    categories.add('interacting');
+  }
+
+  return GALAXY_CATEGORY_OPTIONS.map(({ key }) => key).filter((key) => categories.has(key));
+}
+
+function enrichGalaxyRecord(galaxy) {
+  const categoryTags = inferGalaxyCategories(galaxy);
+  return {
+    ...galaxy,
+    categoryTags,
+    galaxyType: galaxy.galaxyType || categoryTags[0] || null
+  };
+}
+
+function formatGalaxyCategories(galaxy) {
+  const categories = normalizeGalaxyCategories(galaxy.categoryTags);
+  if (!categories.length) {
+    return 'Unclassified';
+  }
+
+  return categories.map((category) => GALAXY_CATEGORY_LABELS[category] || category).join(', ');
+}
+
+function getSelectedGalaxyCategories() {
+  return Array.from(document.querySelectorAll('.galaxy-type-filter'))
+    .filter((input) => input instanceof HTMLInputElement && input.checked)
+    .map((input) => input.value.trim().toLowerCase())
+    .filter(Boolean);
+}
+
+GALAXY_DATABASE = GALAXY_DATABASE.map(enrichGalaxyRecord);
+
 // Allow augmenting / filtering the galaxy database from an external JSON file.
 const EXTERNAL_GALAXY_DB_PATH = 'data/galaxy-database.json';
 let ORIGINAL_GALAXY_DATABASE = GALAXY_DATABASE.slice();
@@ -666,7 +746,7 @@ async function loadExternalGalaxyDatabase() {
     for (const entry of items) {
       if (!entry) continue;
 
-      const copy = { ...entry };
+      let copy = { ...entry };
       if ((!copy.ageGyr || copy.ageGyr === null) && copy.redshift != null) {
         const z = Number(copy.redshift);
         const age = redshiftToAgeGyr(z);
@@ -677,6 +757,8 @@ async function loadExternalGalaxyDatabase() {
       copy.name = copy.name || copy.id;
       copy.imageQuery = copy.imageQuery || copy.name;
       copy.summary = copy.summary || '';
+      copy.fullSummary = copy.fullSummary || copy.summary;
+      copy = enrichGalaxyRecord(copy);
 
       const copyKeys = [copy.id, copy.name, copy.imageUrl, copy.sourceUrl, copy.localImage]
         .filter(Boolean)
@@ -739,6 +821,8 @@ const galaxyAgeMinInput = document.getElementById('age-min');
 const galaxyAgeMaxInput = document.getElementById('age-max');
 const galaxyAgeApplyButton = document.getElementById('age-apply');
 const galaxyAgeResetButton = document.getElementById('age-reset');
+const galaxyCategoryFilters = Array.from(document.querySelectorAll('.galaxy-type-filter'));
+const galaxyCategoryResetButton = document.getElementById('galaxy-category-reset');
 const galaxyHelp = document.getElementById('galaxy-help');
 const galaxySummary = document.getElementById('galaxy-summary');
 const galaxyStatus = document.getElementById('galaxy-status');
@@ -758,6 +842,7 @@ let currentItems = [];
 let currentRange = null;
 let activeModalItem = null;
 let activeModalSourceItem = null;
+let apodCache = [];
 
 let lastTrigger = null;
 let galleryRenderToken = 0;
@@ -821,12 +906,27 @@ function pickRandomFact() {
 }
 
 function clampEndDate() {
-  const today = new Date();
-  const maxEnd = toISODate(today);
-  endDateInput.max = maxEnd;
-  const preferred = toISODate(today);
+  const bounds = getApodCacheBounds();
+  endDateInput.min = bounds.min;
+  endDateInput.max = bounds.max;
+  const preferred = bounds.max;
   endDateInput.value = preferred;
   rangeHelp.textContent = getLocaleStrings().rangeWillShow(formatDateLabel(preferred));
+}
+
+function getApodCacheBounds() {
+  if (!apodCache.length) {
+    const today = toISODate(new Date());
+    return {
+      min: EARLIEST_END_DATE,
+      max: today
+    };
+  }
+
+  return {
+    min: apodCache[0].date,
+    max: apodCache[apodCache.length - 1].date
+  };
 }
 
 function setLoading(isLoading) {
@@ -1078,16 +1178,8 @@ function createVideoPlaceholder(item) {
 }
 
 async function fetchApodByDate(dateString) {
-  const url = new URL(API_URL);
-  url.searchParams.set('api_key', DEFAULT_API_KEY);
-  url.searchParams.set('date', dateString);
-
-  const response = await fetch(url);
-  if (!response.ok) {
-    throw new Error('NASA APOD request failed.');
-  }
-
-  return response.json();
+  await loadApodCache();
+  return apodCache.find((item) => item.date === dateString) || null;
 }
 
 function renderApodBanner(item) {
@@ -1130,16 +1222,43 @@ function renderApodBanner(item) {
   apodBanner.onclick = () => openModal(item, apodBanner);
 }
 
+function selectGalleryCard(card, containerSelector) {
+  const container = card.closest(containerSelector);
+  if (!container) {
+    return;
+  }
+
+  const isAlreadySelected = card.classList.contains('is-selected');
+
+  container.querySelectorAll('.gallery-item.is-selected').forEach((selectedCard) => {
+    if (selectedCard !== card) {
+      selectedCard.classList.remove('is-selected');
+      selectedCard.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  if (isAlreadySelected) {
+    card.classList.remove('is-selected');
+    card.setAttribute('aria-expanded', 'false');
+    return;
+  }
+
+  card.classList.add('is-selected');
+  card.setAttribute('aria-expanded', 'true');
+  card.scrollIntoView({ block: 'center', behavior: 'smooth' });
+}
+
 function createGalleryCard(item) {
   const strings = getLocaleStrings();
   const article = document.createElement('article');
   article.className = 'gallery-item';
+  article.setAttribute('aria-expanded', 'false');
 
   const trigger = document.createElement('button');
   trigger.type = 'button';
   trigger.className = 'gallery-trigger';
   trigger.setAttribute('aria-label', strings.openDetailsFor(item.title));
-  trigger.addEventListener('click', () => openModal(item, trigger));
+  trigger.addEventListener('click', () => selectGalleryCard(article, '#gallery'));
 
   const media = document.createElement('div');
   media.className = 'gallery-media';
@@ -1169,9 +1288,22 @@ function createGalleryCard(item) {
   date.dateTime = item.date;
   date.textContent = formatDateLabel(item.date);
 
-  body.append(title, date);
+  const summary = document.createElement('p');
+  summary.className = 'gallery-card-summary';
+  summary.textContent = item.explanation;
+
+  body.append(title, date, summary);
   trigger.append(media, body);
   article.append(trigger);
+
+  article.addEventListener('click', () => selectGalleryCard(article, '#gallery'));
+  article.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      selectGalleryCard(article, '#gallery');
+    }
+  });
+
   return article;
 }
 
@@ -1224,18 +1356,31 @@ function getDateRange(endDateString) {
 }
 
 async function fetchApodRange(startDate, endDate) {
-  const url = new URL(API_URL);
-  url.searchParams.set('api_key', DEFAULT_API_KEY);
-  url.searchParams.set('start_date', startDate);
-  url.searchParams.set('end_date', endDate);
+  await loadApodCache();
+  return apodCache.filter((item) => item.date >= startDate && item.date <= endDate);
+}
 
-  const response = await fetch(url);
-  if (!response.ok) {
-    throw new Error('NASA APOD request failed.');
+async function loadApodCache() {
+  if (apodCache.length > 0) {
+    return apodCache;
   }
 
-  const data = await response.json();
-  return Array.isArray(data) ? data : [data];
+  const response = await fetch(APOD_CACHE_PATH, { cache: 'no-store' });
+  if (!response.ok) {
+    throw new Error('NASA APOD cache is unavailable.');
+  }
+
+  const items = await response.json();
+  if (!Array.isArray(items)) {
+    throw new Error('NASA APOD cache is invalid.');
+  }
+
+  apodCache = items
+    .filter((item) => item && typeof item.date === 'string')
+    .map((item) => ({ ...item }))
+    .sort((left, right) => left.date.localeCompare(right.date));
+
+  return apodCache;
 }
 
 function describeRange(startDate, endDate) {
@@ -1361,8 +1506,9 @@ async function applyLocale(locale) {
 async function loadGallery(endDateString) {
   const strings = getLocaleStrings();
   const range = getDateRange(endDateString);
+  const bounds = getApodCacheBounds();
 
-  if (range.startDate < EARLIEST_END_DATE) {
+  if (range.startDate < bounds.min) {
     statusText.textContent = strings.selectLaterEndDate;
     return;
   }
@@ -1533,12 +1679,16 @@ function createGalaxyCard(galaxy) {
   article.tabIndex = 0;
   article.setAttribute('role', 'button');
   article.setAttribute('aria-label', `Open details for ${galaxy.name}`);
+  article.setAttribute('aria-expanded', 'false');
 
   const trigger = document.createElement('button');
   trigger.type = 'button';
   trigger.className = 'gallery-trigger';
   trigger.setAttribute('aria-label', `Open details for ${galaxy.name}`);
-  trigger.addEventListener('click', () => openGalaxyModal(galaxy, trigger));
+  trigger.addEventListener('click', (event) => {
+    event.stopPropagation();
+    selectGalleryCard(article, '#galaxy-atlas');
+  });
 
   const media = document.createElement('div');
   media.className = 'gallery-media';
@@ -1558,13 +1708,14 @@ function createGalaxyCard(galaxy) {
   details.textContent = `${formatGalaxyAge(galaxy.ageGyr)} • ${galaxy.morphology}`;
 
   const summary = document.createElement('p');
-  summary.textContent = galaxy.summary;
+  summary.className = 'gallery-card-summary';
+  summary.textContent = galaxy.fullSummary || galaxy.summary;
 
   body.append(title, details, summary);
   trigger.append(media, body);
   article.append(trigger);
 
-  const openCard = () => openGalaxyModal(galaxy, trigger);
+  const openCard = () => selectGalleryCard(article, '#galaxy-atlas');
   article.addEventListener('click', openCard);
   article.addEventListener('keydown', (event) => {
     if (event.key === 'Enter' || event.key === ' ') {
@@ -1605,6 +1756,7 @@ function renderGalaxyFacts(galaxy) {
     ['Stellar mass', formatSolarMass(galaxy.stellarMassSolar)],
     ['Star formation', `${galaxy.starFormationRate.toFixed(2)} M☉/yr`],
     ['Structure', galaxy.morphology],
+    ['Categories', formatGalaxyCategories(galaxy)],
     ['Environment', `${galaxy.environment} • ${formatRedshift(galaxy.redshift)}`]
   ];
 
@@ -1640,6 +1792,7 @@ function getAgeFilterBounds() {
 
 function getFilteredGalaxies() {
   const { minAge, maxAge } = getAgeFilterBounds();
+  const selectedCategories = getSelectedGalaxyCategories();
 
   return GALAXY_DATABASE
     .filter((galaxy) => {
@@ -1653,6 +1806,13 @@ function getFilteredGalaxies() {
 
       if (maxAge != null && galaxy.ageGyr > maxAge) {
         return false;
+      }
+
+      if (selectedCategories.length) {
+        const galaxyCategories = normalizeGalaxyCategories(galaxy.categoryTags);
+        if (!selectedCategories.some((category) => galaxyCategories.includes(category))) {
+          return false;
+        }
       }
 
       return true;
@@ -1669,6 +1829,7 @@ function getFilteredGalaxies() {
 
 function updateGalaxySummary(totalMatches) {
   const { minAge, maxAge } = getAgeFilterBounds();
+  const selectedCategories = getSelectedGalaxyCategories();
   const parts = [];
 
   if (minAge != null && maxAge != null) {
@@ -1681,13 +1842,30 @@ function updateGalaxySummary(totalMatches) {
     parts.push('All galaxies sorted by age');
   }
 
+  if (selectedCategories.length) {
+    const labels = selectedCategories.map((category) => GALAXY_CATEGORY_LABELS[category] || category);
+    parts.push(`Types: ${labels.join(', ')}`);
+  } else {
+    parts.push('Types: all');
+  }
+
   galaxySummary.textContent = `${parts.join(' • ')}.`;
-  galaxyStatus.textContent = `${totalMatches} galaxies match the current age filter.`;
+  galaxyStatus.textContent = `${totalMatches} galaxies match the current filters.`;
 }
 
 function openGalaxyModal(galaxy, trigger) {
   activeGalaxyModalItem = galaxy;
   activeGalaxyTrigger = trigger;
+
+  const activeCard = trigger?.closest('.gallery-item');
+  document.querySelectorAll('.galaxy-card.is-selected').forEach((card) => {
+    if (card !== activeCard) {
+      card.classList.remove('is-selected');
+    }
+  });
+
+  activeCard?.classList.add('is-selected');
+  activeCard?.scrollIntoView({ block: 'center', behavior: 'smooth' });
 
   galaxyModalTitle.textContent = galaxy.name;
   galaxyModalSubtitle.textContent = `${formatGalaxyAge(galaxy.ageGyr)} • ${galaxy.morphology}`;
@@ -1735,6 +1913,10 @@ function closeGalaxyModal() {
   galaxyModalLink.hidden = true;
   galaxyModalLink.removeAttribute('href');
   activeGalaxyModalItem = null;
+
+  document.querySelectorAll('.galaxy-card.is-selected').forEach((card) => {
+    card.classList.remove('is-selected');
+  });
 
   if (activeGalaxyTrigger) {
     activeGalaxyTrigger.focus();
@@ -1799,6 +1981,12 @@ galaxyAgeMaxInput?.addEventListener('input', () => {
   renderGalaxyAtlas();
 });
 
+galaxyCategoryFilters.forEach((input) => {
+  input.addEventListener('change', () => {
+    renderGalaxyAtlas();
+  });
+});
+
 galaxyAgeResetButton?.addEventListener('click', () => {
   if (galaxyAgeMinInput) {
     galaxyAgeMinInput.value = '';
@@ -1807,6 +1995,14 @@ galaxyAgeResetButton?.addEventListener('click', () => {
   if (galaxyAgeMaxInput) {
     galaxyAgeMaxInput.value = '';
   }
+
+  renderGalaxyAtlas();
+});
+
+galaxyCategoryResetButton?.addEventListener('click', () => {
+  galaxyCategoryFilters.forEach((input) => {
+    input.checked = false;
+  });
 
   renderGalaxyAtlas();
 });
@@ -1830,6 +2026,12 @@ document.addEventListener('keydown', (event) => {
 
 (async function boot() {
   await applyLocale(initialLocale);
+  try {
+    await loadApodCache();
+  } catch (error) {
+    // Fall back to the default date; loadGallery will show the user-facing error.
+  }
+
   clampEndDate();
 
   // Try to load external galaxy records (data/galaxies.json) and merge.

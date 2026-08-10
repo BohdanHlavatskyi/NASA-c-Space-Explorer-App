@@ -97,21 +97,28 @@
         <div class="section-heading galaxy-heading">
           <div>
             <p class="section-label">Galaxy Atlas</p>
-              <h2 id="galaxy-title">Galaxies by age</h2>
+              <h2 id="galaxy-title">Galaxies by age and type</h2>
           </div>
           <div class="atlas-controls">
-              <div class="age-filters" style="display:inline-flex;gap:8px;align-items:center;margin-left:12px;">
+              <div class="age-filters" style="display:inline-flex;gap:8px;align-items:center;flex-wrap:wrap;margin-left:12px;">
                 <label for="age-min">Age (Gyr)</label>
                 <input id="age-min" type="number" min="0" max="20" step="0.1" placeholder="min" style="width:72px" />
                 <input id="age-max" type="number" min="0" max="20" step="0.1" placeholder="max" style="width:72px" />
                 <button id="age-apply" class="atlas-button" type="button">Apply</button>
                 <button id="age-reset" class="atlas-button" type="button">Reset</button>
               </div>
+              <div class="type-filters" style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-left:12px;margin-top:10px;">
+                <span>Galaxy type</span>
+                <label><input class="galaxy-type-filter" type="checkbox" value="spiral" /> Spiral galaxy</label>
+                <label><input class="galaxy-type-filter" type="checkbox" value="elliptical" /> Elliptical galaxy</label>
+                <label><input class="galaxy-type-filter" type="checkbox" value="interacting" /> Interacting galaxies</label>
+                <button id="galaxy-category-reset" class="atlas-button" type="button">Clear types</button>
+              </div>
           </div>
         </div>
 
         <p class="helper-text" id="galaxy-help">
-          Filter galaxies by age in billions of years, then view every matching galaxy sorted from youngest to oldest.
+          Filter galaxies by age in billions of years and by structure type, then view every matching galaxy sorted from youngest to oldest.
         </p>
 
         <div class="atlas-summary">
