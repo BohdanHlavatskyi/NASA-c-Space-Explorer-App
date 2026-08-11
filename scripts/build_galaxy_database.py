@@ -34,7 +34,11 @@ GALAXY_CATEGORY_RULES = {
         re.IGNORECASE
     ),
     'elliptical': re.compile(
-        r'\belliptical\b|\bellipsoid\b|\bspheroid\b|\bgiant elliptical\b',
+        r'\belliptical\b|\bellipsoid\b|\bspheroid\b|\bgiant elliptical\b|\broughly spherical\b',
+        re.IGNORECASE
+    ),
+    'spherical': re.compile(
+        r'\bspherical\b|\broughly spherical\b|\bglobular\b',
         re.IGNORECASE
     ),
     'interacting': re.compile(
@@ -143,7 +147,7 @@ def estimate_age_from_metadata(entry):
         bucket = (0.5, 3.0)
     elif any(token in text for token in ['starburst', 'young', 'forming', 'proto', 'merging', 'interaction', 'interacting']):
         bucket = (2.0, 7.0)
-    elif any(token in text for token in ['elliptical', 'cluster', 'giant', 'bulge']):
+    elif any(token in text for token in ['elliptical', 'spherical', 'cluster', 'giant', 'bulge']):
         bucket = (8.0, 13.7)
     elif any(token in text for token in ['spiral', 'disk', 'barred', 'whirlpool', 'andromeda', 'milky way']):
         bucket = (6.0, 12.0)
@@ -200,10 +204,55 @@ def clean_entry(entry):
     return cleaned
 
 
+def build_minimal_record(entry):
+    text = galaxy_text(entry)
+    age = ensure_age(entry)
+    is_elliptical = bool(re.search(r'\belliptical\b|\bgiant elliptical\b|\bellipsoid\b|\bspheroid\b|\broughly spherical\b', text, re.IGNORECASE))
+    is_spiral = bool(re.search(r'\bspiral\b|\bbarred\b|\bdisk\b|\bwhirlpool\b|\bandromeda\b|\bmilky way\b|\bpinwheel\b|\bcartwheel\b|\bgrand-design\b', text, re.IGNORECASE))
+    is_interacting = bool(re.search(r'\binteracting\b|\bmerging\b|\bmerger\b|\btidal\b|\bcollision\b|\bcompanion\b|\bpair\b|\bdistorted\b|\bantennae\b|\binteraction\b', text, re.IGNORECASE))
+
+    return {
+        'id': entry.get('id') or entry.get('name') or 'unknown-galaxy',
+        'name': entry.get('name') or 'Unknown galaxy',
+        'ageGyr': round(float(age), 2) if isinstance(age, (int, float)) and not math.isnan(age) else 0.0,
+        'isElliptical': is_elliptical,
+        'isSpiral': is_spiral,
+        'isInteracting': is_interacting,
+    }
+
+
+def build_minimal_database(items):
+    minimal = []
+    seen = set()
+
+    for entry in items:
+        if not isinstance(entry, dict):
+            continue
+        if entry.get('downloadFailed'):
+            continue
+        if not is_galaxy_record(entry):
+            continue
+
+        record = build_minimal_record(entry)
+        key = str(record['id']).lower().strip()
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        minimal.append(record)
+
+    minimal.sort(key=lambda item: (
+        item.get('ageGyr') is None,
+        float(item.get('ageGyr') or 0),
+        normalize_text(item.get('name'))
+    ))
+    return minimal
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--input', default=DEFAULT_INPUT)
     parser.add_argument('--output', default=DEFAULT_OUTPUT)
+    parser.add_argument('--minimal-output', default='data/galaxy-database-minimal.json', help='Compact JSON output with only age and type booleans.')
     args = parser.parse_args()
 
     with open(args.input, 'r', encoding='utf-8') as handle:
@@ -242,7 +291,12 @@ def main():
     with open(args.output, 'w', encoding='utf-8') as handle:
         json.dump(curated, handle, indent=2, ensure_ascii=False)
 
+    minimal = build_minimal_database(curated)
+    with open(args.minimal_output, 'w', encoding='utf-8') as handle:
+        json.dump(minimal, handle, separators=(',', ':'), ensure_ascii=False)
+
     print(f'Wrote {len(curated)} curated galaxy records to {args.output}')
+    print(f'Wrote {len(minimal)} compact galaxy records to {args.minimal_output}')
 
 
 if __name__ == '__main__':

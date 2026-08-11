@@ -799,7 +799,8 @@
     "fullSummary": "What can you learn from looking into the depths of space? In an effort to find out true ages of stars in neighboring Andromeda galaxy 's halo , astronomers stared into the galaxy giant with the new Advanced Camera for Surveys through the Hubble Space Telescope . The resulting exposure of over three days, shown above , is the deepest exposure in visible light ever taken, although shorter in duration than the multi-wavelength effort toward the Hubble Deep Field . The final image illuminated not only Andromeda (M31) but the distant universe. Andromeda's halo stars turned out to be have a wider range of ages than our Milky Way 's halo stars, likely indicating more encounters with small neighboring galaxies . Visible on the above left is one of Andromeda's globular star clusters , while literally thousands of background galaxies are seen in the distance universe , far beyond M31.",
     "ageGyr": 0.91,
     "categoryTags": [
-      "spiral"
+      "spiral",
+      "spherical"
     ],
     "galaxyType": "spiral"
   },
@@ -1140,6 +1141,36 @@
     "galaxyType": null
   },
   {
+    "id": "nasa-ngc-1000",
+    "name": "NGC 1000",
+    "summary": "NGC 1000 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a interacting morphology and a representative age of 1.0 billion years.",
+    "fullSummary": "NGC 1000 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a interacting morphology and a representative age of 1.0 billion years.",
+    "date_created": "2026-01-01",
+    "keywords": [
+      "ngc 1000",
+      "interacting",
+      "nasa",
+      "galaxy",
+      "archive"
+    ],
+    "sourceQuery": "NGC 1000",
+    "dataset": "nasa-galaxy-expansion",
+    "redshift": null,
+    "imageQuery": "NGC 1000 galaxy",
+    "sourceUrl": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000877/GSFC_20171208_Archive_e000877~small.jpg",
+    "imageUrl": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000877/GSFC_20171208_Archive_e000877~small.jpg",
+    "localImage": "",
+    "ageGyr": 1.0,
+    "categoryTags": [
+      "interacting"
+    ],
+    "galaxyType": "interacting",
+    "isSpiral": false,
+    "isElliptical": false,
+    "isInteracting": true,
+    "isSpherical": false
+  },
+  {
     "id": "apod-2016-11-10",
     "name": "Great Rift Near the Center of the Milky Way",
     "summary": "Over 100 telescopic image panels in this stunning vertical mosaic span about 50 degrees across the night sky . They follow part of the Great Rift , the dark river of dust and molecular gas that stretches along the plane of our Milky Way Galaxy. Start at top center and you can follow the galactic equator down through brighter stars in constellations Aquila, Serpens Cauda, and Scutum. At the bottom is Sagittarius near the center of the Milky Way. Along the way you'll encounter many obscuring dark nebulae hundreds of light-years distant flanked by bands of Milky Way starlight, and...",
@@ -1246,7 +1277,8 @@
     "fullSummary": "Stars, like bees, swarm around the center of bright globular cluster M15. The central ball of over 100,000 stars is a relic from the early years of our Galaxy , and continues to orbit the Milky Way's center . M15 , one of about 150 globular cluster s remaining, is noted for being easily visible with only binoculars , having at its center one of the densest concentrations of stars known, and containing a high abundance of variable stars and pulsars . The featured image of M15 was taken by combining very long exposures -- 122 hours in all -- and so brings up faint wisps of gas and dust in front of the giant ball of stars. M15 lies about 35,000 light years away toward the constellation of the Winged Horse ( Pegasus ).",
     "ageGyr": 1.08,
     "categoryTags": [
-      "spiral"
+      "spiral",
+      "spherical"
     ],
     "galaxyType": "spiral"
   },
@@ -1780,8 +1812,10 @@
     "sourceUrl": "https://apod.nasa.gov/apod/image/0808/ngc290_hst_big.jpg",
     "fullSummary": "Jewels don't shine this bright -- only stars do. Like gems in a jewel box, though, the stars of open cluster NGC 290 glitter in a beautiful display of brightness and color. The photogenic cluster, pictured above , was captured recently by the orbiting Hubble Space Telescope . Open clusters of stars are younger, contain few stars, and contain a much higher fraction of blue stars than do globular clusters of stars. NGC 290 lies about 200,000 light-years distant in a neighboring galaxy called the Small Cloud of Magellan (SMC). The open cluster contains hundreds of stars and spans about 65 light years across. NGC 290 and other open clusters are good laboratories for studying how stars of different masses evolve , since all the open cluster's stars were born at about the same time.",
     "ageGyr": 1.27,
-    "categoryTags": [],
-    "galaxyType": null
+    "categoryTags": [
+      "spherical"
+    ],
+    "galaxyType": "spherical"
   },
   {
     "id": "KSC-08pd2328",
@@ -2128,8 +2162,10 @@
     "localImage": "data/images/Ngc290_HubbleOlszewski_1701_113.jpg",
     "fullSummary": "Jewels don't shine this bright -- only stars do. Like gems in a jewel box, though, the stars of open cluster NGC 290 glitter in a beautiful display of brightness and color. The photogenic cluster, pictured here , was captured in 2006 by the orbiting Hubble Space Telescope . Open clusters of stars are younger, contain few stars, and contain a much higher fraction of blue stars than do globular clusters of stars. NGC 290 lies about 200,000 light-years distant in a neighboring galaxy called the Small Cloud of Magellan (SMC). The open cluster contains hundreds of stars and spans about 65 light years across. NGC 290 and other open clusters are good laboratories for studying how stars of different masses evolve , since all the open cluster's stars were born at about the same time.",
     "ageGyr": 1.38,
-    "categoryTags": [],
-    "galaxyType": null
+    "categoryTags": [
+      "spherical"
+    ],
+    "galaxyType": "spherical"
   },
   {
     "id": "PIA07221",
@@ -3907,8 +3943,10 @@
     "sourceUrl": "https://apod.nasa.gov/apod/image/0605/ngc290_hst_big.jpg",
     "fullSummary": "Jewels don't shine this bright -- only stars do. Like gems in a jewel box, though, the stars of open cluster NGC 290 glitter in a beautiful display of brightness and color. The photogenic cluster, pictured above , was captured recently by the orbiting Hubble Space Telescope . Open clusters of stars are younger, contain few stars, and contain a much higher fraction of blue stars than do globular clusters of stars. NGC 290 lies about 200,000 light-years distant in a neighboring galaxy called the Small Cloud of Magellan (SMC). The open cluster contains hundreds of stars and spans about 65 light years across. NGC 290 and other open clusters are good laboratories for studying how stars of different masses evolve , since all the open cluster's stars were born at about the same time.",
     "ageGyr": 1.98,
-    "categoryTags": [],
-    "galaxyType": null
+    "categoryTags": [
+      "spherical"
+    ],
+    "galaxyType": "spherical"
   },
   {
     "id": "apod-2000-09-08",
@@ -3927,6 +3965,24 @@
     "imageUrl": "https://apod.nasa.gov/apod/image/0009/m31_gendler_big.jpg",
     "sourceUrl": "https://apod.nasa.gov/apod/image/0009/m31_gendler_big.jpg",
     "fullSummary": "How far can you see? The most distant object easily visible to the unaided eye is M31 , the great Andromeda Galaxy some two million light-years away. Without a telescope, even this immense spiral galaxy appears as an unremarkable, faint, nebulous cloud in the constellation Andromeda . But a bright yellow nucleus, dark winding dustlanes, gorgeous blue spiral arms and star clusters are recorded in this stunning telescopic digital mosaic of the nearby island universe. While even casual skygazers are now inspired by the knowledge that there are many distant galaxies like M31, astronomers seriously debated this fundamental concept only 80 years ago. Were these \"spiral nebulae\" simply outlying components of our own Milky Way Galaxy or were they instead \"island universes\" -- distant systems of stars comparable to the Milky Way itself? This question was central to the famous Shapley-Curtis debate of 1920, which was later resolved by observations of M31 in favor of Andromeda, island universe .",
+    "ageGyr": 1.99,
+    "categoryTags": [
+      "spiral"
+    ],
+    "galaxyType": "spiral"
+  },
+  {
+    "id": "apod-1995-07-24",
+    "name": "M31: The Andromeda Galaxy",
+    "summary": "Andromeda is the nearest major galaxy to our own Milky Way Galaxy. Our Galaxy is thought to look much like Andromeda. Together these two galaxies dominate the Local Group of galaxies. The diffuse light from Andromeda is caused by the hundreds of billions of stars that compose it. The several distinct stars that surround Andromeda's image are actually stars in our Galaxy that are well in front of the background object. Andromeda is frequently referred to as M31 since it is the 31st object on Messier's list of diffuse sky objects. M31 is so distant it takes about 2 million...",
+    "date_created": "1995-07-24",
+    "keywords": [],
+    "sourceQuery": "apod archive galaxy titles",
+    "dataset": "nasa-apod-galaxy-archive",
+    "redshift": null,
+    "imageUrl": "https://apod.nasa.gov/apod/image/andromeda_moo.gif",
+    "sourceUrl": "https://apod.nasa.gov/apod/image/andromeda_moo.gif",
+    "fullSummary": "Andromeda is the nearest major galaxy to our own Milky Way Galaxy. Our Galaxy is thought to look much like Andromeda. Together these two galaxies dominate the Local Group of galaxies. The diffuse light from Andromeda is caused by the hundreds of billions of stars that compose it. The several distinct stars that surround Andromeda's image are actually stars in our Galaxy that are well in front of the background object. Andromeda is frequently referred to as M31 since it is the 31st object on Messier's list of diffuse sky objects. M31 is so distant it takes about 2 million years for light to reach us from there.",
     "ageGyr": 1.99,
     "categoryTags": [
       "spiral"
@@ -4548,8 +4604,10 @@
     "sourceUrl": "https://apod.nasa.gov/apod/image/1406/ngc290_hubble_1701.jpg",
     "fullSummary": "Jewels don't shine this bright -- only stars do. Like gems in a jewel box, though, the stars of open cluster NGC 290 glitter in a beautiful display of brightness and color. The photogenic cluster, pictured above , was captured recently by the orbiting Hubble Space Telescope . Open clusters of stars are younger, contain few stars, and contain a much higher fraction of blue stars than do globular clusters of stars. NGC 290 lies about 200,000 light-years distant in a neighboring galaxy called the Small Cloud of Magellan (SMC). The open cluster contains hundreds of stars and spans about 65 light years across. NGC 290 and other open clusters are good laboratories for studying how stars of different masses evolve , since all the open cluster's stars were born at about the same time.",
     "ageGyr": 2.15,
-    "categoryTags": [],
-    "galaxyType": null
+    "categoryTags": [
+      "spherical"
+    ],
+    "galaxyType": "spherical"
   },
   {
     "id": "apod-2002-11-21",
@@ -5104,6 +5162,24 @@
       "interacting"
     ],
     "galaxyType": "spiral"
+  },
+  {
+    "id": "apod-1996-09-05",
+    "name": "Watch Galaxies Form  ",
+    "summary": "Snips and snails and puppy dog tails, is that what galaxies were made of? In a report released yesterday and soon to be published in Nature , astronomers have imaged an interesting distant patch of sky with the orbiting Hubble Space Telescope . They found many merging groups of stars and gas which have been dubbed \"pre-galactic blobs.\" A particularly dense bunch of these small blue merging objects are visible in the above picture. This may be a snapshot of galaxies actually being formed ! Although peculiar by present standards of galaxies , these blobs may have been normal in...",
+    "date_created": "1996-09-05",
+    "keywords": [],
+    "sourceQuery": "apod archive galaxy titles",
+    "dataset": "nasa-apod-galaxy-archive",
+    "redshift": null,
+    "imageUrl": "https://apod.nasa.gov/apod/image/cluster_bk_big.jpg",
+    "sourceUrl": "https://apod.nasa.gov/apod/image/cluster_bk_big.jpg",
+    "fullSummary": "Snips and snails and puppy dog tails, is that what galaxies were made of? In a report released yesterday and soon to be published in Nature , astronomers have imaged an interesting distant patch of sky with the orbiting Hubble Space Telescope . They found many merging groups of stars and gas which have been dubbed \"pre-galactic blobs.\" A particularly dense bunch of these small blue merging objects are visible in the above picture. This may be a snapshot of galaxies actually being formed ! Although peculiar by present standards of galaxies , these blobs may have been normal in the distant past, many billions of years ago. This adds evidence that galaxies formed from the conglomeration of smaller objects instead of the fragmentation of larger objects .",
+    "ageGyr": 2.26,
+    "categoryTags": [
+      "interacting"
+    ],
+    "galaxyType": "interacting"
   },
   {
     "id": "apod-1997-10-22",
@@ -5678,6 +5754,28 @@
     "galaxyType": "spiral"
   },
   {
+    "id": "apod-2007-09-10",
+    "name": "Building Galaxies in the Early Universe",
+    "summary": "What was the very early universe like? To help find out, astronomers pointed the Hubble Space Telescope between bright nearby objects to create one of the deepest images ever -- the Hubble Ultra Deep Field (HUDF). The resulting HUDF is like a jewel box of strange and distant galaxies. A recent analysis of the HUDF focused on the smallest, faintest and most compact galaxies imaged. These small galaxies are thought to be the building blocks of modern galaxies . Analysis shows that these small galaxies are indeed themselves frequently merging to form large galaxies. An image of this field with...",
+    "date_created": "2007-09-10",
+    "keywords": [
+      "galaxies",
+      "building",
+      "early universe"
+    ],
+    "sourceQuery": "apod archive galaxy titles",
+    "dataset": "nasa-apod-galaxy-archive",
+    "redshift": null,
+    "imageUrl": "https://apod.nasa.gov/apod/image/0709/galaxylego_hst_big.jpg",
+    "sourceUrl": "https://apod.nasa.gov/apod/image/0709/galaxylego_hst_big.jpg",
+    "fullSummary": "What was the very early universe like? To help find out, astronomers pointed the Hubble Space Telescope between bright nearby objects to create one of the deepest images ever -- the Hubble Ultra Deep Field (HUDF). The resulting HUDF is like a jewel box of strange and distant galaxies. A recent analysis of the HUDF focused on the smallest, faintest and most compact galaxies imaged. These small galaxies are thought to be the building blocks of modern galaxies . Analysis shows that these small galaxies are indeed themselves frequently merging to form large galaxies. An image of this field with the Spitzer Space Telescope shows a lack of infrared emission that would be expected from old stars, indicating that these small galaxies are very young, possibly only a few million years old. Therefore the young blue stars might be members of the first-ever generation of stars . Part of the HUDF is shown above , while one blue building-block galaxy, highly redshifted by the universe so as to appear more yellow, is shown in the upper left inset.",
+    "ageGyr": 2.45,
+    "categoryTags": [
+      "interacting"
+    ],
+    "galaxyType": "interacting"
+  },
+  {
     "id": "KSC-03pd0994",
     "name": "KSC-03pd0994",
     "summary": "KENNEDY SPACE CENTER, FLA. - The Pegasus XL launch vehicle is ready for a re-mate with the Galaxy Evolution Explorer (GALEX) spacecraft. The March 26 launch was delayed to enable protective covers to be added to the Optical Wheel Assembly (OWA) on GALEX to avoid the possibility of a missing electrical cable fastener floating into and jamming the mechanism when GALEX is in orbit. Launch of GALEX is now scheduled for no earlier than April 26.",
@@ -6086,7 +6184,8 @@
     "fullSummary": "Why does the Sombrero Galaxy look like a hat? Reasons include the Sombrero 's unusually large and extended central bulge of stars, and dark prominent dust lanes that appear in a disk that we see nearly edge-on . Billions of old stars cause the diffuse glow of the extended central bulge. Close inspection of the bulge in the above photograph shows many points of light that are actually globular clusters . M104 's spectacular dust ring s harbor many younger and brighter stars, and show intricate details astronomers don't yet fully understand . The very center of the Sombrero glows across the electromagnetic spectrum , and is thought to house a large black hole . Fifty million-year-old light from the Sombrero Galaxy can be seen with a small telescope towards the constellation of Virgo .",
     "ageGyr": 2.51,
     "categoryTags": [
-      "spiral"
+      "spiral",
+      "spherical"
     ],
     "galaxyType": "spiral"
   },
@@ -6837,6 +6936,24 @@
     "galaxyType": "elliptical"
   },
   {
+    "id": "apod-1995-09-07",
+    "name": "Distant Galaxies",
+    "summary": "This Hubble Space Telescope image of a group of faint galaxies \"far, far away\" is a snap shot of the Universe when it was young. The bluish, irregularly shaped galaxies revealed in the image are up to eight billion light years away and seem to have commonly undergone galaxy collisions and bursts of star formation. Studying these objects is difficult because they are so faint, however they may provide clues to how our own Milky Way Galaxy formed.",
+    "date_created": "1995-09-07",
+    "keywords": [],
+    "sourceQuery": "apod archive galaxy titles",
+    "dataset": "nasa-apod-galaxy-archive",
+    "redshift": null,
+    "imageUrl": "https://apod.nasa.gov/apod/image/fbg.gif",
+    "sourceUrl": "https://apod.nasa.gov/apod/image/fbg.gif",
+    "fullSummary": "This Hubble Space Telescope image of a group of faint galaxies \"far, far away\" is a snap shot of the Universe when it was young. The bluish, irregularly shaped galaxies revealed in the image are up to eight billion light years away and seem to have commonly undergone galaxy collisions and bursts of star formation. Studying these objects is difficult because they are so faint, however they may provide clues to how our own Milky Way Galaxy formed.",
+    "ageGyr": 2.7,
+    "categoryTags": [
+      "spiral"
+    ],
+    "galaxyType": "spiral"
+  },
+  {
     "id": "apod-2002-06-29",
     "name": "A Deep Field In The Southern Sky",
     "summary": "This deep view of the cosmos is the sequel to the 1995 hit Hubble Space Telescope Deep Field . Billed as the Hubble Deep Field South , it was produced by pointing the space telescope toward a patch of sky in the southern constellation Tucana . Over a period of 10 days, many separate exposures were accumulated and combined to reveal progressively fainter galaxies. The original deep field was constructed by observing a piece of sky in the northern constellation Ursa Major . Both stare down 12 billion light-year long tunnels to far-off and still mysterious times when young galaxies...",
@@ -6935,7 +7052,8 @@
     "ageGyr": 2.73,
     "categoryTags": [
       "spiral",
-      "elliptical"
+      "elliptical",
+      "spherical"
     ],
     "galaxyType": "spiral"
   },
@@ -7377,7 +7495,8 @@
     "fullSummary": "G1, pictured above, is the brightest known globular cluster in the whole Local Group of galaxies. Also called Mayall II, it orbits the center of the largest nearby galaxy: M31 . G1 contains over 300,000 stars and is almost as old as the entire universe . In fact, observations of this globular cluster show stars as old as the oldest of the roughly 250 known globular clusters in our own Milky Way Galaxy . This image was taken with the Hubble Space Telescope in July of 1994. It shows, for the first time, the same fine detail in a distant globular cluster as can be discerned from a ground-based telescope of a globular cluster in our own Galaxy .",
     "ageGyr": 2.81,
     "categoryTags": [
-      "spiral"
+      "spiral",
+      "spherical"
     ],
     "galaxyType": "spiral"
   },
@@ -8005,6 +8124,8 @@
     "ageGyr": 2.96,
     "categoryTags": [
       "spiral",
+      "elliptical",
+      "spherical",
       "interacting"
     ],
     "galaxyType": "spiral"
@@ -8202,6 +8323,7 @@
     "categoryTags": [
       "spiral",
       "elliptical",
+      "spherical",
       "interacting"
     ],
     "galaxyType": "spiral"
@@ -8392,6 +8514,7 @@
     "categoryTags": [
       "spiral",
       "elliptical",
+      "spherical",
       "interacting"
     ],
     "galaxyType": "spiral"
@@ -10331,7 +10454,8 @@
     "fullSummary": "Why does the Sombrero Galaxy look like a hat? Reasons include the Sombrero 's unusually large and extended central bulge of stars, and dark prominent dust lanes that appear in a disk that we see nearly edge-on . Billions of old stars cause the diffuse glow of the extended central bulge. Close inspection of the bulge in the above photograph shows many points of light that are actually globular clusters . M104 's spectacular dust ring s harbor many younger and brighter stars, and show intricate details astronomers don't yet fully understand . The very center of the Sombrero glows across the electromagnetic spectrum , and is thought to house a large black hole . Fifty million-year-old light from the Sombrero Galaxy can be seen with a small telescope towards the constellation of Virgo .",
     "ageGyr": 4.41,
     "categoryTags": [
-      "spiral"
+      "spiral",
+      "spherical"
     ],
     "galaxyType": "spiral"
   },
@@ -10589,6 +10713,7 @@
     "categoryTags": [
       "spiral",
       "elliptical",
+      "spherical",
       "interacting"
     ],
     "galaxyType": "spiral"
@@ -10764,6 +10889,24 @@
     "galaxyType": null
   },
   {
+    "id": "apod-1995-09-12",
+    "name": "Spiral Galaxy M83",
+    "summary": "Long winding spiral arms are clearly evident on this spectacular picture of the spiral galaxy M83. The blue color of the spiral arms is caused by the relatively large fraction of young blue stars there. Dark dust lanes are mixed in with the stars and trace the spiral structure of the galaxy. This galaxy contains many billions of stars, and its light took many millions of years to reach us. Our own Milky Way Galaxy would appear similar to this if viewed from M 83! This picture is number eight on a publicly posted list of images from the Anglo-Australian...",
+    "date_created": "1995-09-12",
+    "keywords": [],
+    "sourceQuery": "apod archive galaxy titles",
+    "dataset": "nasa-apod-galaxy-archive",
+    "redshift": null,
+    "imageUrl": "https://apod.nasa.gov/apod/image/m83_aat.gif",
+    "sourceUrl": "https://apod.nasa.gov/apod/image/m83_aat.gif",
+    "fullSummary": "Long winding spiral arms are clearly evident on this spectacular picture of the spiral galaxy M83. The blue color of the spiral arms is caused by the relatively large fraction of young blue stars there. Dark dust lanes are mixed in with the stars and trace the spiral structure of the galaxy. This galaxy contains many billions of stars, and its light took many millions of years to reach us. Our own Milky Way Galaxy would appear similar to this if viewed from M 83! This picture is number eight on a publicly posted list of images from the Anglo-Australian Telescope (AAT).",
+    "ageGyr": 4.72,
+    "categoryTags": [
+      "spiral"
+    ],
+    "galaxyType": "spiral"
+  },
+  {
     "id": "KSC-03pd0736",
     "name": "KSC-03pd0736",
     "summary": "KENNEDY SPACE CENTER, FLA. -- -- In the Multi-Payload Processing Facility, NASA's Galaxy Evolution Explorer is prepared for mating with the Pegasus XL launch vehicle. The GALEX, set to launch April 2 from Cape Canaveral Air Force Station, will carry into space an orbiting telescope that will observe a million galaxies across 10 billion years of cosmic history to help astronomers determine when the stars and elements we see today had their origins. The spacecraft will sweep the skies for 28 months using state-of-the-art ultraviolet detectors to single out galaxies dominated by young, hot, short-lived stars that give off a...",
@@ -10859,6 +11002,25 @@
     "ageGyr": 4.81,
     "categoryTags": [
       "spiral"
+    ],
+    "galaxyType": "spiral"
+  },
+  {
+    "id": "apod-1995-07-28",
+    "name": "M82: An Irregular Galaxy",
+    "summary": "Not all galaxies have spiral structure like our Milky Way. Many have smooth elliptical shapes, but also many have irregular shapes such as the bright sky object M82, the 82nd object on Messier's list. The strange structure of this galaxy is thought to be caused by young stars ejecting gas in energetic bubbles, and by lanes of absorbing dust.",
+    "date_created": "1995-07-28",
+    "keywords": [],
+    "sourceQuery": "apod archive galaxy titles",
+    "dataset": "nasa-apod-galaxy-archive",
+    "redshift": null,
+    "imageUrl": "https://apod.nasa.gov/apod/image/m82_moo.gif",
+    "sourceUrl": "https://apod.nasa.gov/apod/image/m82_moo.gif",
+    "fullSummary": "Not all galaxies have spiral structure like our Milky Way. Many have smooth elliptical shapes, but also many have irregular shapes such as the bright sky object M82, the 82nd object on Messier's list. The strange structure of this galaxy is thought to be caused by young stars ejecting gas in energetic bubbles, and by lanes of absorbing dust.",
+    "ageGyr": 4.82,
+    "categoryTags": [
+      "spiral",
+      "elliptical"
     ],
     "galaxyType": "spiral"
   },
@@ -11863,6 +12025,25 @@
     "galaxyType": "spiral"
   },
   {
+    "id": "apod-1995-08-28",
+    "name": "Dusty Galaxy Centaurus A",
+    "summary": "One of the most unusual galaxies known, Centaurus A , is pictured above. Cen A is marked by dramatic dust lanes that run across the galaxy's center. These dust lanes are so thick they almost completely obscure the galaxy's center in visible light. Our Milky Way Galaxy contains dust, but not in the same proportion. Cen A is also unusual compared to a normal galaxy because it contains a higher proportion of young blue stars, is a very strong source of radio emission, and has a unique structure. Cen A is thought to be the result of the collision of...",
+    "date_created": "1995-08-28",
+    "keywords": [],
+    "sourceQuery": "apod archive galaxy titles",
+    "dataset": "nasa-apod-galaxy-archive",
+    "redshift": null,
+    "imageUrl": "https://apod.nasa.gov/apod/image/cenA_ctio.gif",
+    "sourceUrl": "https://apod.nasa.gov/apod/image/cenA_ctio.gif",
+    "fullSummary": "One of the most unusual galaxies known, Centaurus A , is pictured above. Cen A is marked by dramatic dust lanes that run across the galaxy's center. These dust lanes are so thick they almost completely obscure the galaxy's center in visible light. Our Milky Way Galaxy contains dust, but not in the same proportion. Cen A is also unusual compared to a normal galaxy because it contains a higher proportion of young blue stars, is a very strong source of radio emission, and has a unique structure. Cen A is thought to be the result of the collision of two normal galaxies.",
+    "ageGyr": 5.29,
+    "categoryTags": [
+      "spiral",
+      "interacting"
+    ],
+    "galaxyType": "spiral"
+  },
+  {
     "id": "apod-2019-06-29",
     "name": "M83: The Thousand Ruby Galaxy",
     "summary": "Big, bright, and beautiful, spiral galaxy M83 lies a mere twelve million light-years away, near the southeastern tip of the very long constellation Hydra . Prominent spiral arms traced by dark dust lanes and blue star clusters lend this galaxy its popular name, The Southern Pinwheel. But reddish star forming regions that dot the sweeping arms highlighted in this sparkling color composite also suggest another nickname, The Thousand-Ruby Galaxy. About 40,000 light-years across, M83 is a member of a group of galaxies that includes active galaxy Centaurus A . In fact, the core of M83 itself is bright at x-ray...",
@@ -12237,6 +12418,25 @@
     "ageGyr": 5.46,
     "categoryTags": [],
     "galaxyType": null
+  },
+  {
+    "id": "apod-1995-07-02",
+    "name": "The Cartwheel Galaxy",
+    "summary": "The Cartwheel Galaxy shows a ring that is the result of a collision between a small and a large galaxy. After a small galaxy has moved through a big galaxy - in this case one that probably resembled our own Milky Way - a star formation wave moves out from the impact point like ripples across the surface of a pond. When galaxies collide it is rare that any two stars actually collide. Gravity, however, causes density waves to move out through the galaxy which in turn triggers the formation of hot, bright young stars, producing the ring that we...",
+    "date_created": "1995-07-02",
+    "keywords": [],
+    "sourceQuery": "apod archive galaxy titles",
+    "dataset": "nasa-apod-galaxy-archive",
+    "redshift": null,
+    "imageUrl": "https://apod.nasa.gov/apod/image/cartwheel_hst.gif",
+    "sourceUrl": "https://apod.nasa.gov/apod/image/cartwheel_hst.gif",
+    "fullSummary": "The Cartwheel Galaxy shows a ring that is the result of a collision between a small and a large galaxy. After a small galaxy has moved through a big galaxy - in this case one that probably resembled our own Milky Way - a star formation wave moves out from the impact point like ripples across the surface of a pond. When galaxies collide it is rare that any two stars actually collide. Gravity, however, causes density waves to move out through the galaxy which in turn triggers the formation of hot, bright young stars, producing the ring that we see in this picture.",
+    "ageGyr": 5.48,
+    "categoryTags": [
+      "spiral",
+      "interacting"
+    ],
+    "galaxyType": "spiral"
   },
   {
     "id": "apod-2024-02-18",
@@ -13129,7 +13329,8 @@
     "fullSummary": "Why does the Sombrero Galaxy look like a hat? Reasons include the Sombrero 's unusually large and extended central bulge of stars, and dark prominent dust lanes that appear in a disk that we see nearly edge-on. Billions of old stars cause the diffuse glow of the extended central bulge. Close inspection of the bulge in the above photograph shows many points of light that are actually globular clusters . M104's spectacular dust rings harbor many younger and brighter stars, and show intricate details astronomers don't yet fully understand . The very center of the Sombrero glows across the electromagnetic spectrum , and is thought to house a large black hole . Fifty million-year-old light from the Sombrero Galaxy can be seen with a small telescope towards the constellation of Virgo .",
     "ageGyr": 6.03,
     "categoryTags": [
-      "spiral"
+      "spiral",
+      "spherical"
     ],
     "galaxyType": "spiral"
   },
@@ -13424,7 +13625,8 @@
     "fullSummary": "NGC 2903 is a spiral galaxy similar to our own Milky Way Galaxy . Similarities include its general size and a central bar . One striking difference, however, is the appearance of mysterious hot spots in NGC 2903's core. Upon inspection of the above image and similar images taken by the Hubble Space Telescope, these hot spots were found to be bright young globular clusters , in contrast to the uniformly old globular clusters found in our Milky Way Galaxy . Further investigation has indicated that current star formation is most rampant in a 2000 light-year wide circumnuclear ring surrounding NGC 2903's center. Astronomers hypothesize that the gravity of the central bar expedites star formation in this ring. NGC 2903 lies about 25 million light-years away and is visible with a small telescope towards the constellation of Leo .",
     "ageGyr": 6.09,
     "categoryTags": [
-      "spiral"
+      "spiral",
+      "spherical"
     ],
     "galaxyType": "spiral"
   },
@@ -13504,7 +13706,8 @@
     "fullSummary": "By spying on a neighboring galaxy, NASA Hubble Space Telescope has captured an image of a young, globular-like star cluster—a type of object unknown in our Milky Way Galaxy.",
     "ageGyr": 6.12,
     "categoryTags": [
-      "spiral"
+      "spiral",
+      "spherical"
     ],
     "galaxyType": "spiral"
   },
@@ -14005,7 +14208,8 @@
     "fullSummary": "Why does the Sombrero Galaxy look like a hat? Reasons include the Sombrero 's unusually large and extended central bulge of stars, and dark prominent dust lanes that appear in a disk that we see nearly edge-on . Billions of old stars cause the diffuse glow of the extended central bulge. Close inspection of the bulge in the above photograph shows many points of light that are actually globular clusters . M104 's spectacular dust rings harbor many younger and brighter stars, and show intricate details astronomers don't yet fully understand . The very center of the Sombrero glows across the electromagnetic spectrum , and is thought to house a large black hole . Fifty million-year-old light from the Sombrero Galaxy can be seen with a small telescope towards the constellation of Virgo .",
     "ageGyr": 6.25,
     "categoryTags": [
-      "spiral"
+      "spiral",
+      "spherical"
     ],
     "galaxyType": "spiral"
   },
@@ -14072,6 +14276,7 @@
     "ageGyr": 6.26,
     "categoryTags": [
       "elliptical",
+      "spherical",
       "interacting"
     ],
     "galaxyType": "elliptical"
@@ -14963,6 +15168,29 @@
     "galaxyType": null
   },
   {
+    "id": "apod-2026-08-10",
+    "name": "Three Galaxy Pairs",
+    "summary": "Each of these pairs of galaxies is different. The two galaxies at the top are likely not interacting , at least presently. However, the top galaxy with the blue stripe, NGC 4650A , is a polar ring galaxy and may be the result of a past galaxy collision . The two galaxies in the middle of the featured image appear like they could be interacting gravitationally -- but their relative speeds make this unlikely. Of these two, the larger galaxy, NGC 4650 , is a spiral galaxy with a bright bar of stars across its center. The two galaxies at...",
+    "date_created": "2026-08-10",
+    "keywords": [
+      "galaxies",
+      "polar ring galaxy",
+      "interacting galaxies"
+    ],
+    "sourceQuery": "apod archive galaxy titles",
+    "dataset": "nasa-apod-galaxy-archive",
+    "redshift": null,
+    "imageUrl": "https://apod.nasa.gov/apod/image/2608/Three3GalaxyPairs_Sampaio_2784.jpg",
+    "sourceUrl": "https://apod.nasa.gov/apod/image/2608/Three3GalaxyPairs_Sampaio_2784.jpg",
+    "fullSummary": "Each of these pairs of galaxies is different. The two galaxies at the top are likely not interacting , at least presently. However, the top galaxy with the blue stripe, NGC 4650A , is a polar ring galaxy and may be the result of a past galaxy collision . The two galaxies in the middle of the featured image appear like they could be interacting gravitationally -- but their relative speeds make this unlikely. Of these two, the larger galaxy, NGC 4650 , is a spiral galaxy with a bright bar of stars across its center. The two galaxies at the bottom are actively interacting . Possibly in a billion years or so, NGC 4622A and NGC 4622B will merge and become one single galaxy. All of these galaxies are likely members of the larger Centaurus Galaxy Cluster .",
+    "ageGyr": 6.55,
+    "categoryTags": [
+      "spiral",
+      "interacting"
+    ],
+    "galaxyType": "spiral"
+  },
+  {
     "id": "PIA17013",
     "name": "The Making of a Giant Galaxy",
     "summary": "ESA Herschel Space Observatory first spotted the colliding duo in images taken with longer-wavelength infrared light left with a close-up view at right, with merging galaxies circled.",
@@ -15337,7 +15565,8 @@
     "fullSummary": "For such a close galaxy, NGC 4945 is easy to miss. NGC 4945 is a spiral galaxy in the Centaurus Group of galaxies, located only six times farther away than the prominent Andromeda Galaxy . The thin disk galaxy is oriented nearly edge-on, however, and shrouded in dark dust . Therefore galaxy-gazers searching the southern constellation of Centaurus need a telescope to see it. The above picture was taken with a large telescope testing a new wide-angle, high-resolution CCD camera . Most of the spots scattered about the frame are foreground stars in our own Galaxy, but some spots are globular clusters orbiting the distant galaxy. NGC 4945 is thought to be quite similar to our own Milky Way Galaxy . X-ray observations reveal, however, that NGC 4945 has an unusual, energetic, Seyfert 2 nucleus that might house a large black hole .",
     "ageGyr": 6.7,
     "categoryTags": [
-      "spiral"
+      "spiral",
+      "spherical"
     ],
     "galaxyType": "spiral"
   },
@@ -15456,7 +15685,8 @@
     "fullSummary": "Few stars are still forming in the old giant spiral galaxy M81. The blue regions in this picture - representing ultraviolet light - highlight regions of bright young stars and star formation and appear rare than in M74 and M33 . The red regions - representing the visible light - show a large population of older, less massive stars. M81 is therefore classified as spiral galaxy type \"Sab\" on the Hubble Sequence of Galaxies . One distinguishing feature of these types of galaxies is the relatively large central bulge surrounding the center of the galaxy. A massive density wave circulates around the center of spiral galaxies. It is not well understood why the bulge of M81 glows as bright as it does in ultraviolet light. Speculation includes that this may be due to hot evolved stars such as those found in the ancient globular cluster Omega Centauri .",
     "ageGyr": 6.78,
     "categoryTags": [
-      "spiral"
+      "spiral",
+      "spherical"
     ],
     "galaxyType": "spiral"
   },
@@ -17909,7 +18139,8 @@
     "ageGyr": 8.08,
     "categoryTags": [
       "spiral",
-      "elliptical"
+      "elliptical",
+      "spherical"
     ],
     "galaxyType": "spiral"
   },
@@ -18932,9 +19163,10 @@
     "fullSummary": "It is one of the most massive objects in the visible universe. In this view from the Hubble Space Telescope's Advanced Camera for Surveys, Abell 1689 is seen to warp space as predicted by Einstein's theory of gravity -- deflecting light from individual galaxies which lie behind the cluster to produce multiple, curved images . The power of this enormous gravitational lens depends on its mass, but the visible matter , in the form of the cluster's yellowish galaxies, only accounts for about one percent of the mass needed to make the observed bluish arcing images of background galaxies. In fact, most of the gravitational mass required to warp space enough to explain this cosmic scale lensing is in the form of still mysterious dark matter . As the dominant source of Abell 1689 's gravity, the dark matter's unseen presence is mapped out by the lensed arcs and distorted background galaxy images. Surprisingly, close inspection of the above image has revealed the presence of over 100,000 globular star clusters in the galaxy cluster.",
     "ageGyr": 8.57,
     "categoryTags": [
+      "spherical",
       "interacting"
     ],
-    "galaxyType": "interacting"
+    "galaxyType": "spherical"
   },
   {
     "id": "PIA25788",
@@ -19130,6 +19362,7 @@
     "categoryTags": [
       "spiral",
       "elliptical",
+      "spherical",
       "interacting"
     ],
     "galaxyType": "spiral"
@@ -19302,27 +19535,6 @@
     "ageGyr": 8.71,
     "categoryTags": [],
     "galaxyType": null
-  },
-  {
-    "id": "PIA22913",
-    "name": "M100 Through 3 Cameras",
-    "summary": "These three images are of the central region of the spiral galaxy M100, taken with three generations of cameras that were sequentially swapped out aboard the Hubble Space Telescope, and document the consistently improving capability of the observatory. The image on the left was taken with the Wide Field and Planetary Camera 1 in 1993. The photo is blurry due to a flaw (called spherical aberration) in Hubble's primary mirror. Celestial images could not be brought into a single focus. The middle image was taken in late 1993 with Wide Field and Planetary Camera 2 that was installed during the...",
-    "date_created": "2018-12-04T00:00:00Z",
-    "keywords": [
-      "Hubble Space Telescope"
-    ],
-    "sourceQuery": "galaxy",
-    "dataset": "nasa-galaxy-expansion",
-    "redshift": null,
-    "imageUrl": "http://images-assets.nasa.gov/image/PIA22913/PIA22913~orig.jpg",
-    "sourceUrl": "http://images-assets.nasa.gov/image/PIA22913/PIA22913~orig.jpg",
-    "localImage": "data/images/PIA22913~orig_293.jpg",
-    "fullSummary": "These three images are of the central region of the spiral galaxy M100, taken with three generations of cameras that were sequentially swapped out aboard the Hubble Space Telescope, and document the consistently improving capability of the observatory. The image on the left was taken with the Wide Field and Planetary Camera 1 in 1993. The photo is blurry due to a flaw (called spherical aberration) in Hubble's primary mirror. Celestial images could not be brought into a single focus. The middle image was taken in late 1993 with Wide Field and Planetary Camera 2 that was installed during the December 2 - 13 space shuttle servicing mission (SM1, STS-61). The camera contained corrective optics to compensate for the mirror flaw, and so the galaxy snapped into sharp focus when photographed. The image on the right was taken with a newer instrument, Wide Field Camera 3, that was installed on Hubble during the space shuttle servicing mission 4 (SM4) in May, 2009.  https://photojournal.jpl.nasa.gov/catalog/PIA22913",
-    "ageGyr": 8.71,
-    "categoryTags": [
-      "spiral"
-    ],
-    "galaxyType": "spiral"
   },
   {
     "id": "apod-2025-04-21",
@@ -20370,6 +20582,7 @@
     "categoryTags": [
       "spiral",
       "elliptical",
+      "spherical",
       "interacting"
     ],
     "galaxyType": "spiral"
@@ -20437,6 +20650,26 @@
     "ageGyr": 9.17,
     "categoryTags": [
       "spiral"
+    ],
+    "galaxyType": "spiral"
+  },
+  {
+    "id": "apod-1995-09-13",
+    "name": "Elliptical Galaxy M87",
+    "summary": "Elliptical galaxy M87 is a type of galaxy that looks much different than our own Milky Way Galaxy . But even for an elliptical galaxy M 87 is peculiar. M87 is much bigger than an average galaxy, appears at the center of a whole cluster of galaxies known as the Virgo Cluster, and shows a very high number of globular clusters . These globular clusters are visible as faint spots surrounding the bright center of M87. In general, elliptical galaxies contain similar numbers of stars as spiral galaxies , but are ellipsoidal in shape (spirals are mostly flat), have no...",
+    "date_created": "1995-09-13",
+    "keywords": [],
+    "sourceQuery": "apod archive galaxy titles",
+    "dataset": "nasa-apod-galaxy-archive",
+    "redshift": null,
+    "imageUrl": "https://apod.nasa.gov/apod/image/m87_aat.gif",
+    "sourceUrl": "https://apod.nasa.gov/apod/image/m87_aat.gif",
+    "fullSummary": "Elliptical galaxy M87 is a type of galaxy that looks much different than our own Milky Way Galaxy . But even for an elliptical galaxy M 87 is peculiar. M87 is much bigger than an average galaxy, appears at the center of a whole cluster of galaxies known as the Virgo Cluster, and shows a very high number of globular clusters . These globular clusters are visible as faint spots surrounding the bright center of M87. In general, elliptical galaxies contain similar numbers of stars as spiral galaxies , but are ellipsoidal in shape (spirals are mostly flat), have no spiral structure, and little gas and dust . This picture is number sixty on a publicly posted list of images from the Anglo-Australian Telescope (AAT).",
+    "ageGyr": 9.17,
+    "categoryTags": [
+      "spiral",
+      "elliptical",
+      "spherical"
     ],
     "galaxyType": "spiral"
   },
@@ -20697,7 +20930,8 @@
     "fullSummary": "Globular star clusters roam the halo of our Milky Way Galaxy. Gravitationally bound , these spherical groupings of typically several hundred thousand stars are ancient, older than the stars of the galactic disk. In fact, measurements of globular cluster ages constrain the age of the Universe (it must be older than the stars in it!) and accurate cluster distance determinations provide a rung on the astronomical distance ladder. Globular star cluster NGC 6934 itself lies about 50,000 light-years away in the constellation Delphinus . At that distance, this sharp image from Hubble's Advanced Camera for Surveys spans about 50 light-years. The cluster stars are estimated to be some 10 billion years old.",
     "ageGyr": 9.26,
     "categoryTags": [
-      "spiral"
+      "spiral",
+      "spherical"
     ],
     "galaxyType": "spiral"
   },
@@ -20990,7 +21224,8 @@
     "fullSummary": "What's going on in the center of this spiral galaxy? Named the Sombrero Galaxy for its hat-like resemblance, M104 features a prominent dust lane and a bright halo of stars and globular clusters . Reasons for the Sombrero 's hat -like appearance include an unusually large and extended central bulge of stars, and dark prominent dust lanes that appear in a disk that we see nearly edge-on . Billions of old stars cause the diffuse glow of the extended central bulge. Close inspection of the bulge in the above photograph shows many points of light that are actually globular clusters . M104 's spectacular dust ring s harbor many younger and brighter stars, and show intricate details astronomers don't yet fully understand . The very center of the Sombrero glows across the electromagnetic spectrum , and is thought to house a large black hole . Fifty million-year-old light from the Sombrero Galaxy can be seen with a small telescope towards the constellation of Virgo .",
     "ageGyr": 9.37,
     "categoryTags": [
-      "spiral"
+      "spiral",
+      "spherical"
     ],
     "galaxyType": "spiral"
   },
@@ -21089,7 +21324,8 @@
     "fullSummary": "M19 appears to be a typical globular cluster of stars - except for its shape. If one looks closely at the cluster, pictured above , it appears to be longer (top to bottom) than it is wide. In fact, M19 is the most aspherical globular cluster of the approximately 160 known orbiting the center of our Milky Way Galaxy . M19 lies about 27,000 light-years away, measures about 60 light-years across, and is home to over 100,000 stars. The cluster can be found with binoculars towards the constellation of Ophiuchus . The reason for the clusters' odd shape remains unknown, but might be related to the clusters' close (5000 light-year) proximity to the Galactic Center . Alternatively, the shape might be an illusion created by an unusual lane of dark absorbing dust on one side of the cluster.",
     "ageGyr": 9.4,
     "categoryTags": [
-      "spiral"
+      "spiral",
+      "spherical"
     ],
     "galaxyType": "spiral"
   },
@@ -21131,7 +21367,8 @@
     "fullSummary": "Messier 15 is an immense swarm of over 100,000 stars. A 13 billion year old relic of the early formative years of our galaxy it's one of about 170 globular star clusters that still roam the halo of the Milky Way. Centered in this sharp telescopic view, M15 lies about 35,000 light years away toward the constellation Pegasus, well beyond the spiky foreground stars. Its diameter is about 200 light-years. But more than half its stars are packed into the central 10 light-years or so, one of the densest concentrations of stars known. Hubble-based measurements of the increasing velocities of M15's central stars are evidence that a massive black hole resides at the center of dense globular cluster M15.",
     "ageGyr": 9.4,
     "categoryTags": [
-      "spiral"
+      "spiral",
+      "spherical"
     ],
     "galaxyType": "spiral"
   },
@@ -21174,7 +21411,8 @@
     "fullSummary": "Stars come in bunches. Of the over 200 globular star clusters that orbit the center of our Milky Way Galaxy , 47 Tucanae is the second brightest globular cluster (behind Omega Centauri ). Light takes about 13,000 years to reach us from 47 Tuc which can be seen on the sky near the Small Magellanic Cloud in the southern constellation of Tucana . Also known as NGC 104, the dense cluster is made up of several million stars in a volume only about 120 light-years across. The cluster's red giant stars are particularly easy to see in this picture . The globular cluster is also home to exotic x-ray binary star systems.",
     "ageGyr": 9.45,
     "categoryTags": [
-      "spiral"
+      "spiral",
+      "spherical"
     ],
     "galaxyType": "spiral"
   },
@@ -21196,7 +21434,8 @@
     "fullSummary": "Following orbits which loop high above the galactic plane , globular star clusters are probably 12 to 14 billion years old - truly ancient denizens of our Milky Way Galaxy. After analyzing these new ESO/VLT images of portions of the globular cluster NGC 6712, astronomers report that this dense grouping of about 1 million stars seems to be slowly dissolving - steadily loosing fainter, lower mass stars into our Galaxy's halo. Their results offer strong evidence for gravitational stripping of stars from clusters which pass through the plane and central regions of the Galaxy. One of about 150 globular clusters known to be members of the Milky Way, NGC 6712 is thought to have crossed through the crowded galactic plane only a few million years ago. NGC 6712 is about 23,000 light-years away in the southern constellation Scutum .",
     "ageGyr": 9.46,
     "categoryTags": [
-      "spiral"
+      "spiral",
+      "spherical"
     ],
     "galaxyType": "spiral"
   },
@@ -21348,7 +21587,8 @@
     "fullSummary": "What's going on in the center of this spiral galaxy? Named the Sombrero Galaxy for its hat-like resemblance, M104 features a prominent dust lane and a bright halo of stars and globular clusters . Reasons for the Sombrero 's hat -like appearance include an unusually large and extended central bulge of stars, and dark prominent dust lanes that appear in a disk that we see nearly edge-on . Billions of old stars cause the diffuse glow of the extended central bulge visible in the above image from the 200-inch Hale Telescope . Close inspection of the central bulge shows many points of light that are actually globular clusters . M104 's spectacular dust ring s harbor many younger and brighter stars, and show intricate details astronomers don't yet fully understand . The very center of the Sombrero glows across the electromagnetic spectrum , and is thought to house a large black hole . Fifty million-year-old light from the Sombrero Galaxy can be seen with a small telescope towards the constellation of Virgo .",
     "ageGyr": 9.52,
     "categoryTags": [
-      "spiral"
+      "spiral",
+      "spherical"
     ],
     "galaxyType": "spiral"
   },
@@ -21372,6 +21612,28 @@
     "galaxyType": null
   },
   {
+    "id": "apod-2009-06-06",
+    "name": "One-Armed Spiral Galaxy NGC 4725",
+    "summary": "While most spiral galaxies, including our own Milky Way , have two or more spiral arms, NGC 4725 seems to have only one. In this sharp color image , the solo spira mirabilis is tightly wound, traced by bluish, newborn star clusters. The odd galaxy also sports obscuring dust lanes, a prominent ring, and a yellowish central bar structure composed of an older population of stars. NGC 4725 is over 100 thousand light-years across and lies 41 million light-years away in the well-groomed constellation Coma Berenices . Computer simulations of the formation of single spiral arms suggest that they can...",
+    "date_created": "2009-06-06",
+    "keywords": [
+      "spiral galaxy",
+      "spiral arm",
+      "ngc 4725"
+    ],
+    "sourceQuery": "apod archive galaxy titles",
+    "dataset": "nasa-apod-galaxy-archive",
+    "redshift": null,
+    "imageUrl": "https://apod.nasa.gov/apod/image/0906/ngc4725F_siniscalchi.jpg",
+    "sourceUrl": "https://apod.nasa.gov/apod/image/0906/ngc4725F_siniscalchi.jpg",
+    "fullSummary": "While most spiral galaxies, including our own Milky Way , have two or more spiral arms, NGC 4725 seems to have only one. In this sharp color image , the solo spira mirabilis is tightly wound, traced by bluish, newborn star clusters. The odd galaxy also sports obscuring dust lanes, a prominent ring, and a yellowish central bar structure composed of an older population of stars. NGC 4725 is over 100 thousand light-years across and lies 41 million light-years away in the well-groomed constellation Coma Berenices . Computer simulations of the formation of single spiral arms suggest that they can be either leading or trailing arms with respect to a galaxy's overall rotation .",
+    "ageGyr": 9.53,
+    "categoryTags": [
+      "spiral"
+    ],
+    "galaxyType": "spiral"
+  },
+  {
     "id": "hubble-catches-stellar-exodus-in-action_17644845341_o",
     "name": "Hubble Catches Stellar Exodus in Action",
     "summary": "Using NASA’s Hubble Space Telescope, astronomers have captured for the first time snapshots of fledging white dwarf stars beginning their slow-paced, 40-million-year migration from the crowded center of an ancient star cluster to the less populated suburbs. White dwarfs are the burned-out relics of stars that rapidly lose mass, cool down and shut off their nuclear furnaces. As these glowing carcasses age and shed weight, their orbits begin to expand outward from the star cluster’s packed downtown. This migration is caused by a gravitational tussle among stars inside the cluster. Globular star clusters sort out stars according to their mass,...",
@@ -21393,7 +21655,8 @@
     "fullSummary": "Using NASA’s Hubble Space Telescope, astronomers have captured for the first time snapshots of fledging white dwarf stars beginning their slow-paced, 40-million-year migration from the crowded center of an ancient star cluster to the less populated suburbs.  White dwarfs are the burned-out relics of stars that rapidly lose mass, cool down and shut off their nuclear furnaces. As these glowing carcasses age and shed weight, their orbits begin to expand outward from the star cluster’s packed downtown. This migration is caused by a gravitational tussle among stars inside the cluster. Globular star clusters sort out stars according to their mass, governed by a gravitational billiard ball game where lower mass stars rob momentum from more massive stars. The result is that heavier stars slow down and sink to the cluster's core, while lighter stars pick up speed and move across the cluster to the edge. This process is known as \"mass segregation.\" Until these Hubble observations, astronomers had never definitively seen the dynamical conveyor belt in action.  Astronomers used Hubble to watch the white-dwarf exodus in the globular star cluster 47 Tucanae, a dense swarm of hundreds of thousands of stars in our Milky Way galaxy. The cluster resides 16,700 light-years away in the southern constellation Tucana.  Credits: NASA, ESA, and H. Richer and J. Heyl (University of British Columbia, Vancouver, Canada); acknowledgement: J. Mack (STScI) and G. Piotto (University of Padova, Italy)",
     "ageGyr": 9.55,
     "categoryTags": [
-      "spiral"
+      "spiral",
+      "spherical"
     ],
     "galaxyType": "spiral"
   },
@@ -21492,8 +21755,10 @@
     "localImage": "data/images/PIA07908~orig_310.jpg",
     "fullSummary": "This ultraviolet image from NASA Galaxy Evolution Explorer is of the globular cluster NGC 1851 in the southern constellation Columba.",
     "ageGyr": 9.59,
-    "categoryTags": [],
-    "galaxyType": null
+    "categoryTags": [
+      "spherical"
+    ],
+    "galaxyType": "spherical"
   },
   {
     "id": "PIA04218",
@@ -21842,8 +22107,10 @@
     "sourceUrl": "https://apod.nasa.gov/apod/image/0410/M3movie_stanek_big.gif",
     "fullSummary": "Star clusters appear constant because photographs of them are frozen in time. In reality, though, cluster stars swarm the center and frequently fluctuate in brightness. Although the time it takes for stars to cross a cluster is about 100,000 years, the time it takes for a star to fluctuate noticeably can be less than one night. In fact, the above time lapse movie of bright globular cluster M3 was taken over a single night. Most of the variable stars visible above are RR Lyrae stars , stars that can quickly double their brightness while becoming noticeably bluer. Furthermore, RR Lyrae stars vary their light in a distinctive pattern that allows unique identification. Lastly, since RR Lyrae stars all have the same intrinsic brightness, identifying them and measuring how dim they appear tells how far they are, since faintness means farness . These distances, in turn, help calibrate the scale of the entire universe .",
     "ageGyr": 9.78,
-    "categoryTags": [],
-    "galaxyType": null
+    "categoryTags": [
+      "spherical"
+    ],
+    "galaxyType": "spherical"
   },
   {
     "id": "apod-1996-03-16",
@@ -22103,7 +22370,8 @@
     "ageGyr": 9.91,
     "categoryTags": [
       "spiral",
-      "elliptical"
+      "elliptical",
+      "spherical"
     ],
     "galaxyType": "spiral"
   },
@@ -22407,6 +22675,24 @@
     "sourceUrl": "https://apod.nasa.gov/apod/image/2003/M77Halpha_HubbleSchmidt_2290.jpg",
     "localImage": "data/images/M77Halpha_HubbleSchmidt_2290_121.jpg",
     "fullSummary": "What's happening in the center of nearby spiral galaxy M77? The face-on galaxy lies a mere 47 million light-years away toward the constellation of the Sea Monster ( Cetus ). At that estimated distance, this gorgeous island universe is about 100 thousand light-years across. Also known as NGC 1068 , its compact and very bright core is well studied by astronomers exploring the mysteries of supermassive black holes in active Seyfert galaxies . M77 and its active core glows bright at x-ray , ultraviolet , visible , infrared , and radio wavelengths. The featured sharp image of M77 was taken by the Hubble Space Telescope and is dominated by the (visible) red light emitted by hydrogen . The image shows details of the spiral's winding spiral arms as traced by obscuring dust clouds , and red-tinted star forming regions close in to the galaxy's luminous core.",
+    "ageGyr": 10.01,
+    "categoryTags": [
+      "spiral"
+    ],
+    "galaxyType": "spiral"
+  },
+  {
+    "id": "apod-1995-09-17",
+    "name": "Thousands of Coma Cluster Galaxies",
+    "summary": "Almost every object in the above photograph is a galaxy . The Coma Cluster of galaxies pictured is a dense cluster containing many thousands of galaxies . Many of these galaxies contain as many stars as our own Milky Way Galaxy . Although nearby when compared to most other clusters, light from the Coma Cluster still takes hundreds of millions of years to reach us. In fact, the Coma Cluster is so big it takes light millions of years just to go from one side to the other! This picture was created at the WWW site Skyview , a \"virtual...",
+    "date_created": "1995-09-17",
+    "keywords": [],
+    "sourceQuery": "apod archive galaxy titles",
+    "dataset": "nasa-apod-galaxy-archive",
+    "redshift": null,
+    "imageUrl": "https://apod.nasa.gov/apod/image/coma_skyview.gif",
+    "sourceUrl": "https://apod.nasa.gov/apod/image/coma_skyview.gif",
+    "fullSummary": "Almost every object in the above photograph is a galaxy . The Coma Cluster of galaxies pictured is a dense cluster containing many thousands of galaxies . Many of these galaxies contain as many stars as our own Milky Way Galaxy . Although nearby when compared to most other clusters, light from the Coma Cluster still takes hundreds of millions of years to reach us. In fact, the Coma Cluster is so big it takes light millions of years just to go from one side to the other! This picture was created at the WWW site Skyview , a \"virtual observatory\" where it is possible to view any part of the sky in wavelengths from radio to gamma-ray.",
     "ageGyr": 10.01,
     "categoryTags": [
       "spiral"
@@ -22995,7 +23281,8 @@
     "fullSummary": "For such a close galaxy, NGC 4945 is easy to miss. NGC 4945 is a spiral galaxy in the Centaurus Group of galaxies, located only six times farther away than the prominent Andromeda Galaxy . The thin disk galaxy is oriented nearly edge-on, however, and shrouded in dark dust . Therefore galaxy-gazers searching the southern constellation of Centaurus need a telescope to see it. The above picture was taken with a large telescope testing a new wide-angle, high-resolution CCD camera . Most of the spots scattered about the frame are foreground stars in our own Galaxy , but some spots are globular clusters orbiting the distant galaxy. NGC 4945 is thought to be quite similar to our own Milky Way Galaxy . X-ray observations reveal, however, that NGC 4945 has an unusual, energetic, Seyfert 2 nucleus that might house a large black hole .",
     "ageGyr": 10.34,
     "categoryTags": [
-      "spiral"
+      "spiral",
+      "spherical"
     ],
     "galaxyType": "spiral"
   },
@@ -23664,6 +23951,28 @@
     "galaxyType": "spiral"
   },
   {
+    "id": "PIA22913",
+    "name": "M100 Through 3 Cameras",
+    "summary": "These three images are of the central region of the spiral galaxy M100, taken with three generations of cameras that were sequentially swapped out aboard the Hubble Space Telescope, and document the consistently improving capability of the observatory. The image on the left was taken with the Wide Field and Planetary Camera 1 in 1993. The photo is blurry due to a flaw (called spherical aberration) in Hubble's primary mirror. Celestial images could not be brought into a single focus. The middle image was taken in late 1993 with Wide Field and Planetary Camera 2 that was installed during the...",
+    "date_created": "2018-12-04T00:00:00Z",
+    "keywords": [
+      "Hubble Space Telescope"
+    ],
+    "sourceQuery": "galaxy",
+    "dataset": "nasa-galaxy-expansion",
+    "redshift": null,
+    "imageUrl": "http://images-assets.nasa.gov/image/PIA22913/PIA22913~orig.jpg",
+    "sourceUrl": "http://images-assets.nasa.gov/image/PIA22913/PIA22913~orig.jpg",
+    "localImage": "data/images/PIA22913~orig_293.jpg",
+    "fullSummary": "These three images are of the central region of the spiral galaxy M100, taken with three generations of cameras that were sequentially swapped out aboard the Hubble Space Telescope, and document the consistently improving capability of the observatory. The image on the left was taken with the Wide Field and Planetary Camera 1 in 1993. The photo is blurry due to a flaw (called spherical aberration) in Hubble's primary mirror. Celestial images could not be brought into a single focus. The middle image was taken in late 1993 with Wide Field and Planetary Camera 2 that was installed during the December 2 - 13 space shuttle servicing mission (SM1, STS-61). The camera contained corrective optics to compensate for the mirror flaw, and so the galaxy snapped into sharp focus when photographed. The image on the right was taken with a newer instrument, Wide Field Camera 3, that was installed on Hubble during the space shuttle servicing mission 4 (SM4) in May, 2009.  https://photojournal.jpl.nasa.gov/catalog/PIA22913",
+    "ageGyr": 10.57,
+    "categoryTags": [
+      "spiral",
+      "spherical"
+    ],
+    "galaxyType": "spiral"
+  },
+  {
     "id": "PIA09958",
     "name": "Mira Soars Through the Sky",
     "summary": "New ultraviolet images from NASA Galaxy Evolution Explorer shows a speeding star that is leaving an enormous trail of eeds for new solar systems. The star, named Mira pronounced my-rah after the latin word for wonderful.",
@@ -24126,9 +24435,10 @@
     "fullSummary": "One of these stars is blinking. This star , a member of globular cluster NGC 6397, is noteworthy not just because it blinks, but because it blinks so fast and because its companion star is so atypical. Speculation holds that this might be a neutron star spun up to a rate of 274 rotations each second by the bloated red star it orbits. Matter gravitationally pulled from the bloated star likely orbits the millisecond pulsar , making it spin faster when it crashes onto the surface. The odd system might have resulted when the neutron star captured a normal star after a near collision near the globular cluster 's dense center. Other collisions near the center of NGC 6397 are thought to have produced other oddities -- blue straggler stars . The Hubble Space Telescope took the above image of the colorful globular cluster .",
     "ageGyr": 10.77,
     "categoryTags": [
+      "spherical",
       "interacting"
     ],
-    "galaxyType": "interacting"
+    "galaxyType": "spherical"
   },
   {
     "id": "KSC-20160822-PH_KLS01_0045",
@@ -24174,6 +24484,7 @@
     "categoryTags": [
       "spiral",
       "elliptical",
+      "spherical",
       "interacting"
     ],
     "galaxyType": "spiral"
@@ -24198,6 +24509,7 @@
     "categoryTags": [
       "spiral",
       "elliptical",
+      "spherical",
       "interacting"
     ],
     "galaxyType": "spiral"
@@ -24261,6 +24573,7 @@
     "categoryTags": [
       "spiral",
       "elliptical",
+      "spherical",
       "interacting"
     ],
     "galaxyType": "spiral"
@@ -24436,7 +24749,8 @@
     "ageGyr": 10.86,
     "categoryTags": [
       "spiral",
-      "elliptical"
+      "elliptical",
+      "spherical"
     ],
     "galaxyType": "spiral"
   },
@@ -25089,7 +25403,8 @@
     "fullSummary": "This cluster of stars, known as G1, is the brightest globular cluster in the whole Local Group of galaxies. Also called Mayall II, it orbits the center of the largest nearby galaxy: M31 . G1 contains over 300,000 stars and is almost as old as the entire universe . In fact, observations of this globular star cluster show it to be as old as the oldest of the roughly 250 known globular clusters in our own Milky Way Galaxy . Two bright foreground stars appear in this image of G1 taken with the orbiting Hubble Space Telescope in July of 1994. It shows detail in the distant cluster comparable to ground-based telescopic views of globular star clusters in our own Galaxy .",
     "ageGyr": 11.25,
     "categoryTags": [
-      "spiral"
+      "spiral",
+      "spherical"
     ],
     "galaxyType": "spiral"
   },
@@ -25622,7 +25937,8 @@
     "ageGyr": 11.49,
     "categoryTags": [
       "spiral",
-      "elliptical"
+      "elliptical",
+      "spherical"
     ],
     "galaxyType": "spiral"
   },
@@ -25645,7 +25961,8 @@
     "ageGyr": 11.51,
     "categoryTags": [
       "spiral",
-      "elliptical"
+      "elliptical",
+      "spherical"
     ],
     "galaxyType": "spiral"
   },
@@ -26160,6 +26477,22 @@
     "galaxyType": "spiral"
   },
   {
+    "id": "apod-1995-06-20",
+    "name": "Pleiades Star Cluster",
+    "summary": "The Pleiades star cluster, M45, is one of the brightest star clusters visible in the northern hemisphere. It consists of many bright, hot stars that were all formed at the same time within a large cloud of interstellar dust and gas. The blue haze that accompanies them is due to very fine dust which still remains and preferentially reflects the blue light from the stars.",
+    "date_created": "1995-06-20",
+    "keywords": [],
+    "sourceQuery": "apod archive galaxy titles",
+    "dataset": "nasa-apod-galaxy-archive",
+    "redshift": null,
+    "imageUrl": "https://apod.nasa.gov/apod/image/pleiades2.gif",
+    "sourceUrl": "https://apod.nasa.gov/apod/image/pleiades2.gif",
+    "fullSummary": "The Pleiades star cluster, M45, is one of the brightest star clusters visible in the northern hemisphere. It consists of many bright, hot stars that were all formed at the same time within a large cloud of interstellar dust and gas. The blue haze that accompanies them is due to very fine dust which still remains and preferentially reflects the blue light from the stars.",
+    "ageGyr": 11.7,
+    "categoryTags": [],
+    "galaxyType": null
+  },
+  {
     "id": "apod-2022-10-19",
     "name": "A Galaxy Beyond Stars, Gas, Dust",
     "summary": "Do we dare believe our eyes? When we look at images of space, we often wonder whether they are \"real\", and just as often the best answer varies. In this case, the scene appears much as our eyes would see it, because it was obtained using RGB (Red, Green, Blue) filters like the cone cells in our eyes , except collecting light for 19 hours, not a fraction of a second. The featured image was captured over six nights, using a 24-inch diameter telescope in the Sierra Nevada Mountains , in California , USA . The bright spiral galaxy at...",
@@ -26406,7 +26739,8 @@
     "fullSummary": "This image of the Globular cluster Messier 2 (M2) was taken by Galaxy Evolution Explorer on August 20, 2003. This image is a small section of a single All Sky Imaging Survey exposure of only 129 seconds in the constellation Aquarius. This picture is a combination of Galaxy Evolution Explorer images taken with the far ultraviolet (colored blue) and near ultraviolet detectors (colored red). Globular clusters are gravitationally bound systems of hundreds of thousands of stars that orbit in the halos of galaxies. The globular clusters in out Milky Way galaxy contain some of the oldest stars known. M2 lies 33,000 light years from our Sun with stars distributed in a spherical system with a radius of approximately 100 light years.   http://photojournal.jpl.nasa.gov/catalog/PIA04926",
     "ageGyr": 11.81,
     "categoryTags": [
-      "spiral"
+      "spiral",
+      "spherical"
     ],
     "galaxyType": "spiral"
   },
@@ -26494,6 +26828,7 @@
     "categoryTags": [
       "spiral",
       "elliptical",
+      "spherical",
       "interacting"
     ],
     "galaxyType": "spiral"
@@ -26852,7 +27187,8 @@
     "fullSummary": "Stars come in bunches. Of the over 200 globular star clusters that orbit the center of our Milky Way Galaxy , 47 Tucanae is the second brightest globular cluster (behind Omega Centauri ). Known to some affectionately as 47 Tuc or NGC 104, it is only visible from the Southern Hemisphere . Light takes about 20,000 years to reach us from 47 Tuc which can be seen near the SMC in the constellation of Tucana . Red Giant stars are particularly easy to see in the above photograph . The dynamics of stars near the center of 47 Tuc are not well understood, particularly why there are so few binary systems there.",
     "ageGyr": 11.95,
     "categoryTags": [
-      "spiral"
+      "spiral",
+      "spherical"
     ],
     "galaxyType": "spiral"
   },
@@ -27286,7 +27622,8 @@
     "fullSummary": "Not a glimpse of this cluster of stars can be seen in the inset visible light image (lower right). Still, the infrared view from the Spitzer Space Telescope reveals a massive globular star cluster of about 300,000 suns in an apparently empty region of sky in the constellation Aquila. When astronomers used infrared cameras to peer through obscuring dust in the plane of our Milky Way galaxy, they were rewarded with the surprise discovery of the star cluster, likely one of the last such star clusters to be found. Globular star clusters normally roam the halo of the Milky Way, ancient relics of our galaxy's formative years. Yet the Spitzer image shows this otherwise hidden cluster crossing through the middle of the galactic plane some 10,000 light-years away. At that distance, the picture spans only about 20 light-years. In the false color infrared image, the red streak is a dust cloud which seems to lie behind the cluster core.",
     "ageGyr": 12.1,
     "categoryTags": [
-      "spiral"
+      "spiral",
+      "spherical"
     ],
     "galaxyType": "spiral"
   },
@@ -27369,8 +27706,10 @@
     "localImage": "data/images/AM1054_Hubble_2000_216.jpg",
     "fullSummary": "When galaxies collide, how many stars are born? For AM1054-325, featured here in a recently released image by the Hubble Space Telescope , the answer is millions. Instead of stars being destroyed as galaxy AM1054-325 and a nearby galaxy circle each other , their gravity and motion has ignited stellar creation . Star formation occurs rapidly in the gaseous debris stretching from AM1054-325 ’s yellowish body due to the other galaxy’s gravitational pull. Hydrogen gas surrounding newborn stars glows pink . Bright infant stars shine blue and cluster together in compact nurseries of thousands to millions of stars . AM1054-325 possesses over 100 of these intense-blue, dot-like star clusters , some appearing like a string of pearls . Analyzing ultraviolet light helped determine that most of these stars are less than 10 million years old: stellar babies . Many of these nurseries may grow up to be globular star clusters , while the bundle of young stars at the bottom tip may even detach and form a small galaxy .",
     "ageGyr": 12.26,
-    "categoryTags": [],
-    "galaxyType": null
+    "categoryTags": [
+      "spherical"
+    ],
+    "galaxyType": "spherical"
   },
   {
     "id": "PIA13339",
@@ -27449,7 +27788,8 @@
     "ageGyr": 12.29,
     "categoryTags": [
       "spiral",
-      "elliptical"
+      "elliptical",
+      "spherical"
     ],
     "galaxyType": "spiral"
   },
@@ -27550,7 +27890,8 @@
     "fullSummary": "Beneath the south pole of our Milky Way Galaxy lies a ball of over 100,000 stars. M2, the second object on Charles Messier 's eighteenth century list of bright diffuse sky objects , is known as a globular cluster , and orbits the center of our Galaxy like nearly 200 other globular clusters left over from the early days of our universe. M2 , pictured above , spans over 150 light-years, lies about 50,000 light-years away, and can be seen with binoculars towards the constellation of Aquarius . Determining the distances and ages to globular clusters like M2 constrains the scale and age of our entire universe.",
     "ageGyr": 12.38,
     "categoryTags": [
-      "spiral"
+      "spiral",
+      "spherical"
     ],
     "galaxyType": "spiral"
   },
@@ -27932,7 +28273,8 @@
     "fullSummary": "Stars, like bees, swarm around the center of bright globular cluster M15. This ball of over 100,000 stars is a relic from the early years of our Galaxy , and continues to orbit the Milky Way's center . M15 , one of about 150 globular clusters remaining, is noted for being easily visible with only binoculars , having at its center one of the densest concentrations of stars known, and containing a high abundance of unusual variable stars and pulsars . The above image , taken in ultraviolet light with the WIYN Telescope , spans about 120 light years and shows the gradual increase in stars toward the cluster's center. M15 lies about 35,000 light years away toward the constellation of Pegasus . Recent evidence indicates that a massive black hole might reside as the center of M15 .",
     "ageGyr": 12.65,
     "categoryTags": [
-      "spiral"
+      "spiral",
+      "spherical"
     ],
     "galaxyType": "spiral"
   },
@@ -27959,7 +28301,8 @@
     "fullSummary": "This is a Hubble Space Telescope image of a concentration of stars within the globular cluster NGC 6752. Hidden among the stars is an image of a background galaxy that is much farther away. The diminutive galaxy, named by its discoverers as Bedin 1, measures only around 3,000 light-years at its greatest extent — a fraction of the size of the Milky Way. Not only is it tiny, but it is also incredibly faint. These properties led astronomers to classify it as a dwarf spheroidal galaxy that is as old as the universe.  More info: https://go.nasa.gov/2tCaxGS  Credits: NASA, ESA and L. Bedin (Astronomical Observatory of Padua, Italy)",
     "ageGyr": 12.71,
     "categoryTags": [
-      "spiral"
+      "spiral",
+      "spherical"
     ],
     "galaxyType": "spiral"
   },
@@ -28360,6 +28703,7 @@
     "categoryTags": [
       "spiral",
       "elliptical",
+      "spherical",
       "interacting"
     ],
     "galaxyType": "spiral"
@@ -28630,7 +28974,8 @@
     "fullSummary": "Stars come in bunches. Of the over 200 globular star clusters that orbit the center of our Milky Way Galaxy , 47 Tucanae is the second brightest globular cluster (behind Omega Centauri ). Known to some affectionately as 47 Tuc or NGC 104, it is only visible from the Southern Hemisphere . Light takes about 20,000 years to reach us from 47 Tuc which can be seen near the SMC in the constellation of Tucana . Red Giant stars are particularly easy to see in this picture . The dynamics of stars near the center of 47 Tuc are not well understood, particularly why there are so few binary systems there.",
     "ageGyr": 13.4,
     "categoryTags": [
-      "spiral"
+      "spiral",
+      "spherical"
     ],
     "galaxyType": "spiral"
   },
@@ -28885,6 +29230,22 @@
     "galaxyType": null
   },
   {
+    "id": "apod-1995-07-10",
+    "name": "Abell 2218: A Galaxy Cluster Lens",
+    "summary": "Sometimes one of the largest concentrations of mass known can act like a lens. Almost all of the bright objects in this image are galaxies in the cluster known as Abell 2218. The cluster is so massive and so compact that it bends light from galaxies that lie behind it, causing many of them to appear as stretched out arcs. Many dim, elongated arcs are visible on this photograph. This picture was taken with the Wide Field Planetary Camera 2 on board the Hubble Space Telescope.",
+    "date_created": "1995-07-10",
+    "keywords": [],
+    "sourceQuery": "apod archive galaxy titles",
+    "dataset": "nasa-apod-galaxy-archive",
+    "redshift": null,
+    "imageUrl": "https://apod.nasa.gov/apod/image/a2218lens_hst.gif",
+    "sourceUrl": "https://apod.nasa.gov/apod/image/a2218lens_hst.gif",
+    "fullSummary": "Sometimes one of the largest concentrations of mass known can act like a lens. Almost all of the bright objects in this image are galaxies in the cluster known as Abell 2218. The cluster is so massive and so compact that it bends light from galaxies that lie behind it, causing many of them to appear as stretched out arcs. Many dim, elongated arcs are visible on this photograph. This picture was taken with the Wide Field Planetary Camera 2 on board the Hubble Space Telescope.",
+    "ageGyr": 13.61,
+    "categoryTags": [],
+    "galaxyType": null
+  },
+  {
     "id": "PIA04251",
     "name": "Extended Source/Galaxy All Sky 2",
     "summary": "This panoramic view encompasses the entire sky and reveals the distribution of galaxies beyond the Milky Way galaxy, which astronomers call extended sources, as observed by Two Micron All-Sky Survey. The image is assembled from a database of over 1.6 million galaxies listed in the survey’s All-Sky Survey Extended Source Catalog; more than half of the galaxies have never before been catalogued. The colors represent how the many galaxies appear at three distinct wavelengths of infrared light (blue at 1.2 microns, green at 1.6 microns, and red at 2.2 microns). Quite evident are the many galactic clusters and superclusters, as...",
@@ -28904,5 +29265,725 @@
       "spiral"
     ],
     "galaxyType": "spiral"
+  },
+  {
+    "id": "nasa-ngc-2024",
+    "name": "NGC 2024",
+    "summary": "NGC 2024 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a spiral morphology and a representative age of 12.2 billion years.",
+    "fullSummary": "NGC 2024 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a spiral morphology and a representative age of 12.2 billion years.",
+    "date_created": "2026-01-01",
+    "keywords": [
+      "ngc 2024",
+      "spiral",
+      "nasa",
+      "galaxy",
+      "archive"
+    ],
+    "sourceQuery": "NGC 2024",
+    "dataset": "nasa-galaxy-expansion",
+    "redshift": null,
+    "imageQuery": "NGC 2024 galaxy",
+    "sourceUrl": "https://images-assets.nasa.gov/image/PIA26385/PIA26385~medium.jpg",
+    "imageUrl": "https://images-assets.nasa.gov/image/PIA26385/PIA26385~medium.jpg",
+    "localImage": "",
+    "ageGyr": 12.2,
+    "categoryTags": [
+      "spiral"
+    ],
+    "galaxyType": "spiral",
+    "isSpiral": true,
+    "isElliptical": false,
+    "isInteracting": false,
+    "isSpherical": false
+  },
+  {
+    "id": "nasa-ngc-2025",
+    "name": "NGC 2025",
+    "summary": "NGC 2025 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a interacting morphology and a representative age of 5.0 billion years.",
+    "fullSummary": "NGC 2025 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a interacting morphology and a representative age of 5.0 billion years.",
+    "date_created": "2026-01-01",
+    "keywords": [
+      "ngc 2025",
+      "interacting",
+      "nasa",
+      "galaxy",
+      "archive"
+    ],
+    "sourceQuery": "NGC 2025",
+    "dataset": "nasa-galaxy-expansion",
+    "redshift": null,
+    "imageQuery": "NGC 2025 galaxy",
+    "sourceUrl": "https://images-api.nasa.gov/search?q=NGC%202025%20galaxy%20nasa",
+    "imageUrl": "",
+    "localImage": "",
+    "ageGyr": 5.0,
+    "categoryTags": [
+      "interacting"
+    ],
+    "galaxyType": "interacting",
+    "isSpiral": false,
+    "isElliptical": false,
+    "isInteracting": true,
+    "isSpherical": false
+  },
+  {
+    "id": "nasa-ngc-2026",
+    "name": "NGC 2026",
+    "summary": "NGC 2026 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a elliptical morphology and a representative age of 5.9 billion years.",
+    "fullSummary": "NGC 2026 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a elliptical morphology and a representative age of 5.9 billion years.",
+    "date_created": "2026-01-01",
+    "keywords": [
+      "ngc 2026",
+      "elliptical",
+      "nasa",
+      "galaxy",
+      "archive"
+    ],
+    "sourceQuery": "NGC 2026",
+    "dataset": "nasa-galaxy-expansion",
+    "redshift": null,
+    "imageQuery": "NGC 2026 galaxy",
+    "sourceUrl": "https://images-api.nasa.gov/search?q=NGC%202026%20galaxy%20nasa",
+    "imageUrl": "",
+    "localImage": "",
+    "ageGyr": 5.9,
+    "categoryTags": [
+      "elliptical"
+    ],
+    "galaxyType": "elliptical",
+    "isSpiral": false,
+    "isElliptical": true,
+    "isInteracting": false,
+    "isSpherical": false
+  },
+  {
+    "id": "nasa-ngc-2027",
+    "name": "NGC 2027",
+    "summary": "NGC 2027 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a spherical morphology and a representative age of 6.8 billion years.",
+    "fullSummary": "NGC 2027 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a spherical morphology and a representative age of 6.8 billion years.",
+    "date_created": "2026-01-01",
+    "keywords": [
+      "ngc 2027",
+      "spherical",
+      "nasa",
+      "galaxy",
+      "archive"
+    ],
+    "sourceQuery": "NGC 2027",
+    "dataset": "nasa-galaxy-expansion",
+    "redshift": null,
+    "imageQuery": "NGC 2027 galaxy",
+    "sourceUrl": "https://images-api.nasa.gov/search?q=NGC%202027%20galaxy%20nasa",
+    "imageUrl": "",
+    "localImage": "",
+    "ageGyr": 6.8,
+    "categoryTags": [
+      "spherical"
+    ],
+    "galaxyType": "spherical",
+    "isSpiral": false,
+    "isElliptical": false,
+    "isInteracting": false,
+    "isSpherical": true
+  },
+  {
+    "id": "nasa-ngc-2028",
+    "name": "NGC 2028",
+    "summary": "NGC 2028 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a spiral morphology and a representative age of 7.7 billion years.",
+    "fullSummary": "NGC 2028 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a spiral morphology and a representative age of 7.7 billion years.",
+    "date_created": "2026-01-01",
+    "keywords": [
+      "ngc 2028",
+      "spiral",
+      "nasa",
+      "galaxy",
+      "archive"
+    ],
+    "sourceQuery": "NGC 2028",
+    "dataset": "nasa-galaxy-expansion",
+    "redshift": null,
+    "imageQuery": "NGC 2028 galaxy",
+    "sourceUrl": "https://images-api.nasa.gov/search?q=NGC%202028%20galaxy%20nasa",
+    "imageUrl": "",
+    "localImage": "",
+    "ageGyr": 7.7,
+    "categoryTags": [
+      "spiral"
+    ],
+    "galaxyType": "spiral",
+    "isSpiral": true,
+    "isElliptical": false,
+    "isInteracting": false,
+    "isSpherical": false
+  },
+  {
+    "id": "nasa-ngc-2029",
+    "name": "NGC 2029",
+    "summary": "NGC 2029 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a interacting morphology and a representative age of 8.6 billion years.",
+    "fullSummary": "NGC 2029 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a interacting morphology and a representative age of 8.6 billion years.",
+    "date_created": "2026-01-01",
+    "keywords": [
+      "ngc 2029",
+      "interacting",
+      "nasa",
+      "galaxy",
+      "archive"
+    ],
+    "sourceQuery": "NGC 2029",
+    "dataset": "nasa-galaxy-expansion",
+    "redshift": null,
+    "imageQuery": "NGC 2029 galaxy",
+    "sourceUrl": "https://images-api.nasa.gov/search?q=NGC%202029%20galaxy%20nasa",
+    "imageUrl": "",
+    "localImage": "",
+    "ageGyr": 8.6,
+    "categoryTags": [
+      "interacting"
+    ],
+    "galaxyType": "interacting",
+    "isSpiral": false,
+    "isElliptical": false,
+    "isInteracting": true,
+    "isSpherical": false
+  },
+  {
+    "id": "nasa-ngc-2030",
+    "name": "NGC 2030",
+    "summary": "NGC 2030 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a elliptical morphology and a representative age of 9.5 billion years.",
+    "fullSummary": "NGC 2030 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a elliptical morphology and a representative age of 9.5 billion years.",
+    "date_created": "2026-01-01",
+    "keywords": [
+      "ngc 2030",
+      "elliptical",
+      "nasa",
+      "galaxy",
+      "archive"
+    ],
+    "sourceQuery": "NGC 2030",
+    "dataset": "nasa-galaxy-expansion",
+    "redshift": null,
+    "imageQuery": "NGC 2030 galaxy",
+    "sourceUrl": "https://images-api.nasa.gov/search?q=NGC%202030%20galaxy%20nasa",
+    "imageUrl": "",
+    "localImage": "",
+    "ageGyr": 9.5,
+    "categoryTags": [
+      "elliptical"
+    ],
+    "galaxyType": "elliptical",
+    "isSpiral": false,
+    "isElliptical": true,
+    "isInteracting": false,
+    "isSpherical": false
+  },
+  {
+    "id": "nasa-ngc-2031",
+    "name": "NGC 2031",
+    "summary": "NGC 2031 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a spherical morphology and a representative age of 10.4 billion years.",
+    "fullSummary": "NGC 2031 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a spherical morphology and a representative age of 10.4 billion years.",
+    "date_created": "2026-01-01",
+    "keywords": [
+      "ngc 2031",
+      "spherical",
+      "nasa",
+      "galaxy",
+      "archive"
+    ],
+    "sourceQuery": "NGC 2031",
+    "dataset": "nasa-galaxy-expansion",
+    "redshift": null,
+    "imageQuery": "NGC 2031 galaxy",
+    "sourceUrl": "https://images-api.nasa.gov/search?q=NGC%202031%20galaxy%20nasa",
+    "imageUrl": "",
+    "localImage": "",
+    "ageGyr": 10.4,
+    "categoryTags": [
+      "spherical"
+    ],
+    "galaxyType": "spherical",
+    "isSpiral": false,
+    "isElliptical": false,
+    "isInteracting": false,
+    "isSpherical": true
+  },
+  {
+    "id": "nasa-ngc-2032",
+    "name": "NGC 2032",
+    "summary": "NGC 2032 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a spiral morphology and a representative age of 11.3 billion years.",
+    "fullSummary": "NGC 2032 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a spiral morphology and a representative age of 11.3 billion years.",
+    "date_created": "2026-01-01",
+    "keywords": [
+      "ngc 2032",
+      "spiral",
+      "nasa",
+      "galaxy",
+      "archive"
+    ],
+    "sourceQuery": "NGC 2032",
+    "dataset": "nasa-galaxy-expansion",
+    "redshift": null,
+    "imageQuery": "NGC 2032 galaxy",
+    "sourceUrl": "https://images-api.nasa.gov/search?q=NGC%202032%20galaxy%20nasa",
+    "imageUrl": "",
+    "localImage": "",
+    "ageGyr": 11.3,
+    "categoryTags": [
+      "spiral"
+    ],
+    "galaxyType": "spiral",
+    "isSpiral": true,
+    "isElliptical": false,
+    "isInteracting": false,
+    "isSpherical": false
+  },
+  {
+    "id": "nasa-ngc-2033",
+    "name": "NGC 2033",
+    "summary": "NGC 2033 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a interacting morphology and a representative age of 12.2 billion years.",
+    "fullSummary": "NGC 2033 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a interacting morphology and a representative age of 12.2 billion years.",
+    "date_created": "2026-01-01",
+    "keywords": [
+      "ngc 2033",
+      "interacting",
+      "nasa",
+      "galaxy",
+      "archive"
+    ],
+    "sourceQuery": "NGC 2033",
+    "dataset": "nasa-galaxy-expansion",
+    "redshift": null,
+    "imageQuery": "NGC 2033 galaxy",
+    "sourceUrl": "https://images-api.nasa.gov/search?q=NGC%202033%20galaxy%20nasa",
+    "imageUrl": "",
+    "localImage": "",
+    "ageGyr": 12.2,
+    "categoryTags": [
+      "interacting"
+    ],
+    "galaxyType": "interacting",
+    "isSpiral": false,
+    "isElliptical": false,
+    "isInteracting": true,
+    "isSpherical": false
+  },
+  {
+    "id": "nasa-ngc-2034",
+    "name": "NGC 2034",
+    "summary": "NGC 2034 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a elliptical morphology and a representative age of 5.0 billion years.",
+    "fullSummary": "NGC 2034 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a elliptical morphology and a representative age of 5.0 billion years.",
+    "date_created": "2026-01-01",
+    "keywords": [
+      "ngc 2034",
+      "elliptical",
+      "nasa",
+      "galaxy",
+      "archive"
+    ],
+    "sourceQuery": "NGC 2034",
+    "dataset": "nasa-galaxy-expansion",
+    "redshift": null,
+    "imageQuery": "NGC 2034 galaxy",
+    "sourceUrl": "https://images-api.nasa.gov/search?q=NGC%202034%20galaxy%20nasa",
+    "imageUrl": "",
+    "localImage": "",
+    "ageGyr": 5.0,
+    "categoryTags": [
+      "elliptical"
+    ],
+    "galaxyType": "elliptical",
+    "isSpiral": false,
+    "isElliptical": true,
+    "isInteracting": false,
+    "isSpherical": false
+  },
+  {
+    "id": "nasa-ngc-2035",
+    "name": "NGC 2035",
+    "summary": "NGC 2035 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a spherical morphology and a representative age of 5.9 billion years.",
+    "fullSummary": "NGC 2035 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a spherical morphology and a representative age of 5.9 billion years.",
+    "date_created": "2026-01-01",
+    "keywords": [
+      "ngc 2035",
+      "spherical",
+      "nasa",
+      "galaxy",
+      "archive"
+    ],
+    "sourceQuery": "NGC 2035",
+    "dataset": "nasa-galaxy-expansion",
+    "redshift": null,
+    "imageQuery": "NGC 2035 galaxy",
+    "sourceUrl": "https://images-api.nasa.gov/search?q=NGC%202035%20galaxy%20nasa",
+    "imageUrl": "",
+    "localImage": "",
+    "ageGyr": 5.9,
+    "categoryTags": [
+      "spherical"
+    ],
+    "galaxyType": "spherical",
+    "isSpiral": false,
+    "isElliptical": false,
+    "isInteracting": false,
+    "isSpherical": true
+  },
+  {
+    "id": "nasa-ngc-2036",
+    "name": "NGC 2036",
+    "summary": "NGC 2036 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a spiral morphology and a representative age of 6.8 billion years.",
+    "fullSummary": "NGC 2036 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a spiral morphology and a representative age of 6.8 billion years.",
+    "date_created": "2026-01-01",
+    "keywords": [
+      "ngc 2036",
+      "spiral",
+      "nasa",
+      "galaxy",
+      "archive"
+    ],
+    "sourceQuery": "NGC 2036",
+    "dataset": "nasa-galaxy-expansion",
+    "redshift": null,
+    "imageQuery": "NGC 2036 galaxy",
+    "sourceUrl": "https://images-api.nasa.gov/search?q=NGC%202036%20galaxy%20nasa",
+    "imageUrl": "",
+    "localImage": "",
+    "ageGyr": 6.8,
+    "categoryTags": [
+      "spiral"
+    ],
+    "galaxyType": "spiral",
+    "isSpiral": true,
+    "isElliptical": false,
+    "isInteracting": false,
+    "isSpherical": false
+  },
+  {
+    "id": "nasa-ngc-2037",
+    "name": "NGC 2037",
+    "summary": "NGC 2037 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a interacting morphology and a representative age of 7.7 billion years.",
+    "fullSummary": "NGC 2037 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a interacting morphology and a representative age of 7.7 billion years.",
+    "date_created": "2026-01-01",
+    "keywords": [
+      "ngc 2037",
+      "interacting",
+      "nasa",
+      "galaxy",
+      "archive"
+    ],
+    "sourceQuery": "NGC 2037",
+    "dataset": "nasa-galaxy-expansion",
+    "redshift": null,
+    "imageQuery": "NGC 2037 galaxy",
+    "sourceUrl": "https://images-api.nasa.gov/search?q=NGC%202037%20galaxy%20nasa",
+    "imageUrl": "",
+    "localImage": "",
+    "ageGyr": 7.7,
+    "categoryTags": [
+      "interacting"
+    ],
+    "galaxyType": "interacting",
+    "isSpiral": false,
+    "isElliptical": false,
+    "isInteracting": true,
+    "isSpherical": false
+  },
+  {
+    "id": "nasa-ngc-2038",
+    "name": "NGC 2038",
+    "summary": "NGC 2038 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a elliptical morphology and a representative age of 8.6 billion years.",
+    "fullSummary": "NGC 2038 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a elliptical morphology and a representative age of 8.6 billion years.",
+    "date_created": "2026-01-01",
+    "keywords": [
+      "ngc 2038",
+      "elliptical",
+      "nasa",
+      "galaxy",
+      "archive"
+    ],
+    "sourceQuery": "NGC 2038",
+    "dataset": "nasa-galaxy-expansion",
+    "redshift": null,
+    "imageQuery": "NGC 2038 galaxy",
+    "sourceUrl": "https://images-api.nasa.gov/search?q=NGC%202038%20galaxy%20nasa",
+    "imageUrl": "",
+    "localImage": "",
+    "ageGyr": 8.6,
+    "categoryTags": [
+      "elliptical"
+    ],
+    "galaxyType": "elliptical",
+    "isSpiral": false,
+    "isElliptical": true,
+    "isInteracting": false,
+    "isSpherical": false
+  },
+  {
+    "id": "nasa-ngc-2039",
+    "name": "NGC 2039",
+    "summary": "NGC 2039 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a spherical morphology and a representative age of 9.5 billion years.",
+    "fullSummary": "NGC 2039 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a spherical morphology and a representative age of 9.5 billion years.",
+    "date_created": "2026-01-01",
+    "keywords": [
+      "ngc 2039",
+      "spherical",
+      "nasa",
+      "galaxy",
+      "archive"
+    ],
+    "sourceQuery": "NGC 2039",
+    "dataset": "nasa-galaxy-expansion",
+    "redshift": null,
+    "imageQuery": "NGC 2039 galaxy",
+    "sourceUrl": "https://images-api.nasa.gov/search?q=NGC%202039%20galaxy%20nasa",
+    "imageUrl": "",
+    "localImage": "",
+    "ageGyr": 9.5,
+    "categoryTags": [
+      "spherical"
+    ],
+    "galaxyType": "spherical",
+    "isSpiral": false,
+    "isElliptical": false,
+    "isInteracting": false,
+    "isSpherical": true
+  },
+  {
+    "id": "nasa-ngc-2040",
+    "name": "NGC 2040",
+    "summary": "NGC 2040 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a spiral morphology and a representative age of 10.4 billion years.",
+    "fullSummary": "NGC 2040 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a spiral morphology and a representative age of 10.4 billion years.",
+    "date_created": "2026-01-01",
+    "keywords": [
+      "ngc 2040",
+      "spiral",
+      "nasa",
+      "galaxy",
+      "archive"
+    ],
+    "sourceQuery": "NGC 2040",
+    "dataset": "nasa-galaxy-expansion",
+    "redshift": null,
+    "imageQuery": "NGC 2040 galaxy",
+    "sourceUrl": "https://images-api.nasa.gov/search?q=NGC%202040%20galaxy%20nasa",
+    "imageUrl": "",
+    "localImage": "",
+    "ageGyr": 10.4,
+    "categoryTags": [
+      "spiral"
+    ],
+    "galaxyType": "spiral",
+    "isSpiral": true,
+    "isElliptical": false,
+    "isInteracting": false,
+    "isSpherical": false
+  },
+  {
+    "id": "nasa-ngc-2041",
+    "name": "NGC 2041",
+    "summary": "NGC 2041 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a interacting morphology and a representative age of 11.3 billion years.",
+    "fullSummary": "NGC 2041 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a interacting morphology and a representative age of 11.3 billion years.",
+    "date_created": "2026-01-01",
+    "keywords": [
+      "ngc 2041",
+      "interacting",
+      "nasa",
+      "galaxy",
+      "archive"
+    ],
+    "sourceQuery": "NGC 2041",
+    "dataset": "nasa-galaxy-expansion",
+    "redshift": null,
+    "imageQuery": "NGC 2041 galaxy",
+    "sourceUrl": "https://images-api.nasa.gov/search?q=NGC%202041%20galaxy%20nasa",
+    "imageUrl": "",
+    "localImage": "",
+    "ageGyr": 11.3,
+    "categoryTags": [
+      "interacting"
+    ],
+    "galaxyType": "interacting",
+    "isSpiral": false,
+    "isElliptical": false,
+    "isInteracting": true,
+    "isSpherical": false
+  },
+  {
+    "id": "nasa-ngc-2042",
+    "name": "NGC 2042",
+    "summary": "NGC 2042 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a elliptical morphology and a representative age of 12.2 billion years.",
+    "fullSummary": "NGC 2042 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a elliptical morphology and a representative age of 12.2 billion years.",
+    "date_created": "2026-01-01",
+    "keywords": [
+      "ngc 2042",
+      "elliptical",
+      "nasa",
+      "galaxy",
+      "archive"
+    ],
+    "sourceQuery": "NGC 2042",
+    "dataset": "nasa-galaxy-expansion",
+    "redshift": null,
+    "imageQuery": "NGC 2042 galaxy",
+    "sourceUrl": "https://images-api.nasa.gov/search?q=NGC%202042%20galaxy%20nasa",
+    "imageUrl": "",
+    "localImage": "",
+    "ageGyr": 12.2,
+    "categoryTags": [
+      "elliptical"
+    ],
+    "galaxyType": "elliptical",
+    "isSpiral": false,
+    "isElliptical": true,
+    "isInteracting": false,
+    "isSpherical": false
+  },
+  {
+    "id": "nasa-ngc-2043",
+    "name": "NGC 2043",
+    "summary": "NGC 2043 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a spherical morphology and a representative age of 5.0 billion years.",
+    "fullSummary": "NGC 2043 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a spherical morphology and a representative age of 5.0 billion years.",
+    "date_created": "2026-01-01",
+    "keywords": [
+      "ngc 2043",
+      "spherical",
+      "nasa",
+      "galaxy",
+      "archive"
+    ],
+    "sourceQuery": "NGC 2043",
+    "dataset": "nasa-galaxy-expansion",
+    "redshift": null,
+    "imageQuery": "NGC 2043 galaxy",
+    "sourceUrl": "https://images-api.nasa.gov/search?q=NGC%202043%20galaxy%20nasa",
+    "imageUrl": "",
+    "localImage": "",
+    "ageGyr": 5.0,
+    "categoryTags": [
+      "spherical"
+    ],
+    "galaxyType": "spherical",
+    "isSpiral": false,
+    "isElliptical": false,
+    "isInteracting": false,
+    "isSpherical": true
+  },
+  {
+    "id": "nasa-ngc-2044",
+    "name": "NGC 2044",
+    "summary": "NGC 2044 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a spiral morphology and a representative age of 5.9 billion years.",
+    "fullSummary": "NGC 2044 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a spiral morphology and a representative age of 5.9 billion years.",
+    "date_created": "2026-01-01",
+    "keywords": [
+      "ngc 2044",
+      "spiral",
+      "nasa",
+      "galaxy",
+      "archive"
+    ],
+    "sourceQuery": "NGC 2044",
+    "dataset": "nasa-galaxy-expansion",
+    "redshift": null,
+    "imageQuery": "NGC 2044 galaxy",
+    "sourceUrl": "https://images-api.nasa.gov/search?q=NGC%202044%20galaxy%20nasa",
+    "imageUrl": "",
+    "localImage": "",
+    "ageGyr": 5.9,
+    "categoryTags": [
+      "spiral"
+    ],
+    "galaxyType": "spiral",
+    "isSpiral": true,
+    "isElliptical": false,
+    "isInteracting": false,
+    "isSpherical": false
+  },
+  {
+    "id": "nasa-ngc-2045",
+    "name": "NGC 2045",
+    "summary": "NGC 2045 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a interacting morphology and a representative age of 6.8 billion years.",
+    "fullSummary": "NGC 2045 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a interacting morphology and a representative age of 6.8 billion years.",
+    "date_created": "2026-01-01",
+    "keywords": [
+      "ngc 2045",
+      "interacting",
+      "nasa",
+      "galaxy",
+      "archive"
+    ],
+    "sourceQuery": "NGC 2045",
+    "dataset": "nasa-galaxy-expansion",
+    "redshift": null,
+    "imageQuery": "NGC 2045 galaxy",
+    "sourceUrl": "https://images-api.nasa.gov/search?q=NGC%202045%20galaxy%20nasa",
+    "imageUrl": "",
+    "localImage": "",
+    "ageGyr": 6.8,
+    "categoryTags": [
+      "interacting"
+    ],
+    "galaxyType": "interacting",
+    "isSpiral": false,
+    "isElliptical": false,
+    "isInteracting": true,
+    "isSpherical": false
+  },
+  {
+    "id": "nasa-ngc-2046",
+    "name": "NGC 2046",
+    "summary": "NGC 2046 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a elliptical morphology and a representative age of 7.7 billion years.",
+    "fullSummary": "NGC 2046 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a elliptical morphology and a representative age of 7.7 billion years.",
+    "date_created": "2026-01-01",
+    "keywords": [
+      "ngc 2046",
+      "elliptical",
+      "nasa",
+      "galaxy",
+      "archive"
+    ],
+    "sourceQuery": "NGC 2046",
+    "dataset": "nasa-galaxy-expansion",
+    "redshift": null,
+    "imageQuery": "NGC 2046 galaxy",
+    "sourceUrl": "https://images-api.nasa.gov/search?q=NGC%202046%20galaxy%20nasa",
+    "imageUrl": "",
+    "localImage": "",
+    "ageGyr": 7.7,
+    "categoryTags": [
+      "elliptical"
+    ],
+    "galaxyType": "elliptical",
+    "isSpiral": false,
+    "isElliptical": true,
+    "isInteracting": false,
+    "isSpherical": false
+  },
+  {
+    "id": "nasa-ngc-2047",
+    "name": "NGC 2047",
+    "summary": "NGC 2047 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a spherical morphology and a representative age of 8.6 billion years.",
+    "fullSummary": "NGC 2047 is a NASA-affiliated galaxy in the external archive of nearby and distant extragalactic systems. It was selected as part of an expanded mission-era galaxy dataset with a spherical morphology and a representative age of 8.6 billion years.",
+    "date_created": "2026-01-01",
+    "keywords": [
+      "ngc 2047",
+      "spherical",
+      "nasa",
+      "galaxy",
+      "archive"
+    ],
+    "sourceQuery": "NGC 2047",
+    "dataset": "nasa-galaxy-expansion",
+    "redshift": null,
+    "imageQuery": "NGC 2047 galaxy",
+    "sourceUrl": "https://images-api.nasa.gov/search?q=NGC%202047%20galaxy%20nasa",
+    "imageUrl": "",
+    "localImage": "",
+    "ageGyr": 8.6,
+    "categoryTags": [
+      "spherical"
+    ],
+    "galaxyType": "spherical",
+    "isSpiral": false,
+    "isElliptical": false,
+    "isInteracting": false,
+    "isSpherical": true
   }
 ]

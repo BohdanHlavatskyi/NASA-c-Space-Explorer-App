@@ -76,6 +76,14 @@ NON_GALAXY_TERMS = re.compile(
 )
 
 
+def is_nasa_affiliated(value):
+    if not value:
+        return False
+    host = urlparse(str(value)).netloc.lower()
+    value_lower = str(value).lower()
+    return 'nasa.gov' in host or 'nasa.gov' in value_lower or 'images-api.nasa.gov' in value_lower or 'apod.nasa.gov' in value_lower
+
+
 def normalize_text(value):
     if not value:
         return ''
@@ -262,6 +270,8 @@ def add_entry(results, seen, entry):
     key = entry_key(entry)
     if not key or key in seen:
         return False
+    if not is_nasa_affiliated(entry.get('imageUrl') or entry.get('sourceUrl')):
+        return False
 
     seen.add(key)
     results.append(entry)
@@ -298,7 +308,7 @@ def harvest_apod_galaxies(results, seen, limit):
             continue
 
         image_url, desc, keywords = extract_apod_media_and_text(page_html)
-        if not image_url or not desc:
+        if not image_url or not desc or not is_nasa_affiliated(image_url):
             continue
 
         if not is_galaxy_record(title, desc, keywords):
@@ -412,6 +422,8 @@ def main():
                     asset_url = asset_url or thumb
 
                 image_url = asset_url or thumb
+                if not image_url or not is_nasa_affiliated(image_url):
+                    continue
                 entry = {
                     'id': str(nasa_id).replace(' ', '_'),
                     'name': title,

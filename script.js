@@ -612,6 +612,7 @@ let GALAXY_DATABASE = [
 const GALAXY_CATEGORY_OPTIONS = [
   { key: 'spiral', label: 'Spiral galaxy' },
   { key: 'elliptical', label: 'Elliptical galaxy' },
+  { key: 'spherical', label: 'Spherical galaxy' },
   { key: 'interacting', label: 'Interacting galaxies' }
 ];
 
@@ -626,6 +627,66 @@ function normalizeGalaxyCategories(value) {
 
   const values = Array.isArray(value) ? value : [value];
   return [...new Set(values.map((category) => String(category).trim().toLowerCase()).filter(Boolean))];
+}
+
+function buildCategoryTagsFromFlags(galaxy) {
+  const tags = new Set();
+  const nameText = `${galaxy.name || ''} ${galaxy.summary || ''} ${galaxy.fullSummary || ''}`.toLowerCase();
+
+  if (galaxy.isSpiral || /\bspiral\b/.test(nameText)) {
+    tags.add('spiral');
+  }
+
+  if (galaxy.isElliptical || /\belliptical\b|\bgiant elliptical\b|\bspheroid\b/.test(nameText)) {
+    tags.add('elliptical');
+  }
+
+  if (galaxy.isSpherical || /\bspherical\b|\broughly spherical\b|\bglobular\b/.test(nameText)) {
+    tags.add('spherical');
+  }
+
+  if (galaxy.isInteracting || /\binteracting\b|\bmerging\b|\bmerger\b|\btidal\b|\bcompanion\b|\bcollision\b/.test(nameText)) {
+    tags.add('interacting');
+  }
+
+  return Array.from(tags);
+}
+
+function coerceGalaxyRecord(galaxy) {
+  if (!galaxy || typeof galaxy !== 'object') {
+    return galaxy;
+  }
+
+  const normalized = { ...galaxy };
+  const categoryTags = normalizeGalaxyCategories(normalized.categoryTags).length
+    ? normalizeGalaxyCategories(normalized.categoryTags)
+    : buildCategoryTagsFromFlags(normalized);
+
+  const derivedMorphology = normalized.morphology || (
+    categoryTags.includes('spiral') ? 'spiral galaxy' :
+      categoryTags.includes('elliptical') ? 'elliptical galaxy' :
+        categoryTags.includes('interacting') ? 'interacting galaxy' :
+          categoryTags.includes('spherical') ? 'spherical galaxy' :
+            'galaxy'
+  );
+
+  const summary = normalized.summary || normalized.fullSummary || `NASA galaxy record for ${normalized.name || 'unknown galaxy'}.`;
+
+  return {
+    ...normalized,
+    name: normalized.name || normalized.id || 'Unknown galaxy',
+    summary,
+    fullSummary: normalized.fullSummary || summary,
+    environment: normalized.environment || 'NASA archive',
+    morphology: derivedMorphology,
+    categoryTags,
+    galaxyType: normalized.galaxyType || categoryTags[0] || null,
+    ageGyr: typeof normalized.ageGyr === 'number' ? normalized.ageGyr : Number(normalized.ageGyr) || null,
+    blackHoleMassSolar: Number(normalized.blackHoleMassSolar ?? 0),
+    stellarMassSolar: Number(normalized.stellarMassSolar ?? 0),
+    starFormationRate: Number(normalized.starFormationRate ?? 0),
+    redshift: normalized.redshift != null ? Number(normalized.redshift) : 0
+  };
 }
 
 function inferGalaxyCategories(galaxy) {
@@ -652,8 +713,12 @@ function inferGalaxyCategories(galaxy) {
     categories.add('spiral');
   }
 
-  if (/\belliptical\b|\bellipsoid\b|\bspheroid\b|\bgiant elliptical\b/.test(text)) {
+  if (/\belliptical\b|\bellipsoid\b|\bspheroid\b|\bgiant elliptical\b|\broughly spherical\b/.test(text)) {
     categories.add('elliptical');
+  }
+
+  if (/\bspherical\b|\broughly spherical\b|\bglobular\b/.test(text)) {
+    categories.add('spherical');
   }
 
   if (/\binteracting\b|\bmerging\b|\bmerger\b|\btidal\b|\bcollision\b|\bcompanion\b|\bpair\b|\bdistorted\b|\bantennae\b|\binteraction\b/.test(text)) {
@@ -688,10 +753,17 @@ function getSelectedGalaxyCategories() {
     .filter(Boolean);
 }
 
-GALAXY_DATABASE = GALAXY_DATABASE.map(enrichGalaxyRecord);
+GALAXY_DATABASE = GALAXY_DATABASE.map((galaxy) => enrichGalaxyRecord(coerceGalaxyRecord(galaxy)));
 
-// Allow augmenting / filtering the galaxy database from an external JSON file.
-const EXTERNAL_GALAXY_DB_PATH = 'data/galaxy-database.json';
+// Prefer the curated full export as the source of truth. The compact export is intentionally a
+// reduced fallback only, and it should never suppress the complete atlas view when the full file is available.
+const EXTERNAL_GALAXY_DB_PATHS = [
+  'data/galaxy-database.json',
+  'data/galaxy-database-minimal.json'
+];
+const EMBEDDED_GALAXY_DATA = typeof window !== 'undefined' && Array.isArray(window.__GALAXY_DATA__)
+  ? window.__GALAXY_DATA__
+  : [];
 let ORIGINAL_GALAXY_DATABASE = GALAXY_DATABASE.slice();
 
 function redshiftToAgeGyr(z, options = {}) {
@@ -726,43 +798,75 @@ function redshiftToAgeGyr(z, options = {}) {
 }
 
 async function loadExternalGalaxyDatabase() {
-  try {
-    const resp = await fetch(EXTERNAL_GALAXY_DB_PATH, { cache: 'no-store' });
-    if (!resp.ok) {
-      return;
+  const seenKeys = new Set(
+    GALAXY_DATABASE.flatMap((galaxy) => {
+      const identityKeys = [galaxy.id, galaxy.imageUrl, galaxy.sourceUrl, galaxy.localImage]
+        .filter(Boolean)
+        .map((value) => normalizeGalaxyKey(value));
+
+      return identityKeys.length > 0 ? identityKeys : [normalizeGalaxyKey(galaxy.name)];
+    })
+  );
+
+  const dataSources = [];
+  let fullDatabaseLoaded = false;
+
+  for (const dbPath of EXTERNAL_GALAXY_DB_PATHS) {
+    try {
+      const resp = await fetch(dbPath, { cache: 'no-store' });
+      if (!resp.ok) {
+        continue;
+      }
+
+      const items = await resp.json();
+      if (!Array.isArray(items) || items.length === 0) {
+        continue;
+      }
+
+      if (dbPath.endsWith('galaxy-database.json')) {
+        dataSources.push(items);
+        fullDatabaseLoaded = true;
+        break;
+      }
+
+      if (!fullDatabaseLoaded) {
+        dataSources.push(items);
+      }
+    } catch (e) {
+      // ignore and try the next known export path
     }
+  }
 
-    const items = await resp.json();
-    if (!Array.isArray(items)) return;
+  if (!fullDatabaseLoaded && Array.isArray(EMBEDDED_GALAXY_DATA) && EMBEDDED_GALAXY_DATA.length > 0) {
+    dataSources.unshift(EMBEDDED_GALAXY_DATA);
+  }
 
-    const seenKeys = new Set(
-      GALAXY_DATABASE.flatMap((galaxy) =>
-        [galaxy.id, galaxy.name, galaxy.imageUrl, galaxy.sourceUrl, galaxy.localImage]
-          .filter(Boolean)
-          .map((value) => normalizeGalaxyKey(value))
-      )
-    );
+  for (const items of dataSources) {
+    if (!Array.isArray(items)) continue;
 
     for (const entry of items) {
       if (!entry) continue;
 
-      let copy = { ...entry };
+      let copy = coerceGalaxyRecord(entry);
       if ((!copy.ageGyr || copy.ageGyr === null) && copy.redshift != null) {
         const z = Number(copy.redshift);
         const age = redshiftToAgeGyr(z);
         if (age != null) copy.ageGyr = Number(age.toFixed(2));
       }
 
-      // Ensure required fields
       copy.name = copy.name || copy.id;
       copy.imageQuery = copy.imageQuery || copy.name;
       copy.summary = copy.summary || '';
       copy.fullSummary = copy.fullSummary || copy.summary;
       copy = enrichGalaxyRecord(copy);
 
-      const copyKeys = [copy.id, copy.name, copy.imageUrl, copy.sourceUrl, copy.localImage]
+      const copyKeys = [copy.id, copy.imageUrl, copy.sourceUrl, copy.localImage]
         .filter(Boolean)
         .map((value) => normalizeGalaxyKey(value));
+
+      if (copyKeys.length === 0 && copy.name) {
+        copyKeys.push(normalizeGalaxyKey(copy.name));
+      }
 
       if (copyKeys.some((key) => seenKeys.has(key))) {
         continue;
@@ -771,11 +875,9 @@ async function loadExternalGalaxyDatabase() {
       copyKeys.forEach((key) => seenKeys.add(key));
       GALAXY_DATABASE.push(copy);
     }
-
-    ORIGINAL_GALAXY_DATABASE = GALAXY_DATABASE.slice();
-  } catch (e) {
-    // ignore
   }
+
+  ORIGINAL_GALAXY_DATABASE = GALAXY_DATABASE.slice();
 }
 
 function applyAgeFilter(minAge, maxAge) {
@@ -1827,7 +1929,7 @@ function getFilteredGalaxies() {
     });
 }
 
-function updateGalaxySummary(totalMatches) {
+function updateGalaxySummary(totalMatches, totalDatabaseCount = ORIGINAL_GALAXY_DATABASE.length) {
   const { minAge, maxAge } = getAgeFilterBounds();
   const selectedCategories = getSelectedGalaxyCategories();
   const parts = [];
@@ -1850,7 +1952,13 @@ function updateGalaxySummary(totalMatches) {
   }
 
   galaxySummary.textContent = `${parts.join(' • ')}.`;
-  galaxyStatus.textContent = `${totalMatches} galaxies match the current filters.`;
+
+  if (minAge == null && maxAge == null && selectedCategories.length === 0) {
+    galaxyStatus.textContent = `${totalDatabaseCount} galaxies total in the database.`;
+    return;
+  }
+
+  galaxyStatus.textContent = `${totalMatches} galaxies match the current filters of ${totalDatabaseCount} total.`;
 }
 
 function openGalaxyModal(galaxy, trigger) {
@@ -1929,7 +2037,8 @@ async function renderGalaxyAtlas() {
 
   setGalaxyLoading(true);
   const matches = getFilteredGalaxies();
-  updateGalaxySummary(matches.length);
+  const totalDatabaseCount = ORIGINAL_GALAXY_DATABASE.length;
+  updateGalaxySummary(matches.length, totalDatabaseCount);
 
   resetGalaxyVisibilityObserver();
 
@@ -1942,7 +2051,7 @@ async function renderGalaxyAtlas() {
 
   if (token === galaxyRenderToken) {
     setGalaxyLoading(false);
-    updateGalaxySummary(matches.length);
+    updateGalaxySummary(matches.length, ORIGINAL_GALAXY_DATABASE.length);
   }
 }
 
